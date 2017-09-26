@@ -6,9 +6,9 @@ return [
     'distribution'      => true,#是否开启分销
     'pageSize'          =>21,
     'backendPayUser' => true,//后台开启给用户充值功能
-    'appName'           =>'亲友棋牌游戏',//APP名称
+    'appName'           =>'耍哈儿',//APP名称
     'startTime'         =>'2017-01-01 00:00:00',//时间组件开始时间
 //    'ApiUserPay'        => 'http://120.77.155.126:4002',
-    'ApiUserPay'        => 'http://192.168.2.136:8080/gameserver/control/deposit',//游戏服务器地址
+    'ApiUserPay'        => 'http://192.168.2.128:9010',//游戏服务器地址
     'manyPay'           => true,//多货币开始、关闭状态
 ];

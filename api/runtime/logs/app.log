@@ -1,0 +1,2994 @@
+2017-09-25 18:51:34 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-25 18:51:34 [192.168.2.117][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2328'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59240'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506336694.1248
+    'REQUEST_TIME' => 1506336694
+]
+2017-09-26 12:01:25 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 12:01:24 [192.168.2.117][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2580'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '51171'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarytxcJcYOKDcByfeqW'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506398484.9001
+    'REQUEST_TIME' => 1506398484
+]
+2017-09-26 12:02:24 [192.168.2.117][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user/add".' in D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/add', Array)
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\project\shuahaer\api\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\project\shuahaer\api\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-26 12:02:24 [192.168.2.117][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2580'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/user/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/user/add'
+    'REMOTE_PORT' => '51193'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryRD7g31Y5KvUz0Uxo'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506398544.2318
+    'REQUEST_TIME' => 1506398544
+]
+2017-09-26 12:02:41 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 12:02:41 [192.168.2.117][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2580'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '51201'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarynSfnfMHEVeSaeHZz'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506398561.1037
+    'REQUEST_TIME' => 1506398561
+]
+2017-09-26 12:02:49 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 12:02:49 [192.168.2.117][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2580'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '51208'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryBGBwUTkqmULE2xgP'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506398569.0552
+    'REQUEST_TIME' => 1506398569
+]
+2017-09-26 12:03:40 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 12:03:40 [192.168.2.117][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2580'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '51228'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryxDxI0mdvRG9n9x4o'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506398620.7277
+    'REQUEST_TIME' => 1506398620
+]
+2017-09-26 14:31:43 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 14:31:42 [192.168.2.117][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2544'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '55623'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarydBRNIhWZmKZE5ZkF'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506407502.618
+    'REQUEST_TIME' => 1506407502
+]
+2017-09-26 14:34:21 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 14:34:21 [192.168.2.117][-][-][info][application] $_POST = [
+    'game_id' => '玩家ID'
+    'nickname' => '玩家昵称'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2544'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '55688'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarymP1RWlW75Rqjp11O'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '253'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506407661.7525
+    'REQUEST_TIME' => 1506407661
+]
+2017-09-26 14:34:24 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 14:34:23 [192.168.2.117][-][-][info][application] $_POST = [
+    'game_id' => '玩家ID'
+    'nickname' => '玩家昵称'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2544'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '55691'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary56yngyuK3SNGkBQ9'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '253'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506407663.9228
+    'REQUEST_TIME' => 1506407663
+]
+2017-09-26 14:34:24 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 14:34:24 [192.168.2.117][-][-][info][application] $_POST = [
+    'game_id' => '玩家ID'
+    'nickname' => '玩家昵称'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2544'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '55691'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary8jYbXe43qRDJWEfB'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '253'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506407664.8007
+    'REQUEST_TIME' => 1506407664
+]
+2017-09-26 14:34:25 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 14:34:25 [192.168.2.117][-][-][info][application] $_POST = [
+    'game_id' => '玩家ID'
+    'nickname' => '玩家昵称'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2544'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '55691'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryZoxvg8QvEdp2C3JE'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '253'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506407665.3444
+    'REQUEST_TIME' => 1506407665
+]
+2017-09-26 14:34:29 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 14:34:29 [192.168.2.117][-][-][info][application] $_POST = [
+    'game_id' => '121212'
+    'nickname' => '玩家昵称'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2544'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '55691'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryKYuV7UWKbyIPO65k'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '251'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506407669.8298
+    'REQUEST_TIME' => 1506407669
+]
+2017-09-26 14:34:52 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 14:34:52 [192.168.2.117][-][-][info][application] $_POST = [
+    'game_id' => '121212'
+    'nickname' => '玩家昵称'
+    'gold' => '0'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2544'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '55701'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary3jBL0EdjO4Xofhl0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '343'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506407692.4574
+    'REQUEST_TIME' => 1506407692
+]
+2017-09-26 14:38:11 [192.168.2.117][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user/consumption".' in D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/consumptio...', Array)
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\project\shuahaer\api\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\project\shuahaer\api\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-26 14:38:11 [192.168.2.117][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2604'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/user/consumption'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/user/consumption'
+    'REMOTE_PORT' => '55797'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryvp5kOlD2R9jQb5B1'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506407891.3504
+    'REQUEST_TIME' => 1506407891
+]
+2017-09-26 14:38:17 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 14:38:17 [192.168.2.117][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2604'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/consumption'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/consumption'
+    'REMOTE_PORT' => '55801'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarymoKQSjNniYumWOJc'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506407897.6447
+    'REQUEST_TIME' => 1506407897
+]
+2017-09-26 15:11:34 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:11:34 [192.168.2.128][-][-][info][application] $_POST = [
+    'game_id' => '100029'
+    'nickname' => '12哦哦'
+    'gold' => '6'
+    'head' => 'http://g.hiphotos.baidu.com/image/pic/item/08f790529822720eb25fa86479cb0a46f31fab9f.jpg'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2352'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '63387'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryiZVSspu79IeZr4hu'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '517'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506409894.5512
+    'REQUEST_TIME' => 1506409894
+]
+2017-09-26 15:38:54 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 15:38:54 [192.168.2.117][-][-][info][application] $_COOKIE = [
+    'advanced-backend' => 'hntgm3iqr4ssh37t0akrcrvn41'
+    '_token_backend_' => '14e22db7912cd8f74b42d4b490326f2c56634b9917b007dfe424a97bc787fc87a:2:{i:0;s:15:\"_token_backend_\";i:1;s:32:\"A0k7a4_6zIkQ3WXW4Gg6Q2kDIf6G5qO7\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2492'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '57245'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'HTTP_COOKIE' => 'advanced-backend=hntgm3iqr4ssh37t0akrcrvn41; _token_backend_=14e22db7912cd8f74b42d4b490326f2c56634b9917b007dfe424a97bc787fc87a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_token_backend_%22%3Bi%3A1%3Bs%3A32%3A%22A0k7a4_6zIkQ3WXW4Gg6Q2kDIf6G5qO7%22%3B%7D'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryjeZT16ZwuJmAaEXL'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506411534.7627
+    'REQUEST_TIME' => 1506411534
+]
+2017-09-26 15:45:32 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 15:45:32 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:45:32 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2464'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '64850'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506411932.312
+    'REQUEST_TIME' => 1506411932
+]
+2017-09-26 15:45:55 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 15:45:55 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:45:55 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2464'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '64868'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506411955.7903
+    'REQUEST_TIME' => 1506411955
+]
+2017-09-26 15:46:19 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 15:46:19 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:46:19 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2464'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '64884'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506411979.9188
+    'REQUEST_TIME' => 1506411979
+]
+2017-09-26 15:46:27 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 15:46:27 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:46:27 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2464'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '64899'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506411987.1945
+    'REQUEST_TIME' => 1506411987
+]
+2017-09-26 15:46:44 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 15:46:44 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:46:44 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2464'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '64913'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412004.2966
+    'REQUEST_TIME' => 1506412004
+]
+2017-09-26 15:47:37 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 15:47:37 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:47:37 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2608'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '64943'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412057.7976
+    'REQUEST_TIME' => 1506412057
+]
+2017-09-26 15:47:37 [192.168.2.128][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: igbinary: Unable to initialize module
+Module compiled with module API=20121212
+PHP    compiled with module API=20131226
+These options need to match
+' in Unknown:0
+Stack trace:
+#0 {main}
+2017-09-26 15:47:37 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:47:37 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2608'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '64943'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412057.7976
+    'REQUEST_TIME' => 1506412057
+]
+2017-09-26 15:48:50 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 15:48:50 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:48:50 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2608'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '64964'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412130.4489
+    'REQUEST_TIME' => 1506412130
+]
+2017-09-26 15:49:50 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 15:49:50 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:49:50 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2608'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '64991'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412190.2152
+    'REQUEST_TIME' => 1506412190
+]
+2017-09-26 15:54:41 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:54:41 [192.168.2.128][-][-][info][application] $_COOKIE = [
+    'advanced-backend' => 'tb7067m1rd1mok46oqpr6er140'
+    '_token_backend_' => 'edbafc59422710be265b788c806935612afc669201b8ca30c4b83a1e1dc2b6cfa:2:{i:0;s:15:\"_token_backend_\";i:1;s:32:\"v-BMAz9ksPJuPE1g8NZBdnTACWD54APU\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2608'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '65109'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=tb7067m1rd1mok46oqpr6er140; _token_backend_=edbafc59422710be265b788c806935612afc669201b8ca30c4b83a1e1dc2b6cfa%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_token_backend_%22%3Bi%3A1%3Bs%3A32%3A%22v-BMAz9ksPJuPE1g8NZBdnTACWD54APU%22%3B%7D'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko Core/1.50.1547.400 QQBrowser/9.5.9307.400'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, image/jxr, */*'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412481.1502
+    'REQUEST_TIME' => 1506412481
+]
+2017-09-26 15:54:55 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:54:55 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2608'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '65152'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412495.3052
+    'REQUEST_TIME' => 1506412495
+]
+2017-09-26 15:56:26 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 15:56:26 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:56:26 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '65198'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412586.2699
+    'REQUEST_TIME' => 1506412586
+]
+2017-09-26 15:56:26 [192.168.2.128][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: igbinary: Unable to initialize module
+Module compiled with module API=20121212
+PHP    compiled with module API=20131226
+These options need to match
+' in Unknown:0
+Stack trace:
+#0 {main}
+2017-09-26 15:56:26 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:56:26 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '65198'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412586.2699
+    'REQUEST_TIME' => 1506412586
+]
+2017-09-26 15:56:44 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 15:56:44 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:56:44 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '65206'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412604.5465
+    'REQUEST_TIME' => 1506412604
+]
+2017-09-26 15:57:52 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 15:57:52 [192.168.2.117][-][-][info][application] $_POST = [
+    'game_id' => '121212'
+    'nickname' => '玩家昵称'
+    'gold' => '0'
+    'head' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'hntgm3iqr4ssh37t0akrcrvn41'
+    '_token_backend_' => '14e22db7912cd8f74b42d4b490326f2c56634b9917b007dfe424a97bc787fc87a:2:{i:0;s:15:\"_token_backend_\";i:1;s:32:\"A0k7a4_6zIkQ3WXW4Gg6Q2kDIf6G5qO7\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '57680'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'HTTP_COOKIE' => 'advanced-backend=hntgm3iqr4ssh37t0akrcrvn41; _token_backend_=14e22db7912cd8f74b42d4b490326f2c56634b9917b007dfe424a97bc787fc87a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_token_backend_%22%3Bi%3A1%3Bs%3A32%3A%22A0k7a4_6zIkQ3WXW4Gg6Q2kDIf6G5qO7%22%3B%7D'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryPEc4ksayO3zsfbXe'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '434'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412672.3585
+    'REQUEST_TIME' => 1506412672
+]
+2017-09-26 15:57:58 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 15:57:57 [192.168.2.117][-][-][info][application] $_POST = [
+    'game_id' => '121218'
+    'nickname' => '玩家昵称'
+    'gold' => '0'
+    'head' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'hntgm3iqr4ssh37t0akrcrvn41'
+    '_token_backend_' => '14e22db7912cd8f74b42d4b490326f2c56634b9917b007dfe424a97bc787fc87a:2:{i:0;s:15:\"_token_backend_\";i:1;s:32:\"A0k7a4_6zIkQ3WXW4Gg6Q2kDIf6G5qO7\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '57683'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'HTTP_COOKIE' => 'advanced-backend=hntgm3iqr4ssh37t0akrcrvn41; _token_backend_=14e22db7912cd8f74b42d4b490326f2c56634b9917b007dfe424a97bc787fc87a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_token_backend_%22%3Bi%3A1%3Bs%3A32%3A%22A0k7a4_6zIkQ3WXW4Gg6Q2kDIf6G5qO7%22%3B%7D'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryzyG2PByKL1iPAeud'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '434'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412677.6911
+    'REQUEST_TIME' => 1506412677
+]
+2017-09-26 15:58:18 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 15:58:18 [192.168.2.117][-][-][info][application] $_COOKIE = [
+    'advanced-backend' => 'hntgm3iqr4ssh37t0akrcrvn41'
+    '_token_backend_' => '14e22db7912cd8f74b42d4b490326f2c56634b9917b007dfe424a97bc787fc87a:2:{i:0;s:15:\"_token_backend_\";i:1;s:32:\"A0k7a4_6zIkQ3WXW4Gg6Q2kDIf6G5qO7\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '57691'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'HTTP_COOKIE' => 'advanced-backend=hntgm3iqr4ssh37t0akrcrvn41; _token_backend_=14e22db7912cd8f74b42d4b490326f2c56634b9917b007dfe424a97bc787fc87a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_token_backend_%22%3Bi%3A1%3Bs%3A32%3A%22A0k7a4_6zIkQ3WXW4Gg6Q2kDIf6G5qO7%22%3B%7D'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryM8IJYKa1WRBUddFG'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412698.81
+    'REQUEST_TIME' => 1506412698
+]
+2017-09-26 15:58:44 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 15:58:44 [192.168.2.117][-][-][info][application] $_COOKIE = [
+    'advanced-backend' => 'hntgm3iqr4ssh37t0akrcrvn41'
+    '_token_backend_' => '14e22db7912cd8f74b42d4b490326f2c56634b9917b007dfe424a97bc787fc87a:2:{i:0;s:15:\"_token_backend_\";i:1;s:32:\"A0k7a4_6zIkQ3WXW4Gg6Q2kDIf6G5qO7\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '57702'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'HTTP_COOKIE' => 'advanced-backend=hntgm3iqr4ssh37t0akrcrvn41; _token_backend_=14e22db7912cd8f74b42d4b490326f2c56634b9917b007dfe424a97bc787fc87a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_token_backend_%22%3Bi%3A1%3Bs%3A32%3A%22A0k7a4_6zIkQ3WXW4Gg6Q2kDIf6G5qO7%22%3B%7D'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryeXDg2pGMsR8CFWzm'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412724.43
+    'REQUEST_TIME' => 1506412724
+]
+2017-09-26 15:58:52 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 15:58:52 [192.168.2.117][-][-][info][application] $_POST = [
+    'game_id' => '121212'
+    'nickname' => '玩家昵称'
+    'gold' => '0'
+    'head' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'hntgm3iqr4ssh37t0akrcrvn41'
+    '_token_backend_' => '14e22db7912cd8f74b42d4b490326f2c56634b9917b007dfe424a97bc787fc87a:2:{i:0;s:15:\"_token_backend_\";i:1;s:32:\"A0k7a4_6zIkQ3WXW4Gg6Q2kDIf6G5qO7\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '57710'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'HTTP_COOKIE' => 'advanced-backend=hntgm3iqr4ssh37t0akrcrvn41; _token_backend_=14e22db7912cd8f74b42d4b490326f2c56634b9917b007dfe424a97bc787fc87a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_token_backend_%22%3Bi%3A1%3Bs%3A32%3A%22A0k7a4_6zIkQ3WXW4Gg6Q2kDIf6G5qO7%22%3B%7D'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary0wuBNxo4BzIHReaV'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '434'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412732.717
+    'REQUEST_TIME' => 1506412732
+]
+2017-09-26 15:58:56 [192.168.2.117][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.117
+2017-09-26 15:58:56 [192.168.2.117][-][-][info][application] $_POST = [
+    'game_id' => '12121'
+    'nickname' => '玩家昵称'
+    'gold' => '0'
+    'head' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'hntgm3iqr4ssh37t0akrcrvn41'
+    '_token_backend_' => '14e22db7912cd8f74b42d4b490326f2c56634b9917b007dfe424a97bc787fc87a:2:{i:0;s:15:\"_token_backend_\";i:1;s:32:\"A0k7a4_6zIkQ3WXW4Gg6Q2kDIf6G5qO7\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '57714'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.117'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://apizza.cc/console/project/83b1cc7822d02ad0c6088d14106d687d/dev'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://apizza.cc'
+    'HTTP_COOKIE' => 'advanced-backend=hntgm3iqr4ssh37t0akrcrvn41; _token_backend_=14e22db7912cd8f74b42d4b490326f2c56634b9917b007dfe424a97bc787fc87a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22_token_backend_%22%3Bi%3A1%3Bs%3A32%3A%22A0k7a4_6zIkQ3WXW4Gg6Q2kDIf6G5qO7%22%3B%7D'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarye3W1K0TAtegikE2E'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '433'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412736.6298
+    'REQUEST_TIME' => 1506412736
+]
+2017-09-26 15:59:32 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 15:59:32 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 15:59:32 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '65248'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412772.2238
+    'REQUEST_TIME' => 1506412772
+]
+2017-09-26 16:02:48 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 16:02:48 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:02:48 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '65285'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506412968.8873
+    'REQUEST_TIME' => 1506412968
+]
+2017-09-26 16:04:53 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 16:04:53 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:04:53 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '65327'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506413093.3473
+    'REQUEST_TIME' => 1506413093
+]
+2017-09-26 16:04:53 [192.168.2.128][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: igbinary: Unable to initialize module
+Module compiled with module API=20121212
+PHP    compiled with module API=20131226
+These options need to match
+' in Unknown:0
+Stack trace:
+#0 {main}
+2017-09-26 16:04:53 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:04:53 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '65327'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506413093.3473
+    'REQUEST_TIME' => 1506413093
+]
+2017-09-26 16:06:37 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 16:06:37 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:06:37 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '65376'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506413197.2077
+    'REQUEST_TIME' => 1506413197
+]
+2017-09-26 16:06:38 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:06:38 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '65375'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded;charset=UTF-8'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506413198.2493
+    'REQUEST_TIME' => 1506413198
+]
+2017-09-26 16:07:47 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 16:07:47 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:07:47 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2740'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '65394'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506413267.8709
+    'REQUEST_TIME' => 1506413267
+]
+2017-09-26 16:11:55 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 16:11:55 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:11:55 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2844'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '65467'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506413515.5318
+    'REQUEST_TIME' => 1506413515
+]
+2017-09-26 16:11:55 [192.168.2.128][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: igbinary: Unable to initialize module
+Module compiled with module API=20121212
+PHP    compiled with module API=20131226
+These options need to match
+' in Unknown:0
+Stack trace:
+#0 {main}
+2017-09-26 16:11:55 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:11:55 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2844'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '65467'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506413515.5318
+    'REQUEST_TIME' => 1506413515
+]
+2017-09-26 16:11:55 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:11:55 [192.168.2.128][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: igbinary: Unable to initialize module
+Module compiled with module API=20121212
+PHP    compiled with module API=20131226
+These options need to match
+' in Unknown:0
+Stack trace:
+#0 {main}
+2017-09-26 16:11:55 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:11:55 [192.168.2.128][-][-][info][application] $_POST = [
+    'game_id' => '100046'
+    'nickname' => '下次v吃许多等等'
+    'gold' => '6'
+    'head' => 'http://g.hiphotos.baidu.com/image/pic/item/08f790529822720eb25fa86479cb0a46f31fab9f.jpg'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2784'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '65466'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'CONTENT_LENGTH' => '202'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506413515.5539
+    'REQUEST_TIME' => 1506413515
+]
+2017-09-26 16:14:53 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 16:14:53 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:14:52 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2784'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '49182'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506413692.9466
+    'REQUEST_TIME' => 1506413692
+]
+2017-09-26 16:14:53 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:14:52 [192.168.2.128][-][-][info][application] $_POST = [
+    'game_id' => '100047'
+    'nickname' => '吃v办法但是'
+    'gold' => '6'
+    'head' => 'http://g.hiphotos.baidu.com/image/pic/item/08f790529822720eb25fa86479cb0a46f31fab9f.jpg'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2844'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '49181'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'CONTENT_LENGTH' => '184'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506413692.9389
+    'REQUEST_TIME' => 1506413692
+]
+2017-09-26 16:16:17 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 16:16:17 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:16:17 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2844'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '49220'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506413777.529
+    'REQUEST_TIME' => 1506413777
+]
+2017-09-26 16:16:57 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 16:16:57 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:16:56 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2784'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '49232'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506413816.9377
+    'REQUEST_TIME' => 1506413816
+]
+2017-09-26 16:16:57 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:16:56 [192.168.2.128][-][-][info][application] $_POST = [
+    'game_id' => '100048'
+    'nickname' => '是的分无法下次不行'
+    'gold' => '6'
+    'head' => 'http://g.hiphotos.baidu.com/image/pic/item/08f790529822720eb25fa86479cb0a46f31fab9f.jpg'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2844'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '49231'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'CONTENT_LENGTH' => '219'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506413816.8541
+    'REQUEST_TIME' => 1506413816
+]
+2017-09-26 16:53:29 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:53:29 [192.168.2.128][-][-][info][application] $_POST = [
+    'game_id' => '100049'
+    'nickname' => '水电费人温柔温柔'
+    'gold' => '6'
+    'head' => 'http://g.hiphotos.baidu.com/image/pic/item/08f790529822720eb25fa86479cb0a46f31fab9f.jpg'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2844'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '49880'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'CONTENT_LENGTH' => '210'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506416009.4726
+    'REQUEST_TIME' => 1506416009
+]
+2017-09-26 16:53:30 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 16:53:30 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 16:53:30 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2844'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '49881'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506416010.5
+    'REQUEST_TIME' => 1506416010
+]
+2017-09-26 17:07:07 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 17:07:07 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 17:07:07 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2844'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '50215'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506416827.1547
+    'REQUEST_TIME' => 1506416827
+]
+2017-09-26 17:11:33 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 17:11:33 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 17:11:33 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2684'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '50326'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506417093.1918
+    'REQUEST_TIME' => 1506417093
+]
+2017-09-26 17:11:33 [192.168.2.128][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: igbinary: Unable to initialize module
+Module compiled with module API=20121212
+PHP    compiled with module API=20131226
+These options need to match
+' in Unknown:0
+Stack trace:
+#0 {main}
+2017-09-26 17:11:33 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 17:11:33 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2684'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '50326'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506417093.1918
+    'REQUEST_TIME' => 1506417093
+]
+2017-09-26 17:13:42 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 17:13:42 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 17:13:42 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2684'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '50361'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506417222.0882
+    'REQUEST_TIME' => 1506417222
+]
+2017-09-26 17:56:56 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 17:56:56 [192.168.2.128][-][-][info][application] $_POST = [
+    'game_id' => '100050'
+    'nickname' => '宣传宣传'
+    'gold' => '6'
+    'head' => 'http://g.hiphotos.baidu.com/image/pic/item/08f790529822720eb25fa86479cb0a46f31fab9f.jpg'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2364'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/users/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/users/add'
+    'REMOTE_PORT' => '50841'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'CONTENT_LENGTH' => '174'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506419816.2022
+    'REQUEST_TIME' => 1506419816
+]
+2017-09-26 17:56:57 [192.168.2.128][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\shuahaer\api\controllers\NoticeController.php:23
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\project\shuahaer\api\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-09-26 17:56:57 [192.168.2.128][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.2.128
+2017-09-26 17:56:57 [192.168.2.128][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2364'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/notice/get'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/notice/get'
+    'REMOTE_PORT' => '50842'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/api/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/api/web'
+    'REMOTE_ADDR' => '192.168.2.128'
+    'SERVER_PORT' => '666'
+    'SERVER_ADDR' => '192.168.2.117'
+    'SERVER_NAME' => '192.168.2.117'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '192.168.2.117:666'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506419817.2128
+    'REQUEST_TIME' => 1506419817
+]

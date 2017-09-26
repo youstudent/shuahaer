@@ -25,6 +25,8 @@ class PayController extends ObjectController
         $data = $model->getPayLog(\Yii::$app->request->get());
         return $this->render('userPayLog',$data);
     }
+    
+    
 
     /**
      * 平台充值记录

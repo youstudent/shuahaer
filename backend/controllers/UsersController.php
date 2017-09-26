@@ -50,6 +50,45 @@ class UsersController extends ObjectController
         $model->goldArr = $model->getGold();
         return $this->render('payModal',['model'=>$model]);
     }
+    
+    /**
+     * 平台给玩家扣除处理
+     * @return array|string
+     */
+    public function actionDeduct()
+    {
+        $this->layout = false;
+        if(empty(\Yii::$app->request->get('id'))){
+            $id =  \Yii::$app->request->post('id');
+        } else{
+            $id =  \Yii::$app->request->get('id');
+        }
+        
+        if(\Yii::$app->request->isPost)
+        {
+            /**
+             * 设置返回为json格式
+             */
+            \Yii::$app->response->format = Response::FORMAT_JSON;
+            $model = new Users();
+            if($model->deduct(\Yii::$app->request->post()))
+            {
+                return ['code'=>1,'message'=>"扣除成功"];
+            }
+            /**
+             * 发送错误读取错误是什么、并返回给客户端
+             */
+            $message = $model->getFirstErrors();
+            $message = reset($message);
+            return ['code'=>0,'message'=>$message];
+        }
+        
+        $model = Users::findOne(Yii::$app->request->get('id'));
+        $model->goldArr = $model->getGold();
+        return $this->render('deduct',['model'=>$model]);
+    }
+    
+    
 
     /**
      * 显示用户列表
@@ -72,6 +111,20 @@ class UsersController extends ObjectController
         $data = $model->getPayLog(Yii::$app->request->get());
         return $this->render('pay_log',$data);
     }
+    
+    
+    
+    /**
+     * 显示用户的充值记录表
+     * @return string
+     */
+    public function actionDeductLog()
+    {
+        $model = new Users();
+        $data = $model->getDeductLog(Yii::$app->request->get());
+        return $this->render('deduct_log',$data);
+    }
+    
 
     /**
      * 显示用户消费记录
@@ -93,5 +146,24 @@ class UsersController extends ObjectController
         $model = new Users();
         $data = $model->getExploits(Yii::$app->request->get());
         return $this->render('exploits',$data);
+    }
+    
+    
+    /**
+     * 玩家停封和启用
+     * @return array
+     */
+    public function actionStatus(){
+     \Yii::$app->response->format = Response::FORMAT_JSON;
+       $model = new Users();
+       if ($model->status(Yii::$app->request->get())){
+           return ['code'=>1,'message'=>"操作成功"];
+       }
+        /**
+         * 发送错误读取错误是什么、并返回给客户端
+         */
+        $message = $model->getFirstErrors();
+        $message = reset($message);
+        return ['code'=>0,'message'=>$message];
     }
 }

@@ -79,7 +79,9 @@ use yii\bootstrap\ActiveForm;
                                 }
                                 ?>
 <!--                            多货币修改代码-->
-
+                                
+                                <th  class="text-center">上级ID</th>
+                                <th  class="text-center">上级名字</th>
                                 <th  class="text-center">游戏总局数</th>
                                 <th  class="text-center">注册时间</th>
                                 <th  class="text-center">状态</th>
@@ -99,6 +101,8 @@ use yii\bootstrap\ActiveForm;
                                     <td class="text-center"><?= $values ?></td>
                                 <?php endforeach;?>
 <!--                                多货币修改-->
+                                <td  class="text-center"><?=1?></td>
+                                <td  class="text-center"><?='测试'?></td>
                                 <td  class="text-center"><?=$value['game_count']?></td>
                                 <td  class="text-center"><?=date('Y-m-d H:i:s',$value['reg_time'])?></td>
                                 <td class="text-center">
@@ -111,15 +115,23 @@ use yii\bootstrap\ActiveForm;
                                         <i class="fa fa-times text-danger text"></i>
                                     </a>
                                 </td>
-                                <td class="text-center" width="300px;">
+                                <td class="text-center" width="400px;">
+                                    <a onclick="return openAgency(this,'是否<?=$value['status']==1?'停用':'启用'?>该账号?')"
+                                       href="<?php echo \yii\helpers\Url::to(['users/status', 'id' => $value['game_id']]) ?>"
+                                       class="btn btn-xs btn-danger"><?=$value['status']==1?'停用':'启用'?></a>
                                     <a href="<?=\yii\helpers\Url::to(['users/pay-log',
                                         'Users'=>['select'=>'game_id','keyword'=>$value['game_id']]])?>" class="btn btn-xs btn-primary">充值记录</a>
+                                    <a href="<?=\yii\helpers\Url::to(['users/deduct-log',
+                                        'Users'=>['select'=>'game_id','keyword'=>$value['game_id']]])?>" class="btn btn-xs btn-primary">扣除记录</a>
                                     <a href="<?=\yii\helpers\Url::to(['users/out-log',
                                         'Users'=>['select'=>'game_id','keyword'=>$value['game_id']]])?>" class="btn btn-xs btn-success">消费记录</a>
                                     <a href="<?=\yii\helpers\Url::to(['users/exploits',
                                         'Users'=>['select'=>'game_id','keyword'=>$value['game_id']]])?>" class="btn btn-xs btn-info">&nbsp; 战绩&nbsp; </a>
                                     <?php if(Yii::$app->params['backendPayUser']):?>
+                                    
                                     <a href="<?=\yii\helpers\Url::to(['users/pay','id'=>$value['id']])?>" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#myModal">&nbsp;充值&nbsp;&nbsp;</a>
+                                    
+                                    <a href="<?=\yii\helpers\Url::to(['users/deduct','id'=>$value['id']])?>" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#myModal">扣除</a>
                                     <?php endif;?>
                                 </td>
                             </tr>
@@ -156,3 +168,59 @@ use yii\bootstrap\ActiveForm;
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
     <a href="" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen" data-target="#nav"></a>
 </section>
+
+<script>
+
+    //    设置封停的状态
+    function setStatus(val) {
+        $("#status").val(val);
+        $("#agencyForm").submit();
+        console.log($("#status").val());
+    }
+    function openAgency(_this, title) {
+        swal({
+                title: title,
+                text: "请确认你的操作时经过再三是考虑!",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonText: "确认",
+                cancelButtonText: "取消",
+                closeOnConfirm: false,
+                showLoaderOnConfirm: true
+            },
+            function () {
+                console.log(_this.href);
+                $.ajax({
+                    url: _this.href,
+                    success: function (res) {
+                        if (res.code == 1) {
+                            swal(
+                                {
+                                    title: res.message,
+                                    type: "success",
+                                    showCancelButton: false,
+                                    confirmButtonText: "确认",
+                                    closeOnConfirm: false,
+                                    showLoaderOnConfirm: true
+                                }, function () {
+                                    window.location.reload();
+                                }
+                            );
+                        } else {
+                            swal(
+                                {
+                                    title: res.message,
+                                    type: "error",
+                                    showCancelButton: false,
+                                    confirmButtonText: "确认",
+                                    closeOnConfirm: false,
+                                }
+                            );
+                        }
+                    }
+                });
+            });
+
+        return false;
+    }
+</script>

@@ -19,7 +19,11 @@ use yii\helpers\ArrayHelper;
  */
 class Users extends UsersObject
 {
-
+    /**
+     * 充值备注
+     * @var
+     */
+    public $notes;
     /**
      * 搜索时使用的用于记住筛选
      * @var string
@@ -61,6 +65,9 @@ class Users extends UsersObject
      * @return array
      */
     public $endtime      = 0;
+    
+    
+    public $deduct_gold = 0;
 
     public function rules()
     {
@@ -69,7 +76,9 @@ class Users extends UsersObject
             ['pay_gold_num','integer','on'=>'pay'],
             ['pay_gold_num','match','pattern'=>'/^\+?[1-9][0-9]*$/','on'=>'pay'],
             ['pay_money','number','on'=>'pay'],
-            [['starttime','endtime'],'safe'],
+            [['starttime','endtime','autograph','notes'],'safe'],
+            ['pay_gold_num','validateDeduct','on'=>'deduct'],
+            ['pay_gold_num','match','pattern'=>'/^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$/','on'=>'deduct'],
         ];
     }
 
@@ -78,10 +87,28 @@ class Users extends UsersObject
     {
         $arr = [
                 'pay_gold_num'    =>'充值金额',
-                'pay_money'       =>'收款',
+                'pay_money'       =>'备注',
                 'pay_gold_config' =>'充值类型',
+                'autograph' =>'备注',
+                'deduct_gold' =>'扣除金币',
+                'notes' =>'备注',
         ];
         return ArrayHelper::merge(parent::attributeLabels(),$arr);
+    }
+    
+    
+    /**
+     * 严重扣除金币是否符合要求
+     * @param $attribute
+     * @param $params
+     */
+    public function validateDeduct($attribute,$params)
+    {
+        if(!$this->hasErrors())
+        {
+            $gole = $this->getNoeGold($this->pay_gold_config);
+           
+        }
     }
 
     /**
@@ -104,7 +131,16 @@ class Users extends UsersObject
                 /**
                  * 请求游戏服务器、并判断返回值进行逻辑处理
                  */
-                $data = Request::request_post(\Yii::$app->params['ApiUserPay'],['game_id'=>$model->game_id,'gold'=>$this->pay_gold_num,'gold_config'=>GoldConfigObject::getNumCodeByName($this->pay_gold_config)]);
+                /*$datas =[
+                    'uid'=>$model->game_id,
+                    'mod'=>'gm',
+                    'act'=>'charge',
+                    'cash'=>$this->pay_gold_num,
+                    'gold_config'=>GoldConfigObject::getNumCodeByName($this->pay_gold_config)
+                ];*/
+                $kind = GoldConfigObject::getNumCodeByName($this->pay_gold_config);
+                $url = \Yii::$app->params['ApiUserPay']."?mod=gm&act=charge&uid=".$model->game_id."&cash=".$this->pay_gold_num."&type=1"."&kind=".$kind;
+                $data = Request::request_get($url);
                 if($data['code'] == 1)
                 {
                     /**
@@ -130,10 +166,12 @@ class Users extends UsersObject
                         $userModel->user_id     = $model->id;
                         $userModel->game_id     = $model->game_id;
                         $userModel->nickname    = $model->nickname;
+                        $userModel->notes       = $this->notes;
                         $userModel->time        = time();
                         $userModel->gold        = $this->pay_gold_num;
                         $userModel->money       = $this->pay_money;
                         $userModel->status      = 1;
+                        $userModel->type      = 1;  //充值
                         $userModel->gold_config = $this->pay_gold_config;
 
                         /* 保存失败抛出异常 */
@@ -154,6 +192,83 @@ class Users extends UsersObject
             }
         }
     }
+    
+    
+    /**
+     * 用户扣除功能
+     * @param array $data
+     * @return bool
+     * @throws \Exception
+     */
+    public function deduct($data = [])
+    {
+        $this->scenario = 'deduct';
+        if($this->load($data) && $this->validate())
+        {
+            /**
+             * 查询用户是否存在
+             */
+            $model = self::findOne($data['id']);
+            if($model)
+            {
+                /**
+                 * 请求游戏服务器、并判断返回值进行逻辑处理
+                 */
+                $kind = GoldConfigObject::getNumCodeByName($this->pay_gold_config);
+                $url = \Yii::$app->params['ApiUserPay']."?mod=gm&act=charge&uid=".$model->game_id."&cash=".$this->pay_gold_num."&type=2"."&kind=".$kind;
+                $data = Request::request_get($url);
+                if($data['code'] == 1)
+                {
+                    /**
+                     * 开启数据库的事务操作
+                     */
+                    $transaction = \Yii::$app->db->beginTransaction();
+                    try {
+
+//                        $goldConfig = $model->getGold();
+//                        foreach ($goldConfig as $key=>$val){
+//
+//                        }
+                        $data = $model->consumeGold($this->pay_gold_config,$this->pay_gold_num);
+                        if (!$data)
+                            throw new \Exception('save error 101023'); /* 保存失败抛出异常 */
+                        
+                        /**
+                         * 保存用户充值记录
+                         */
+                        $userModel = new UserPay();
+                        $userModel->agency_id   = '1';
+                        $userModel->agency_name = '平台';
+                        $userModel->user_id     = $model->id;
+                        $userModel->game_id     = $model->game_id;
+                        $userModel->nickname    = $model->nickname;
+                        $userModel->notes       = $this->notes;
+                        $userModel->time        = time();
+                        $userModel->gold        = $this->pay_gold_num;
+                        $userModel->money       = $this->pay_money;
+                        $userModel->status      = 1;
+                        $userModel->type      = 2;  //扣除
+                        $userModel->gold_config = $this->pay_gold_config;
+                        
+                        /* 保存失败抛出异常 */
+                        if ($userModel->save()) {
+                            $transaction->commit();
+                            return true;
+                        }else{
+                            throw new \Exception('save error 101024'.reset($userModel->getFirstErrors()));
+                        }
+                        
+                    } catch (\Exception $e) {
+                        $transaction->rollBack();
+                        throw $e;
+                    }
+                }else{
+                    return $this->addError('pay',$data['message']);
+                }
+            }
+        }
+    }
+    
 
     /**
      * 搜索并分页显示用户的数据
@@ -195,11 +310,34 @@ class Users extends UsersObject
                 ->andWhere(['>=','reg_time',strtotime($this->starttime)])
                 ->andWhere(['<=','reg_time',strtotime($this->endtime)]);
         $idArray = $model->asArray()->select('id')->all();
-        $model   = UserPay::find()->where(['IN','user_id',$this->searchIn($idArray)]);
+        $model   = UserPay::find()->where(['IN','user_id',$this->searchIn($idArray)])->andWhere(['type'=>1]);
         $pages   = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data    = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
         return ['data'=>$data,'pages'=>$pages,'model'=>$this];
     }
+    
+    
+    /**
+     * 搜索并分页显示用户扣除记录
+     * @param array $data
+     * @return array
+     */
+    public function getDeductLog($data = [])
+    {
+        $this->load($data);
+        $this->initTime();
+        $model   = self::find()->andWhere($this->searchWhere())
+            ->andWhere(['>=','reg_time',strtotime($this->starttime)])
+            ->andWhere(['<=','reg_time',strtotime($this->endtime)]);
+        $idArray = $model->asArray()->select('id')->all();
+        $model   = UserPay::find()->where(['IN','user_id',$this->searchIn($idArray)])->andWhere(['type'=>2]);
+        $pages   = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
+        $data    = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
+        return ['data'=>$data,'pages'=>$pages,'model'=>$this];
+    }
+    
+    
+    
 
     /**
      * 搜索并分页显示用户消费记录
@@ -282,6 +420,36 @@ class Users extends UsersObject
         }
         if($this->endtime == '') {
             $this->endtime = date('Y-m-d H:i:s');
+        }
+    }
+    
+    
+    /**
+     * 玩家停封 和解封
+     * @param $game_id
+     * @return
+     */
+    public function status($game_id)
+    {
+        //$url = \Yii::$app->params['ApiUserPay']."?mod=gm&act=chargeCard&uid=".$model->game_id."&card=".$this->pay_gold_num;
+        $data = Users::findOne(['game_id' => $game_id]);
+        if (!$data) {
+            return $this->addError('game_id', '玩家不存在');
+        }
+        if ($data->status == 1) {
+            $url = \Yii::$app->params['ApiUserPay'] . "?mod=gm&act=lockAccount&uid=" . $data->game_id; //停封
+            $data->status = 0;
+        } else {
+            $url = \Yii::$app->params['ApiUserPay'] . "?mod=gm&act=unLockAccount&uid=" . $data->game_id; //启用
+            $data->status = 1;
+        }
+        $re = Request::request_get($url);
+        
+        if ($re['code'] == 1) {
+            $data->save();
+            return true;
+        } else {
+            return $this->addError('status', $re['message']);
         }
     }
 }

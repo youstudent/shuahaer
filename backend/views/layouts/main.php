@@ -8,6 +8,7 @@ $config = [
     ['label' => '用户管理', 'icon' => 'fa fa-users icon', 'bg_color' => 'bg-success', 'url' => ['product/index'], 'items' => [
         ['label' => '玩家列表', 'url' => ['users/list']],
         ['label' => '充值记录', 'url' => ['users/pay-log']],
+        ['label' => '扣除记录', 'url' => ['users/deduct-log']],
         ['label' => '消费记录', 'url' => ['users/out-log']],
         ['label' => '战绩记录', 'url' => ['users/exploits']],
     ]],

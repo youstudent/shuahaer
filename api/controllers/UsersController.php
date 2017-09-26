@@ -18,7 +18,6 @@ class UsersController extends ObjectController
      */
     public function actionAdd()
     {
-
         if(\Yii::$app->request->isPost)
         {
             $model = new Users();
