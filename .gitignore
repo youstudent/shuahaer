@@ -1,2 +1,5 @@
 /api/runtime
 /backend/runtime
+.idea
+
+/.idea/
