@@ -43,8 +43,9 @@
                 <!--                升级版本的多货币改动-->
 
                 <?php echo $form->field($model,'deduct_gold')->textInput([])?>
-                <?php echo $form->field($model,'deduct_notes')->textInput([])?>
-                <?php echo $form->field($model,'deduct_money')->textInput([])?>
+                <?php echo $form->field($model,'rebate')->textInput(['readonly'=>true])?>
+                <?php echo $form->field($model,'rebate')->textInput([])?>
+                <?php echo $form->field($model,'deduct_notes')->textInput(['placeholder'=>'备注'])?>
             <?php \yii\bootstrap\ActiveForm::end()?>
             </div>
         </div>

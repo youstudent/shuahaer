@@ -14,14 +14,24 @@ $config = [
     ]],
     ['label' => '代理管理', 'icon' => 'fa fa-sitemap icon', 'bg_color' => 'bg-info', 'url' => ['agency/index'], 'items' => [
         ['label' => '代理列表', 'url' => ['agency/index', 'id' => 1]],
-    ]],
-    ['label' => '充值管理', 'icon' => 'fa fa-ticket icon', 'bg_color' => 'bg-warning', 'url' => ['pay/index'], 'items' => [
-        ['label' => '玩家充值列表', 'url' => ['pay/user-pay-log', 'id' => 1]],
         ['label' => '加盟商充值列表', 'url' => ['pay/agency-pay-log']],
-    ]]
+        ['label' => '加盟商扣除列表', 'url' => ['pay/agency-deduct-log']],
+    ]],
 ];
+$config[] = ['label' => '排行榜管理', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-danger', 'url' => ['notice/index'], 'items' => [
+    ['label' => '财富排行榜', 'url' => ['ranking/wealth']],
+    ['label' => '充值排行榜', 'url' => ['config/index','type'=>'']],
+    ['label' => '交易排行榜', 'url' => ['config/index','type'=>'']],
+]];
+$config[] = ['label' => '抽水管理', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-danger', 'url' => ['notice/index'], 'items' => [
+    ['label' => '游戏抽水记录', 'url' => ['draw-water/list']]
+]];
+$config[] = ['label' => '参数管理', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-danger', 'url' => ['notice/index'], 'items' => [
+    ['label' => '系统参数列表', 'url' => ['config/index','type'=>'']],
+]];
 if (Yii::$app->params['distribution']) {
     $config[] = ['label' => '返利管理', 'icon' => 'fa fa-dollar icon', 'bg_color' => 'bg-primary', 'url' => ['rebate/index'], 'items' => [
+        ['label' => '返利规则', 'url' => ['rebate/index-ratio']],
         ['label' => '返利记录', 'url' => ['rebate/index', 'id' => 1]]
     ]];
 }

@@ -7,6 +7,7 @@
 namespace backend\models;
 
 use common\models\GoldConfigObject;
+use common\models\UsersGoldObject;
 use common\models\UsersObject;
 use common\services\Request;
 use yii\data\Pagination;
@@ -296,6 +297,34 @@ class Users extends UsersObject
 
         return ['data'=>$data,'pages'=>$pages,'model'=>$this];
     }
+    
+    
+    /**
+     * 搜索并分页显示用户的数据
+     * @return array
+     */
+    public function getWealth($data = [])
+    {
+        $this->load($data);
+        $this->initTime();
+        $model   = self::find()->alias('p')->joinWith('gameGold')->andWhere($this->searchWhere())
+            ->andWhere(['>=','reg_time',strtotime($this->starttime)])
+            ->andWhere(['<=','reg_time',strtotime($this->endtime)])->orderBy('g_users_gold.gold DESC');
+        $pages = new Pagination(
+            [
+                'totalCount' =>$model->count(),
+                'pageSize' => \Yii::$app->params['pageSize']
+            ]
+        );
+        
+        $data  = $model->limit($pages->limit)->offset($pages->offset)->limit('100')->all();
+        
+        foreach ($data as $key=>$value){
+            $data[$key]['gold'] = $value->getGold();
+        }
+        
+        return ['data'=>$data,'pages'=>$pages,'model'=>$this];
+    }
 
     /**
      * 搜索并分页显示用户充值记录
@@ -451,5 +480,10 @@ class Users extends UsersObject
         } else {
             return $this->addError('status', $re['message']);
         }
+    }
+    
+    
+    public function getGameGold(){
+        return $this->hasOne(UsersGoldObject::className(),['users_id'=>'id']);
     }
 }

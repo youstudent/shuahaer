@@ -7,6 +7,7 @@
 namespace backend\controllers;
 
 use backend\models\Agency;
+use backend\models\AgencyDeduct;
 use backend\models\AgencyPay;
 use backend\models\UserPay;
 use backend\models\Users;
@@ -29,17 +30,17 @@ class PayController extends ObjectController
     
 
     /**
-     * 平台充值记录
-     * 算法思路
-     * @return string
-     */
+ * 平台充值记录
+ * 算法思路
+ * @return string
+ */
     public function actionAgencyPayLog()
     {
         $agency = new Agency();
         $agency->load(\Yii::$app->request->get());
         $agency->initTime();//初始化默认时间
         $model      = '';
-
+        
         //判断是否输入关键字
         if($agency->keyword != ''){
             $agencyInfo = Agency::find()->where($agency->searchWhere())->one();
@@ -57,4 +58,35 @@ class PayController extends ObjectController
         $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
         return $this->render('agencyPayLog',['model'=>$agency,'data'=>$data,'pages'=>$pages]);
     }
+    
+    /**
+     * 平台充值记录
+     * 算法思路
+     * @return string
+     */
+    public function actionAgencyDeductLog()
+    {
+        $agency = new Agency();
+        $agency->load(\Yii::$app->request->get());
+        $agency->initTime();//初始化默认时间
+        $model      = '';
+        
+        //判断是否输入关键字
+        if($agency->keyword != ''){
+            $agencyInfo = Agency::find()->where($agency->searchWhere())->one();
+            //查询代理是否存在
+            if(isset($agencyInfo->id)) {
+                $model = AgencyDeduct::find()->andWhere(['agency_id' => $agencyInfo->id]);
+            } else{
+                //不存在查询一个不存在代理充值记录
+                $model = AgencyDeduct::find()->where(['id'=>-10]);
+            }
+        }else {$model = AgencyDeduct::find();}//没有关键字查询所有
+        // 添加查询的时间条件
+        $model->andWhere(['>=','time',strtotime($agency->starttime)])->andWhere(['<=','time',strtotime($agency->endtime)]);
+        $pages      = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
+        $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
+        return $this->render('agencyDeductLog',['model'=>$agency,'data'=>$data,'pages'=>$pages]);
+    }
+    
 }

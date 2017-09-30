@@ -10,4 +10,6 @@ use common\models\RebateObject;
 
 class Rebate extends RebateObject{
 
+
+
 }

@@ -23,15 +23,15 @@
                         'labelOptions'  => ['class'=>'col-lg-3 control-label'],
                     ],
                 ])?>
-                <?php echo $form->field($model,'agency_one')->textInput([])?>
-                <?php echo $form->field($model,'agency_two')->textInput([])?>
-                <?php echo $form->field($model,'users_one')->textInput([])?>
+            <?php echo $form->field($model,'agency_one')->textInput([])?>
+            <?php echo $form->field($model,'agency_two')->textInput([])?>
+            <?php echo $form->field($model,'users_one')->textInput([])?>
             <?php \yii\bootstrap\ActiveForm::end()?>
             </div>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i><?=Yii::t('app','but_close')?></button>
-            <button type="button" id="payModalSubmit" class="btn btn-primary"><i class="fa fa-save"></i>&nbsp;确认充值</button>
+            <button type="button" id="payModalSubmit" class="btn btn-primary"><i class="fa fa-save"></i>&nbsp;确认修改</button>
         </div>
     </div>
 </div>

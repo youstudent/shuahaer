@@ -20,6 +20,7 @@ use yii\helpers\ArrayHelper;
  */
 class Agency extends AgencyObject
 {
+    public $notes;
     /**
      * 充值类型
      * @var string
@@ -108,9 +109,10 @@ class Agency extends AgencyObject
             ['recode','validateCodeExist'],
             ['phone','validatePhoneExist','on'=>'add'],
             ['pay_gold','match','pattern'=>'/^\+?[1-9][0-9]*$/','on'=>'pay'],
-            ['deduct_gold','match','pattern'=>'/^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$/','on'=>'deduct'],
+           // ['deduct_gold','match','pattern'=>'/^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$/','on'=>'deduct'],
             ['deduct_gold','validateDeduct','on'=>'deduct'],
-            [['starttime','endtime'],'safe'],
+            ['deduct_gold','rebate','validateDeductrebate','on'=>'deduct'],
+            [['starttime','endtime','notes'],'safe'],
         ];
     }
 
@@ -166,10 +168,12 @@ class Agency extends AgencyObject
             'recode' => '推荐码',
             'pay_gold'=>'充值数量',
             'pay_money'=>'收款金额',
-            'deduct_gold' =>'扣除金币',
-            'deduct_notes'=>'扣除备注',
+            'deduct_gold' =>'扣除数量',
+            'deduct_notes'=>'备注',
             'deduct_money'  =>'人民币',
-            'pay_gold_config'=>'充值类型'
+            'pay_gold_config'=>'充值类型',
+            'rebate'=>'扣除返利点',
+            'notes'=>'备注',
             ];
         return ArrayHelper::merge(parent::attributeLabels(),$arr);
     }
@@ -196,7 +200,8 @@ class Agency extends AgencyObject
     {
         $this->scenario = 'deduct';
         if($this->load($data) && $this->validate())
-        {   $transaction = \Yii::$app->db->beginTransaction();
+        {
+            $transaction = \Yii::$app->db->beginTransaction();
             try{
                 $model = self::findOne($this->id);
                 $data = $model->consumeGold($this->pay_gold_config,$this->deduct_gold);
@@ -240,22 +245,21 @@ class Agency extends AgencyObject
             try{
                 $model = self::findOne($this->id);
                 $data  = $model->payGold($this->pay_gold_config,$this->pay_gold);
-
+               // var_dump($data);EXIT;
                 if(!$data) throw  new \Exception("model保存数据失败");
-
                 $agencyPay = new AgencyPay();
                 $agencyPay->agency_id = $model->id;
                 $agencyPay->name      = $model->name;
                 $agencyPay->time      = time();
                 $agencyPay->gold      = $this->pay_gold;
                 $agencyPay->money     = $this->pay_money;
-                $agencyPay->notes     = '';
+                $agencyPay->notes     = $this->notes;
                 $agencyPay->status    = 2;
                 $agencyPay->manage_id = \Yii::$app->session->get('manageId');
                 $agencyPay->manage_name = \Yii::$app->session->get('manageName');
                 $agencyPay->gold_config = $this->pay_gold_config;
                 if($agencyPay->save()== false) throw new \Exception("agencyPay保存数据失败");
-                if(\Yii::$app->params['distribution'])
+                if(false) //\Yii::$app->params['distribution']
                 {
                     $rebateConf = RebateConf::findOne(1);
 
