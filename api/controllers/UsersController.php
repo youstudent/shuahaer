@@ -9,6 +9,7 @@ namespace api\controllers;
 use api\models\GameExploits;
 use api\models\UserOut;
 use api\models\Users;
+use common\models\DrawWater;
 
 class UsersController extends ObjectController
 {
@@ -18,7 +19,6 @@ class UsersController extends ObjectController
      */
     public function actionAdd()
     {
-
         if(\Yii::$app->request->isPost)
         {
             $model = new Users();
@@ -78,4 +78,25 @@ class UsersController extends ObjectController
 
         }
     }
+    
+    /**
+     * 抽水记录
+     */
+    public function actionDrawWater()
+    {
+        if(\Yii::$app->request->isPost)
+        {
+            $model = new DrawWater();
+            if($model->add(\Yii::$app->request->post())){
+                return $this->returnAjax(1,'成功',[]);
+            }
+            $message = $model->getFirstErrors();
+            $message = reset($message);
+            return $this->returnAjax(0,$message,[]);
+        }
+        return $this->returnAjax(0,'Please submit with POST');
+    }
+    
+    
+    
 }

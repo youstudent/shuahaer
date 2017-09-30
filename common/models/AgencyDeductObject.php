@@ -56,7 +56,7 @@ class AgencyDeductObject extends Object
             'name' => 'Name',
             'time' => 'Time',
             'gold' => 'Gold',
-            'money' => 'Money',
+            'money' => '返利点',
             'notes' => 'Notes',
             'status' => 'Status',
         ];

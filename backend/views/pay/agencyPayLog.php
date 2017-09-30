@@ -14,8 +14,8 @@ use yii\bootstrap\ActiveForm;
             <!--            面包屑开始           -->
             <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
                 <li><a href="<?= \yii\helpers\Url::to(['site/index']) ?>"><i class="fa fa-home"></i>首页</a></li>
-                <li><a href="#">返利管理</a></li>
-                <li class="active">返利记录</li>
+                <li><a href="#">充值管理</a></li>
+                <li class="active">充值记录</li>
             </ul>
             <!--            面包屑结束            -->
             <section class="panel panel-default">
@@ -82,7 +82,7 @@ use yii\bootstrap\ActiveForm;
                             <thead>
                             <tr>
                                 <th class="text-center" style="border-left: 0px;">编号</th>
-                                <th class="text-center">充值人</th>
+                                <th class="text-center">加盟商名字</th>
                                 <th class="text-center">数量</th>
                                 <th class="text-center">类型</th>
                                 <th class="text-center">收款人民币</th>
@@ -103,7 +103,16 @@ use yii\bootstrap\ActiveForm;
                                     <td class="text-center"><?= $value['money'] ?></td>
                                     <td class="text-center"><?= $value['notes'] ?></td>
                                     <td class="text-center"><?= date("Y-m-d H:i:s", $value['time']) ?></td>
-                                    <td class="text-center" style="border-right: 0px;"><?= $value['status'] ?></td>
+                                    <td class="text-center">
+                                        <?php if($value['status'] == 2):?>
+                                        <a href="#" class="active">
+                                            <?php else:?>
+                                            <a href="#" class="">
+                                                <?php endif;?>
+                                                <i class="fa fa-check text-success text-active"></i>
+                                                <i class="fa fa-times text-danger text"></i>
+                                            </a>
+                                    </td>
                                 </tr>
                                 <?php $i++ ?>
                             <?php endforeach; ?>

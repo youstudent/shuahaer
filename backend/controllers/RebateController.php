@@ -7,8 +7,10 @@
 namespace backend\controllers;
 
 use backend\models\Agency;
+
 use backend\models\Rebate;
 use backend\models\RebateConf;
+use backend\models\RebateRatio;
 use yii\web\Response;
 use yii\data\Pagination;
 
@@ -63,5 +65,38 @@ class RebateController extends ObjectController
             }
         }
         return $this->render('setting',['model'=>$model]);
+    }
+    
+    
+    /**
+     * 返利比列表
+     * @return string
+     */
+    public function actionIndexRatio(){
+        $data = RebateRatio::findOne(1);
+        return $this->render('index-ratio',['data'=>$data]);
+    }
+    
+    
+    /**
+     *  修改返利比例
+     * @return array|string
+     */
+    public function actionRatio(){
+        $this->layout = false;
+        $model  = RebateRatio::findOne(1);
+        if(\Yii::$app->request->isPost)
+        {
+            \Yii::$app->response->format = Response::FORMAT_JSON;
+            if($model->load(\Yii::$app->request->post()) && $model->save())
+            {
+                return ['code'=>1,'message'=>'修改成功'];
+            }else{
+                $message = $model->getFirstErrors();
+                $message = reset($message);
+                return ['code'=>0,'message'=>$message];
+            }
+        }
+        return $this->render('ratio',['model'=>$model]);
     }
 }

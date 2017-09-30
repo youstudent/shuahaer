@@ -46,6 +46,7 @@
 
                 <?php echo $form->field($model,'pay_gold')->textInput([])?>
                 <?php echo $form->field($model,'pay_money')->textInput([])?>
+                <?php echo $form->field($model,'notes')->textInput(['placeholder'=>'备注'])?>
             <?php \yii\bootstrap\ActiveForm::end()?>
             </div>
         </div>

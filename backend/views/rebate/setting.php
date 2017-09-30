@@ -16,16 +16,16 @@
             <div class="col-xs-11">
             <?php $form = \yii\bootstrap\ActiveForm::begin([
                     'id'=>'payModalForm',
-                    'action'=>['rebate/setting'],
+                    'action'=>['rebate/ratio'],
                     'options'=>['class'=>'form-horizontal'],
                     'fieldConfig' => [
                         'template' => "{label}<div class=\"col-lg-9\"><div class='input-group'>{input}<span class='input-group-addon'>%</span></div><span class=\"help-block m-b-none\"></span></div>",
                         'labelOptions'  => ['class'=>'col-lg-3 control-label'],
                     ],
                 ])?>
-                <?php echo $form->field($model,'one')->textInput([])?>
-                <?php echo $form->field($model,'two')->textInput([])?>
-                <?php echo $form->field($model,'three')->textInput([])?>
+                <?php echo $form->field($model,'agency_one')->textInput([])?>
+                <?php echo $form->field($model,'agency_two')->textInput([])?>
+                <?php echo $form->field($model,'users_one')->textInput([])?>
             <?php \yii\bootstrap\ActiveForm::end()?>
             </div>
         </div>

@@ -46,7 +46,7 @@ class Request
         }
         return ['code'=>0,'message'=>$data->message];
     }
-
+    
     /**
      * get调用接口
      * @param string $url
@@ -54,7 +54,45 @@ class Request
      */
     static function request_get($url = '')
     {
-        return json_decode(file_get_content($url));
+        $GetRetData = json_decode(self::curl_get($url));
+        if($GetRetData->ok){
+            $data['code'] = 1;
+            return $data;
+        }else{
+            $data['code'] = 0;
+            $data['message'] = '未知错误！';
+            return $data;
+        }
+    }
+    
+    
+    static function curl_get($url)
+    {
+        $curl = curl_init();
+        
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $url,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+            CURLOPT_HTTPHEADER => array(
+                "cache-control: no-cache"
+            ),
+        ));
+        
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        
+        curl_close($curl);
+        
+        if ($err) {
+            return [];
+        } else {
+            return $response;
+        }
     }
 
 }

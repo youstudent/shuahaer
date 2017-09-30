@@ -180,8 +180,10 @@ class AgencyObject extends Object
         /**
          * 循环处理代码、避免数据库压力
          */
+        $i=0;
         foreach (self::$goldConfig as $key=>$value)
         {
+            
             if($value['name'] == $payGoldConfig)
             {
                 $data = AgencyGoldObject::find()
@@ -190,11 +192,12 @@ class AgencyObject extends Object
                         ->one();
                 $data->gold       = ($data->gold + $payGold);
                 $data->sum_gold   = ($data->sum_gold + $payGold);
-
+              //  var_dump($data->sum_gold);
+                $i++;
                 return $data->save();
-
             }
         }
+        
     }
 
     /**

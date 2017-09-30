@@ -24,7 +24,6 @@ class AgencyController extends ObjectController
     {
         $model = new Agency();
         $data = $model->search(\Yii::$app->request->get());
-
         return $this->render('index',$data);
     }
 
@@ -193,6 +192,7 @@ class AgencyController extends ObjectController
         }
 
         $model->goldArr = $model->getGold();
+        $model->deduct_notes='';
         return $this->render('deduct',['model'=>$model]);
     }
 }

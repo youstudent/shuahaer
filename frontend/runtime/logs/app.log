@@ -1,0 +1,822 @@
+2017-09-25 18:51:24 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/font.css".' in D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/font.css', Array)
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-25 18:51:24 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ld9dpid71ud8rfa8jtum5urq43'
+    '_csrf-frontend' => '03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2328'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/font.css'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/font.css'
+    'REMOTE_PORT' => '59231'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'daili.shuahaer.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=ld9dpid71ud8rfa8jtum5urq43; _csrf-frontend=03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://daili.shuahaer.com/login/login'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'daili.shuahaer.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506336684.2525
+    'REQUEST_TIME' => 1506336684
+]
+2017-09-25 18:51:42 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Agency::identity' in D:\project\shuahaer\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('identity')
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\helpers\BaseHtml.php(2081): yii\db\BaseActiveRecord->__get('identity')
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\helpers\BaseHtml.php(1264): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\Agency), 'identity')
+#3 D:\project\shuahaer\vendor\yiisoft\yii2\helpers\BaseHtml.php(1313): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\Agency), 'identity', Array)
+#4 D:\project\shuahaer\vendor\yiisoft\yii2\widgets\ActiveField.php(395): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\Agency), 'identity', Array)
+#5 D:\project\shuahaer\frontend\views\register\index.php(54): yii\widgets\ActiveField->textInput()
+#6 D:\project\shuahaer\vendor\yiisoft\yii2\base\View.php(328): require('D:\\project\\shua...')
+#7 D:\project\shuahaer\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\project\\shua...', Array)
+#8 D:\project\shuahaer\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\project\\shua...', Array, Object(frontend\controllers\RegisterController))
+#9 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(frontend\controllers\RegisterController))
+#10 D:\project\shuahaer\frontend\controllers\RegisterController.php(24): yii\base\Controller->render('index', Array)
+#11 [internal function]: frontend\controllers\RegisterController->actionIndex()
+#12 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#15 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('register/index', Array)
+#16 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2017-09-25 18:51:41 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ld9dpid71ud8rfa8jtum5urq43'
+    '_csrf-frontend' => '03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2328'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/register/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/register/index'
+    'REMOTE_PORT' => '59243'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'daili.shuahaer.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=ld9dpid71ud8rfa8jtum5urq43; _csrf-frontend=03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://daili.shuahaer.com/login/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'daili.shuahaer.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506336701.9142
+    'REQUEST_TIME' => 1506336701
+]
+2017-09-25 18:51:49 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Agency::gold_all' in D:\project\shuahaer\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('gold_all')
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\validators\Validator.php(264): yii\db\BaseActiveRecord->__get('gold_all')
+#2 D:\project\shuahaer\vendor\yiisoft\yii2\base\Model.php(358): yii\validators\Validator->validateAttributes(Object(frontend\models\Agency), Array)
+#3 D:\project\shuahaer\frontend\models\Agency.php(205): yii\base\Model->validate()
+#4 D:\project\shuahaer\frontend\controllers\LoginController.php(31): frontend\models\Agency->login(Array)
+#5 [internal function]: frontend\controllers\LoginController->actionLogin()
+#6 D:\project\shuahaer\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\project\shuahaer\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#9 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('login/login', Array)
+#10 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2017-09-25 18:51:49 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf-frontend' => 'WjJsMjFSNjQ0dzxdcgt/XWJWHX5uAVJACHwKVAg4TlYucSRDZREGeA=='
+    'Agency' => [
+        'phone' => ''
+        'password' => ''
+    ]
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'ld9dpid71ud8rfa8jtum5urq43'
+    '_csrf-frontend' => '03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2328'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/login/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/login/login'
+    'REMOTE_PORT' => '59248'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'daili.shuahaer.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=ld9dpid71ud8rfa8jtum5urq43; _csrf-frontend=03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://daili.shuahaer.com/login/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://daili.shuahaer.com'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_LENGTH' => '118'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'daili.shuahaer.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506336709.3824
+    'REQUEST_TIME' => 1506336709
+]
+2017-09-25 18:55:32 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/font.css".' in D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/font.css', Array)
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-25 18:55:32 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ld9dpid71ud8rfa8jtum5urq43'
+    '_csrf-frontend' => '03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2328'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/font.css'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/font.css'
+    'REMOTE_PORT' => '59291'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'daili.shuahaer.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=ld9dpid71ud8rfa8jtum5urq43; _csrf-frontend=03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://daili.shuahaer.com/login/login'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'daili.shuahaer.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506336932.5968
+    'REQUEST_TIME' => 1506336932
+]
+2017-09-25 18:55:34 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/font.css".' in D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/font.css', Array)
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-25 18:55:34 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ld9dpid71ud8rfa8jtum5urq43'
+    '_csrf-frontend' => '03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2328'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/font.css'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/font.css'
+    'REMOTE_PORT' => '59292'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'daili.shuahaer.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=ld9dpid71ud8rfa8jtum5urq43; _csrf-frontend=03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://daili.shuahaer.com/login/login'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'daili.shuahaer.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506336934.5157
+    'REQUEST_TIME' => 1506336934
+]
+2017-09-25 18:56:46 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/font.css".' in D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/font.css', Array)
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-25 18:56:45 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ld9dpid71ud8rfa8jtum5urq43'
+    '_csrf-frontend' => '03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2408'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/font.css'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/font.css'
+    'REMOTE_PORT' => '59323'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'daili.shuahaer.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=ld9dpid71ud8rfa8jtum5urq43; _csrf-frontend=03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://daili.shuahaer.com/login/login'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'daili.shuahaer.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506337005.9581
+    'REQUEST_TIME' => 1506337005
+]
+2017-09-25 18:56:47 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/font.css".' in D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/font.css', Array)
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-25 18:56:47 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ld9dpid71ud8rfa8jtum5urq43'
+    '_csrf-frontend' => '03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2408'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/font.css'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/font.css'
+    'REMOTE_PORT' => '59325'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'daili.shuahaer.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=ld9dpid71ud8rfa8jtum5urq43; _csrf-frontend=03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://daili.shuahaer.com/login/login'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'daili.shuahaer.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506337007.2784
+    'REQUEST_TIME' => 1506337007
+]
+2017-09-25 18:57:19 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/font.css".' in D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/font.css', Array)
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-25 18:57:19 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ld9dpid71ud8rfa8jtum5urq43'
+    '_csrf-frontend' => '03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2408'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/font.css'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/font.css'
+    'REMOTE_PORT' => '59335'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'daili.shuahaer.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=ld9dpid71ud8rfa8jtum5urq43; _csrf-frontend=03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://daili.shuahaer.com/register/index'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'daili.shuahaer.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506337039.0925
+    'REQUEST_TIME' => 1506337039
+]
+2017-09-25 18:57:20 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "register/js/app.v2.js".' in D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('register/js/app...', Array)
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-25 18:57:20 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ld9dpid71ud8rfa8jtum5urq43'
+    '_csrf-frontend' => '03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2408'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/register/js/app.v2.js'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/register/js/app.v2.js'
+    'REMOTE_PORT' => '59338'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'daili.shuahaer.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=ld9dpid71ud8rfa8jtum5urq43; _csrf-frontend=03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://daili.shuahaer.com/register/index'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'daili.shuahaer.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506337040.1217
+    'REQUEST_TIME' => 1506337040
+]
+2017-09-25 18:57:38 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/font.css".' in D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/font.css', Array)
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-25 18:57:38 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ld9dpid71ud8rfa8jtum5urq43'
+    '_csrf-frontend' => '03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2408'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/font.css'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/font.css'
+    'REMOTE_PORT' => '59345'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'daili.shuahaer.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=ld9dpid71ud8rfa8jtum5urq43; _csrf-frontend=03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://daili.shuahaer.com/login/login'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'daili.shuahaer.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506337058.0742
+    'REQUEST_TIME' => 1506337058
+]
+2017-09-25 18:57:40 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/font.css".' in D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/font.css', Array)
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-25 18:57:40 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ld9dpid71ud8rfa8jtum5urq43'
+    '_csrf-frontend' => '03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2408'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/font.css'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/font.css'
+    'REMOTE_PORT' => '59347'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'daili.shuahaer.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=ld9dpid71ud8rfa8jtum5urq43; _csrf-frontend=03c7ddec75bc824fc781d8ef8d41fe90917b77c2064d5fadb6fe2a60c333e80fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nEPoCYIi8dqL_SdtRNff9jxbtCHqTC0L%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://daili.shuahaer.com/login/login'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'daili.shuahaer.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506337060.3698
+    'REQUEST_TIME' => 1506337060
+]
+2017-09-26 12:44:48 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/font.css".' in D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/font.css', Array)
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-26 12:44:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 's1fbaa95so28thp3tongi2l262'
+    '_csrf-frontend' => '53333f9758eb874dd01cf98f2269e63ecf497a5f8e55ba5662dff757ab4c932ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"yOLAV_Moo1Lbrmpkp2sZILd3duWEzRXO\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2512'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/font.css'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/font.css'
+    'REMOTE_PORT' => '52482'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'daili.shuahaer.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_X_LANTERN_VERSION' => '4.0.1'
+    'HTTP_REFERER' => 'http://daili.shuahaer.com/login/login'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=s1fbaa95so28thp3tongi2l262; _csrf-frontend=53333f9758eb874dd01cf98f2269e63ecf497a5f8e55ba5662dff757ab4c932ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22yOLAV_Moo1Lbrmpkp2sZILd3duWEzRXO%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => 'daili.shuahaer.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506401088.2833
+    'REQUEST_TIME' => 1506401088
+]
+2017-09-26 12:45:17 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/font.css".' in D:\project\shuahaer\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/font.css', Array)
+#1 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\project\shuahaer\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\project\shuahaer\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\project\shuahaer\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-26 12:45:17 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 's1fbaa95so28thp3tongi2l262'
+    '_csrf-frontend' => '53333f9758eb874dd01cf98f2269e63ecf497a5f8e55ba5662dff757ab4c932ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"yOLAV_Moo1Lbrmpkp2sZILd3duWEzRXO\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2512'
+    'HTTP_CONNECTION' => 'close'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/font.css'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/font.css'
+    'REMOTE_PORT' => '52507'
+    'SCRIPT_FILENAME' => 'D:/project/shuahaer/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/project/shuahaer/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'daili.shuahaer.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_REFERER' => 'http://daili.shuahaer.com/login/login'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=s1fbaa95so28thp3tongi2l262; _csrf-frontend=53333f9758eb874dd01cf98f2269e63ecf497a5f8e55ba5662dff757ab4c932ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22yOLAV_Moo1Lbrmpkp2sZILd3duWEzRXO%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_HOST' => 'daili.shuahaer.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1506401117.3943
+    'REQUEST_TIME' => 1506401117
+]

@@ -80,7 +80,7 @@ use yii\bootstrap\ActiveForm;
                                 <th  class="text-center">代理名称</th>
                                 <th  class="text-center">充值数量</th>
                                 <th  class="text-center">充值类型</th>
-                                <th  class="text-center">人民币</th>
+                                <th  class="text-center">备注</th>
                                 <th  class="text-center">充值时间</th>
                                 <th  class="text-center" style="border-right: 0px;">状态</th>
                             </tr>
@@ -95,7 +95,7 @@ use yii\bootstrap\ActiveForm;
                                     <td class="text-center"><?=$value['agency_name']?></td>
                                     <td class="text-center"><?=$value['gold']?></td>
                                     <td class="text-center"><?=$value['gold_config']?></td>
-                                    <td class="text-center"><?=$value['money']?></td>
+                                    <td class="text-center"><?=$value['notes']?></td>
                                     <td class="text-center"><?=date('Y-m-d H:i:s',$value['time'])?></td>
                                     <td class="text-center" style="border-right: 0px;">
                                         <?php if($value['status'] == 1):?>
