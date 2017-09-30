@@ -1,4 +1,5 @@
 <?php
+//file_put_contents(__DIR__.'/log.log', json_encode($_POST, JSON_UNESCAPED_UNICODE).PHP_EOL, FILE_APPEND);
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');
 

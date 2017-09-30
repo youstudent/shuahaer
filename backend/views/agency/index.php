@@ -124,18 +124,18 @@ use yii\bootstrap\ActiveForm;
                                 <th class="text-center">上级代理姓名</th>
                             <?php endif; ?>
                             <th class="text-center">手机号</th>
+                            <th class="text-center">总货币充值量</th>
+                            <th class="text-center">返利点数</th>
+                            <!--                            多货币修改代码-->
+                            <?php
+                            $item = \common\models\GoldConfigObject::find()->all();
+                            foreach ($item as $key=>$value){
+                                echo "<th class=\"text-center\">".$value['name']."</th>";
+                            }
+                            ?>
+                            <!--                            多货币修改代码-->
                             <th class="text-center">用户名</th>
                             <th class="text-center">注册时间</th>
-
-<!--                            多货币修改代码-->
-                            <?php
-                                $item = \common\models\GoldConfigObject::find()->all();
-                                foreach ($item as $key=>$value){
-                                    echo "<th class=\"text-center\">".$value['name']."</th>";
-                                }
-                            ?>
-<!--                            多货币修改代码-->
-
                             <th class="text-center">身份证号</th>
                             <?php if (Yii::$app->params['distribution']): ?>
                                 <th class="text-center">推荐码</th>
@@ -155,13 +155,15 @@ use yii\bootstrap\ActiveForm;
                                     <td class="text-center"><?= $value['pName'] ?></td>
                                 <?php endif; ?>
                                 <td class="text-center"><?= $value['phone'] ?></td>
-                                <td class="text-center"><?= $value['name'] ?></td>
-                                <td class="text-center"><?= date("Y-m-d H:i:s", $value['reg_time']) ?></td>
-<!--                                多货币修改-->
+                                <td class="text-center"><?= 12?></td>
+                                <td class="text-center"><?= $value['rebate']?></td>
+                                <!--                                多货币修改-->
                                 <?php foreach ($value['gold'] as $keys=>$values):?>
                                     <td class="text-center"><?= $values ?></td>
                                 <?php endforeach;?>
-<!--                                多货币修改-->
+                                <!--                                多货币修改-->
+                                <td class="text-center"><?= $value['name'] ?></td>
+                                <td class="text-center"><?= date("Y-m-d H:i:s", $value['reg_time']) ?></td>
                                 <td class="text-center"><?= $value['identity'] ?></td>
                                 <?php if (Yii::$app->params['distribution']): ?>
                                     <td class="text-center"><?= $value['code'] ?></td>
@@ -177,7 +179,7 @@ use yii\bootstrap\ActiveForm;
                                         <span class="label bg-danger"><?= Yii::t('app', '拒绝') ?></span>
                                     <?php endif; ?>
                                 </td>
-                                <td class="text-center" style="width: 270px;border-right: 0px;">
+                                <td class="text-center" style="width: 480px;border-right: 0px;">
                                     <?php if ($value['status'] == 1): ?>
 
                                         <a href="<?php echo \yii\helpers\Url::to(['agency/pay', 'id' => $value['id']]) ?>"
@@ -199,6 +201,12 @@ use yii\bootstrap\ActiveForm;
                                         <a href="<?php echo \yii\helpers\Url::to(['agency/edit', 'id' => $value['id']]) ?>"
                                            data-toggle="modal" data-target="#myModal"
                                            class="btn btn-xs btn-success">&nbsp;编 辑&nbsp;</a>
+                                        <a href="<?php echo \yii\helpers\Url::to(['agency/edit', 'id' => $value['id']]) ?>"
+                                           data-toggle="modal" data-target="#myModal"
+                                           class="btn btn-xs btn-success">&nbsp;下级玩家</a>
+                                        <a href="<?php echo \yii\helpers\Url::to(['agency/edit', 'id' => $value['id']]) ?>"
+                                           data-toggle="modal" data-target="#myModal"
+                                           class="btn btn-xs btn-success">&nbsp;下级加盟商&nbsp;</a>
 
                                     <?php elseif ($value['status'] == 2 || $value['status'] == 4): ?>
 
