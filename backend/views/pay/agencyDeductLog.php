@@ -47,7 +47,6 @@ use yii\bootstrap\ActiveForm;
                                 </div>
                                 <?= $form->field($model,'starttime')->hiddenInput(['id'=>'startTime'])?>
                                 <?= $form->field($model,'endtime')->hiddenInput(['id'=>'endTime'])?>
-
                                 <div class="form-group">
 
                                     <?= $form->field($model, 'select')
@@ -68,6 +67,7 @@ use yii\bootstrap\ActiveForm;
                                 </div>
                             </div>
                             <?php ActiveForm::end() ?>
+                            
                         </div>
                         <div class="col-sm-3 text-right">
 
@@ -92,7 +92,6 @@ use yii\bootstrap\ActiveForm;
                             </tr>
                             </thead>
                             <tbody>
-
                             <?php $i = 1; ?>
                             <?php foreach ($data as $key => $value): ?>
                                 <tr>

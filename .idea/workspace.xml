@@ -5,143 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918c6ea9-717c-404e-be2c-223bad3a94e2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c8dfb6497db.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9d115062d7.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9d15046451.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9d161240cb.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9d16919e4f.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9d19cbda9e.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9f44ef213c.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9f4615ad8a.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9f4627938f.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9f4edc6298.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9f4efeefc7.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9f4f0cf932.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9f4f161cf3.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9f4f5d7890.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9f50c87491.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9f5d372d19.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9f5d9b5ee1.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59c9fda6a2a8a.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca040ece8b0.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca059c5704e.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca05b3c92d3.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca05cbe8822.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca05d33875f.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca05e452b5b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca0619ceded.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca06627f0b4.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca069e40f5d.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca07c134f91.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca07cf5a16a.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca082a4dc62.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca083c95558.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca0880719f1.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca0885be7d2.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca089ae114a.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca08b47ce07.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca08bcbc851.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca08c0a827d.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca08e444446.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca09a8e50f0.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca0a2561780.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca0a8d42fff.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca0a8e4d6f8.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca0ad3e0964.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca0bcb8f0c6.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca0bcb9495b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca0c7cf22f2.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca0c7cf3b65.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca0cd18bcaf.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca0cf9484d8.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca0cf94ae8b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca1589926c8.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca158a8d217.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca18bb2f9e3.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca19c540e79.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca1a46219bf.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca24683d196.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/59ca24693ea5f.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/debug/index.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/runtime/logs/app.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca2f426b060.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca2f57b1a59.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca2f5c1b1f7.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca2f6ede8af.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca2f7293939.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca2f74a5322.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca2f7f9cace.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca2f80d59ac.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca2f84c73f8.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca2f9a81f00.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca2f9d5fa87.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca2fe43f5aa.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca30c8dd8b4.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca30ca5bf61.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca31faf4175.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca31fde4017.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca325d39937.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca326462cba.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca3266552f4.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca3267ce1c4.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca326909485.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca329c22447.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32b0e7546.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32b2811ba.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32b3dd9b9.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32b4f1e3c.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32c52284f.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32c74314f.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32c88f969.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32d08aab0.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32da64b5e.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32dbaf779.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32deaf1d8.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32e26124a.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32e3ce13d.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32e510bb1.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32ea0c1db.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32eb3a16b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32ed02f6b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32efe0056.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32f176835.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32fbef027.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca32ff1ee61.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca330329b27.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca33190e0f4.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca331e91088.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca3361c70b9.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca336998818.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca33786d3b7.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca33821cc15.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca33851759c.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca3386ebc4f.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca338b2964e.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca338de1274.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca33935dc2f.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca33a02047b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca33a296397.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59ca33a6d535c.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/index.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/logs/app.log" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shuahaer.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/UsersController.php" afterPath="$PROJECT_DIR$/api/controllers/UsersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/models/GameExploits.php" afterPath="$PROJECT_DIR$/api/models/GameExploits.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/controllers/AgencyController.php" afterPath="$PROJECT_DIR$/backend/controllers/AgencyController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/controllers/PayController.php" afterPath="$PROJECT_DIR$/backend/controllers/PayController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/controllers/RebateController.php" afterPath="$PROJECT_DIR$/backend/controllers/RebateController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/models/Agency.php" afterPath="$PROJECT_DIR$/backend/models/Agency.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/models/Rebate.php" afterPath="$PROJECT_DIR$/backend/models/Rebate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/models/Users.php" afterPath="$PROJECT_DIR$/backend/models/Users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/agency/deduct.php" afterPath="$PROJECT_DIR$/backend/views/agency/deduct.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/agency/index.php" afterPath="$PROJECT_DIR$/backend/views/agency/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/agency/pay.php" afterPath="$PROJECT_DIR$/backend/views/agency/pay.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/layouts/main.php" afterPath="$PROJECT_DIR$/backend/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/pay/agencyPayLog.php" afterPath="$PROJECT_DIR$/backend/views/pay/agencyPayLog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/rebate/setting.php" afterPath="$PROJECT_DIR$/backend/views/rebate/setting.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/config/params.php" afterPath="$PROJECT_DIR$/common/config/params.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/AgencyDeductObject.php" afterPath="$PROJECT_DIR$/common/models/AgencyDeductObject.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/AgencyObject.php" afterPath="$PROJECT_DIR$/common/models/AgencyObject.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/pay/agencyDeductLog.php" afterPath="$PROJECT_DIR$/backend/views/pay/agencyDeductLog.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -152,37 +19,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Agency.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/models/Agency.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1688">
-              <caret line="383" column="22" lean-forward="true" selection-start-line="383" selection-start-column="22" selection-end-line="383" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RebateConf.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/models/RebateConf.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RankingController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/controllers/RankingController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="DrawWaterController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/controllers/DrawWaterController.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -193,24 +30,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/controllers/ConfigController.php">
+      <file leaf-file-name="agencyPayLog.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/pay/agencyPayLog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="940">
+              <caret line="62" column="70" lean-forward="false" selection-start-line="62" selection-start-column="70" selection-end-line="62" selection-end-column="70" />
+              <folding>
+                <element signature="e#3530#3536#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgencyController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/controllers/AgencyController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RebateController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RebateController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/controllers/RebateController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="78" column="4" lean-forward="true" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
-              <folding>
-                <element signature="e#178#204#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="130">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game_2线上部署版本多货币.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/game_2线上部署版本多货币.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -218,8 +75,8 @@
       <file leaf-file-name="Rebate.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/models/Rebate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="156">
+              <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -228,18 +85,8 @@
       <file leaf-file-name="RebateObject.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/models/RebateObject.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="65" column="31" lean-forward="false" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AgencyController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/controllers/AgencyController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+            <state relative-caret-position="548">
+              <caret line="67" column="36" lean-forward="true" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -248,8 +95,28 @@
       <file leaf-file-name="AgencyObject.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/models/AgencyObject.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            <state relative-caret-position="-4730">
+              <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/rebate/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/controllers/ApiController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -303,23 +170,23 @@
         <option value="$PROJECT_DIR$/backend/controllers/RankingController.php" />
         <option value="$PROJECT_DIR$/backend/models/Users.php" />
         <option value="$PROJECT_DIR$/backend/views/rebate/setting.php" />
-        <option value="$PROJECT_DIR$/backend/controllers/RebateController.php" />
         <option value="$PROJECT_DIR$/backend/views/rebate/ratio.php" />
         <option value="$PROJECT_DIR$/backend/models/RebateRatio.php" />
         <option value="$PROJECT_DIR$/backend/views/rebate/index-ratio.php" />
         <option value="$PROJECT_DIR$/backend/views/ranking/wealth.php" />
         <option value="$PROJECT_DIR$/backend/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/backend/controllers/PayController.php" />
         <option value="$PROJECT_DIR$/common/models/AgencyDeductObject.php" />
         <option value="$PROJECT_DIR$/backend/views/agency/pay.php" />
-        <option value="$PROJECT_DIR$/backend/views/pay/agencyPayLog.php" />
-        <option value="$PROJECT_DIR$/backend/views/pay/agencyDeductLog.php" />
         <option value="$PROJECT_DIR$/backend/views/agency/deduct.php" />
         <option value="$PROJECT_DIR$/backend/models/Agency.php" />
         <option value="$PROJECT_DIR$/backend/controllers/AgencyController.php" />
         <option value="$PROJECT_DIR$/backend/views/agency/index.php" />
         <option value="$PROJECT_DIR$/common/models/AgencyObject.php" />
         <option value="$PROJECT_DIR$/backend/models/Rebate.php" />
+        <option value="$PROJECT_DIR$/backend/views/pay/agencyDeductLog.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/PayController.php" />
+        <option value="$PROJECT_DIR$/backend/views/pay/agencyPayLog.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/RebateController.php" />
       </list>
     </option>
   </component>
@@ -370,282 +237,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rebate" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ranking" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pay" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="draw-water" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agency" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shuahaer" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -656,11 +247,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\shuahaer" />
       <recent name="D:\project\shuahaer\backend\views\pay" />
       <recent name="D:\project\shuahaer\backend\views\rebate" />
       <recent name="D:\project\shuahaer\backend\views\ranking" />
       <recent name="D:\project\shuahaer\backend\views\config" />
-      <recent name="D:\project\shuahaer\backend\views\draw-water" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -786,18 +377,19 @@
       <workItem from="1506689194143" duration="2251000" />
       <workItem from="1506733086165" duration="6487000" />
       <workItem from="1506740347477" duration="4743000" />
-      <workItem from="1506750655390" duration="1463000" />
+      <workItem from="1506750655390" duration="1763000" />
+      <workItem from="1506753699870" duration="138000" />
+      <workItem from="1506754109074" duration="1213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47662000" />
+    <option name="totallyTimeSpent" value="49313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2247854" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23122318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -829,27 +421,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/models/AgencyPayObject.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1820">
-          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/GoldConfigObject.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/Query.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="1025" column="0" lean-forward="false" selection-start-line="1025" selection-start-column="0" selection-end-line="1025" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,13 +432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-          <folding>
-            <marker date="1506335723441" expanded="true" signature="2794:2964" ph="ALTER TABLE ${$quotedTable}... " />
-            <marker date="1506335723441" expanded="true" signature="3108:3197" ph="ALTER TABLE ${$quotedTable}... " />
-            <marker date="1506335723441" expanded="true" signature="3441:3652" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
-            <marker date="1506335723441" expanded="true" signature="4145:4228" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
-            <marker date="1506335723441" expanded="true" signature="4727:4797" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -871,21 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding>
-            <marker date="1506335723410" expanded="true" signature="7028:7040" ph="INSERT INTO ${$schema-&gt;quoteTableName($table)}... " />
-            <marker date="1506335723410" expanded="true" signature="10306:10407" ph="INSERT INTO ${$schema-&gt;quoteTableName($table)}... " />
-            <marker date="1506335723410" expanded="true" signature="13073:13085" ph="DELETE FROM " />
-            <marker date="1506335723410" expanded="true" signature="14821:14911" ph="CREATE TABLE... ${$this-&gt;db-&gt;quoteTableName($table)}" />
-            <marker date="1506335723410" expanded="true" signature="15803:15814" ph="DROP TABLE $... " />
-            <marker date="1506335723410" expanded="true" signature="16659:16840" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
-            <marker date="1506335723410" expanded="true" signature="17303:17385" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
-            <marker date="1506335723410" expanded="true" signature="18621:18735" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
-            <marker date="1506335723410" expanded="true" signature="19227:19305" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
-            <marker date="1506335723410" expanded="true" signature="19900:20040" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
-            <marker date="1506335723410" expanded="true" signature="20956:21129" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
-            <marker date="1506335723410" expanded="true" signature="22486:22800" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
-            <marker date="1506335723410" expanded="true" signature="23489:23571" ph="ALTER TABLE ${$this-&gt;db-&gt;quoteTableName($table)}... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -893,7 +446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -915,7 +467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,7 +481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="553" column="0" lean-forward="false" selection-start-line="553" selection-start-column="0" selection-end-line="553" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,7 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="890" column="0" lean-forward="false" selection-start-line="890" selection-start-column="0" selection-end-line="890" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,7 +495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,7 +502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -962,7 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="495" column="0" lean-forward="false" selection-start-line="495" selection-start-column="0" selection-end-line="495" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -970,7 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -992,7 +537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1000,7 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="524" column="0" lean-forward="false" selection-start-line="524" selection-start-column="0" selection-end-line="524" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,7 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="313" column="0" lean-forward="false" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1044,7 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="660" column="0" lean-forward="false" selection-start-line="660" selection-start-column="0" selection-end-line="660" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="107" column="31" lean-forward="false" selection-start-line="107" selection-start-column="31" selection-end-line="116" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,15 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/PayController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="78" column="32" lean-forward="false" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1120,26 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/pay/agencyDeductLog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2184">
-          <caret line="84" column="58" lean-forward="false" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/agency/pay.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="774">
           <caret line="48" column="56" lean-forward="false" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/pay/agencyPayLog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="90" column="90" lean-forward="false" selection-start-line="90" selection-start-column="90" selection-end-line="90" selection-end-column="90" />
           <folding />
         </state>
       </provider>
@@ -1152,42 +667,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/rebate/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/agency/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="171" column="72" lean-forward="false" selection-start-line="171" selection-start-column="72" selection-end-line="171" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/RebateObject.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="65" column="31" lean-forward="false" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/AgencyObject.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/AgencyController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1200,26 +683,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/models/RebateConf.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/models/Rebate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/controllers/ConfigController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/models/RebateConf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/RankingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/PayController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="56" column="69" lean-forward="false" selection-start-line="56" selection-start-column="69" selection-end-line="56" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/pay/agencyDeductLog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="48" column="100" lean-forward="false" selection-start-line="48" selection-start-column="100" selection-end-line="48" selection-end-column="100" />
+          <folding>
+            <element signature="e#3532#3538#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#section#0;n#section#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#section#0;n#section#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#7;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#section#0;n#section#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#section#0;n#section#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#h1#0;n#div#0;n#div#0;n#div#1;n#section#0;n#section#0;n#section#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/pay/agencyPayLog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="940">
+          <caret line="62" column="70" lean-forward="false" selection-start-line="62" selection-start-column="70" selection-end-line="62" selection-end-column="70" />
+          <folding>
+            <element signature="e#3530#3536#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/ApiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1232,21 +755,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/RankingController.php">
+    <entry file="file://$PROJECT_DIR$/backend/views/rebate/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="26">
+          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/AgencyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/models/Rebate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/RebateObject.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="67" column="36" lean-forward="true" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/AgencyObject.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4730">
+          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/controllers/RebateController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="78" column="4" lean-forward="true" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
-          <folding>
-            <element signature="e#178#204#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="130">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_2线上部署版本多货币.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
