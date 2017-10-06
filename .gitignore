@@ -1,5 +1,6 @@
 /api/runtime
 /backend/runtime
+.DS_Store
 .idea
 
 /.idea/
