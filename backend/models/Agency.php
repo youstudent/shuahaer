@@ -111,11 +111,19 @@ class Agency extends AgencyObject
             ['pay_gold','match','pattern'=>'/^\+?[1-9][0-9]*$/','on'=>'pay'],
            // ['deduct_gold','match','pattern'=>'/^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$/','on'=>'deduct'],
             ['deduct_gold','validateDeduct','on'=>'deduct'],
-            ['deduct_gold','rebate','validateDeductrebate','on'=>'deduct'],
+            //错误 多个字段使用数组
+            [['deduct_gold','rebate'],'validateDeductrebate','on'=>'deduct'],
             [['starttime','endtime','notes'],'safe'],
         ];
     }
 
+    public function validateDeductrebate($a,$p)
+    {
+        if ($this->deduct_gold=0 && $this->rebate=0){
+            $this->addError('扣除货币或者返利点');
+        }
+    }
+    
     /**
      * 判断recode 推荐码用户是否存在
      * @param $attribute

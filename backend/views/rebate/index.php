@@ -8,6 +8,7 @@ $this->title = Yii::t('app', 'rebate_index') . '-' . Yii::$app->params['appName'
 use yii\bootstrap\ActiveForm;
 
 ?>
+
 <section id="content">
     <section class="vbox">
         <section class="scrollable padder">
