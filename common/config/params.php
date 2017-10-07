@@ -3,7 +3,8 @@ return [
     'adminEmail' => 'admin@example.com',
     'supportEmail' => 'support@example.com',
     'user.passwordResetTokenExpire' => 3600,
-    'distribution'      => true,#是否开启分销
+    'distribution'      => true,#是否开启分销代理分销
+    'distribution_users'      => true,#是否开启分销玩家分销
     'pageSize'          =>21,
     'backendPayUser' => true,//后台开启给用户充值功能
     'appName'           =>'耍哈儿',//APP名称

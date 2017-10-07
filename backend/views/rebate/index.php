@@ -8,6 +8,7 @@ $this->title = Yii::t('app', 'rebate_index') . '-' . Yii::$app->params['appName'
 use yii\bootstrap\ActiveForm;
 
 ?>
+
 <section id="content">
     <section class="vbox">
         <section class="scrollable padder">
@@ -52,9 +53,8 @@ use yii\bootstrap\ActiveForm;
                                 <div class="form-group">
                                     <?= $form->field($model, 'select')
                                         ->dropDownList(["1" => Yii::t('app', 'user_select_search_all'),
-                                            "name" => Yii::t('app', 'agency_select_search_game'),
-                                            "phone" => Yii::t('app', 'agency_select_search_phone'),
-                                            "identity" => Yii::t('app', 'agency_select_search_identity')]) ?>
+                                            "agency_id" => '代理ID',
+                                            "agency_name" =>'代理']) ?>
                                 </div>
                                 <div class="form-group">
                                     <div class="input-group">
@@ -69,11 +69,11 @@ use yii\bootstrap\ActiveForm;
                             </div>
                             <?php ActiveForm::end() ?>
                         </div>
-                        <div class="col-sm-3 text-right">
-                            <a href="<?= \yii\helpers\Url::to(['rebate/setting']) ?>" class="btn btn-primary"
+                        <!--<div class="col-sm-3 text-right">
+                            <a href="<?/*= \yii\helpers\Url::to(['rebate/setting']) */?>" class="btn btn-primary"
                                data-toggle="modal" data-target="#myModal"><i
-                                    class="fa fa-gears"></i>&nbsp;<?php echo Yii::t('app', '返利比例') ?></a>
-                        </div>
+                                    class="fa fa-gears"></i>&nbsp;<?php /*echo Yii::t('app', '返利比例') */?></a>
+                        </div>-->
                     </div>
                     <!--                搜索结束          -->
                 </div>
@@ -84,13 +84,15 @@ use yii\bootstrap\ActiveForm;
                             <thead>
                             <tr>
                                 <th class="text-center" style="border-left: 0px;">编号</th>
-                                <th class="text-center">充值人</th>
-                                <th class="text-center">返佣比例</th>
-                                <th class="text-center">用户名</th>
-                                <th class="text-center">返钻数量</th>
+                                <th class="text-center">返利代理ID</th>
+                                <th class="text-center">返利代理姓名</th>
+                                <th class="text-center">类型</th>
+                                <th class="text-center">下级ID</th>
+                                <th class="text-center">下级名称</th>
+                                <th class="text-center">分销级别</th>
+                                <th class="text-center">消费数量</th>
+                                <th class="text-center">返利点数</th>
                                 <th class="text-center">时间</th>
-                                <th class="text-center">备注</th>
-                                <th class="text-center" style="border-right: 0px;">返佣等级</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -99,13 +101,16 @@ use yii\bootstrap\ActiveForm;
                             <?php foreach ($data as $key => $value): ?>
                                 <tr>
                                     <td class="text-center" style="border-left: 0px;"><?= $i ?></td>
-                                    <td class="text-center"><?= $value['agency_pay_name'] ?></td>
-                                    <td class="text-center"><?= $value['proportion'] ?></td>
+                                    <td class="text-center"><?= $value['agency_id'] ?></td>
                                     <td class="text-center"><?= $value['agency_name'] ?></td>
+                                    <td class="text-center"><?= $value['type'] ?></td>
+                                    <td class="text-center"><?= $value['agency_pay_user_id'] ?></td>
+                                    <td class="text-center"><?= $value['pay_name']?></td>
+                                    <td class="text-center"><?= $value['rebate_conf'] ?></td>
                                     <td class="text-center"><?= $value['gold_num'] ?></td>
+                                    <td class="text-center"><?= $value['proportion'] ?></td>
                                     <td class="text-center"><?= date("Y-m-d H:i:s", $value['time']) ?></td>
-                                    <td class="text-center"><?= $value['notes'] ?></td>
-                                    <td class="text-center" style="border-right: 0px;"><?= $value['rebate_conf'] ?></td>
+                                  
                                 </tr>
                                 <?php $i++ ?>
                             <?php endforeach; ?>
@@ -125,12 +130,16 @@ use yii\bootstrap\ActiveForm;
                 <footer class="panel-footer">
                     <div class="row">
                         <div class="col-sm-12 text-right text-center-xs">
-                            <?= \yii\widgets\LinkPager::widget([
-                                'pagination' => $pages,
-                                'options' => [
-                                    'class' => 'pagination pagination-sm m-t-none m-b-none',
+                            <?=\yii\widgets\LinkPager::widget([
+                                'pagination'=>$pages,
+                                'firstPageLabel' => '首页',
+                                'lastPageLabel' => '尾页',
+                                'nextPageLabel' => '下一页',
+                                'prevPageLabel' => '上一页',
+                                'options'   =>[
+                                    'class'=>'pagination pagination-sm m-t-none m-b-none',
                                 ]
-                            ]) ?>
+                            ])?>
                         </div>
                     </div>
                 </footer>

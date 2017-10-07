@@ -13,15 +13,15 @@ use yii\bootstrap\ActiveForm;
 <!--            面包屑开始           -->
             <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
                 <li><a href="<?=\yii\helpers\Url::to(['site/index'])?>"><i class="fa fa-home"></i>首页</a></li>
-                <li><a href="#">用户管理</a></li>
-                <li class="active">玩家列表</li>
+                <li><a href="#">下级玩家管理</a></li>
+                <li class="active">下级玩家列表</li>
             </ul>
 <!--            面包屑结束            -->
             <section class="panel panel-default">
 <!--                搜索开始          -->
                 <div class="row text-sm wrapper">
                     <?php $form = ActiveForm::begin([
-                            'action'=>['users/list'],
+                            'action'=>['users/down'],
                             'method'=>'get',
                             'id'    =>'lr_form',
                             'fieldConfig' => [
@@ -46,7 +46,8 @@ use yii\bootstrap\ActiveForm;
                             <div class="form-group">
                                 <?=$form->field($model,'select')
                                         ->dropDownList(["1"=>Yii::t('app','user_select_search_all'),
-                                                        "game_id"=>Yii::t('app','user_select_search_game'),
+                                                       /* "game_id"=>Yii::t('app','user_select_search_game'),*/
+                                                        "place_grade"=>Yii::t('app','user_select_search_place_grade'),
                                                         "nickname"=>Yii::t('app','user_select_search_nickname')])?>
                             </div>
 
@@ -70,23 +71,8 @@ use yii\bootstrap\ActiveForm;
                                 <th  class="text-center">编号</th>
                                 <th  class="text-center">用户ID</th>
                                 <th  class="text-center">用户昵称</th>
-
-<!--                            多货币修改代码-->
-                                <?php
-                                $item = \common\models\GoldConfigObject::find()->all();
-                                foreach ($item as $key=>$value){
-                                    echo "<th class=\"text-center\">".$value['name']."</th>";
-                                }
-                                ?>
-<!--                            多货币修改代码-->
-                                
-                                <th  class="text-center">上级ID</th>
-                                <th  class="text-center">上级名字</th>
-                                <th  class="text-center">游戏总局数</th>
-                                <th  class="text-center">注册时间</th>
-                                <th  class="text-center">状态</th>
-                                <th  class="text-center">操作</th>
-
+                                <th  class="text-center">返利总额</th>
+                                <th  class="text-center">分销等级</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -96,44 +82,8 @@ use yii\bootstrap\ActiveForm;
                                 <td  class="text-center"><?=$i?></td>
                                 <td  class="text-center"><?=$value['game_id']?></td>
                                 <td  class="text-center"><?=$value['nickname']?></td>
-<!--                                多货币修改-->
-                                <?php foreach ($value['gold'] as $keys=>$values):?>
-                                    <td class="text-center"><?= $values ?></td>
-                                <?php endforeach;?>
-<!--                                多货币修改-->
-                                <td  class="text-center"><?=$value['superior_id']?></td>
-                                <td  class="text-center"><?=$value['superior_name']?></td>
-                                <td  class="text-center"><?=$value['game_count']?></td>
-                                <td  class="text-center"><?=date('Y-m-d H:i:s',$value['reg_time'])?></td>
-                                <td class="text-center">
-                                    <?php if($value['status'] == 1):?>
-                                            <a href="#" class="active">
-                                    <?php else:?>
-                                            <a href="#" class="">
-                                     <?php endif;?>
-                                        <i class="fa fa-check text-success text-active"></i>
-                                        <i class="fa fa-times text-danger text"></i>
-                                    </a>
-                                </td>
-                                <td class="text-center" width="400px;">
-                                    <a onclick="return openAgency(this,'是否<?=$value['status']==1?'停用':'启用'?>该账号?')"
-                                       href="<?php echo \yii\helpers\Url::to(['users/status', 'id' => $value['game_id']]) ?>"
-                                       class="btn btn-xs btn-danger"><?=$value['status']==1?'停用':'启用'?></a>
-                                    <a href="<?=\yii\helpers\Url::to(['users/pay-log',
-                                        'Users'=>['select'=>'game_id','keyword'=>$value['game_id']]])?>" class="btn btn-xs btn-primary">充值记录</a>
-                                    <a href="<?=\yii\helpers\Url::to(['users/deduct-log',
-                                        'Users'=>['select'=>'game_id','keyword'=>$value['game_id']]])?>" class="btn btn-xs btn-primary">扣除记录</a>
-                                    <a href="<?=\yii\helpers\Url::to(['users/out-log',
-                                        'Users'=>['select'=>'game_id','keyword'=>$value['game_id']]])?>" class="btn btn-xs btn-success">消费记录</a>
-                                    <a href="<?=\yii\helpers\Url::to(['users/exploits',
-                                        'Users'=>['select'=>'game_id','keyword'=>$value['game_id']]])?>" class="btn btn-xs btn-info">&nbsp; 战绩&nbsp; </a>
-                                    <?php if(Yii::$app->params['backendPayUser']):?>
-                                    
-                                    <a href="<?=\yii\helpers\Url::to(['users/pay','id'=>$value['id']])?>" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#myModal">&nbsp;充值&nbsp;&nbsp;</a>
-                                    
-                                    <a href="<?=\yii\helpers\Url::to(['users/deduct','id'=>$value['id']])?>" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#myModal">扣除</a>
-                                    <?php endif;?>
-                                </td>
+                                <td  class="text-center"><?=$value['rebate']?></td>
+                                <td  class="text-center"><?=$value['place_grade']?></td>
                             </tr>
                         <?php $i++?>
                         <?php endforeach;?>

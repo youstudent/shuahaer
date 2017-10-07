@@ -9,6 +9,7 @@ namespace api\controllers;
 use api\models\GameExploits;
 use api\models\UserOut;
 use api\models\Users;
+use backend\models\UserPay;
 use common\models\DrawWater;
 
 class UsersController extends ObjectController
@@ -67,17 +68,6 @@ class UsersController extends ObjectController
         }
         return $this->returnAjax(0,'Please submit with POST');
     }
-
-    /**
-     * 会员手机端自动充值
-     */
-    public function actionPay()
-    {
-        if(\Yii::$app->request->isPost)
-        {
-
-        }
-    }
     
     /**
      * 抽水记录
@@ -98,5 +88,22 @@ class UsersController extends ObjectController
     }
     
     
+    /**
+     * 游戏端买金币
+     */
+    public function actionPay()
+    {
+        if(\Yii::$app->request->isPost)
+        {
+            $model = new \api\models\UserPay();
+            if($model->clientPay(\Yii::$app->request->post())){
+                return $this->returnAjax(1,'成功',[]);
+            }
+            $message = $model->getFirstErrors();
+            $message = reset($message);
+            return $this->returnAjax(0,$message,[]);
+        }
+        return $this->returnAjax(0,'Please submit with POST');
+    }
     
 }

@@ -24,7 +24,7 @@
                     ],
                 ])?>
                 <input type="hidden" name="id" value="<?=$model->id?>">
-                <?php echo $form->field($model,'location')->dropDownList(['首页公告'=>'首页公告','首页滚动公告'=>'首页滚动公告','房间滚动公告'=>'房间滚动公告',])?>
+                <?php echo $form->field($model,'location')->dropDownList(['首页公告'=>'首页公告'])?>
                 <?php echo $form->field($model,'title')->textInput(['placeholder'=>'标题'])?>
                 <?php echo $form->field($model,'content')->textarea(['placeholder'=>'内容'])?>
                 <?php echo $form->field($model,'notes')->textInput(['placeholder'=>'备注'])?>

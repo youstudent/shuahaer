@@ -9,7 +9,7 @@
     <div class="modal-content">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">添加通知</h4>
+            <h4 class="modal-title" id="myModalLabel">修改管理员</h4>
         </div>
         <div class="modal-body">
 
@@ -24,7 +24,7 @@
                     ],
                 ])?>
                 <input type="hidden" name="id" value="<?=$model->id?>">
-                <?php echo $form->field($model,'name')->textInput(['placeholder'=>'姓 名'])?>
+                <?php echo $form->field($model,'name')->textInput(['readonly'=>true])?>
                 <?php echo $form->field($model,'password')->passwordInput(['placeholder'=>'密码'])?>
                 <?php echo $form->field($model,'phone')->textInput(['placeholder'=>'手机号'])?>
             <?php \yii\bootstrap\ActiveForm::end()?>

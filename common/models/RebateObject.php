@@ -42,6 +42,7 @@ class RebateObject extends Object
             [['notes'], 'string', 'max' => 255],
             [['rebate_conf'], 'string', 'max' => 11],
             [['agency_id'], 'exist', 'skipOnError' => true, 'targetClass' => AgencyObject::className(), 'targetAttribute' => ['agency_id' => 'id']],
+            [['select','keyword','starttime','endtime'],'safe']
         ];
     }
 

@@ -77,7 +77,7 @@ use yii\bootstrap\ActiveForm;
                                 <th  class="text-center" style="border-left: 0px;">编号</th>
                                 <th  class="text-center">用户ID</th>
                                 <th  class="text-center">昵称</th>
-                                <th  class="text-center">代理名称</th>
+                                <th  class="text-center">扣除来源</th>
                                 <th  class="text-center">充值数量</th>
                                 <th  class="text-center">扣除类型</th>
                                 <th  class="text-center">备注</th>
@@ -128,6 +128,10 @@ use yii\bootstrap\ActiveForm;
                         <div class="col-sm-12 text-right text-center-xs">
                             <?=\yii\widgets\LinkPager::widget([
                                 'pagination'=>$pages,
+                                'firstPageLabel' => '首页',
+                                'lastPageLabel' => '尾页',
+                                'nextPageLabel' => '下一页',
+                                'prevPageLabel' => '上一页',
                                 'options'   =>[
                                     'class'=>'pagination pagination-sm m-t-none m-b-none',
                                 ]

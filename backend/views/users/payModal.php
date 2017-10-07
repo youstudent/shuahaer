@@ -58,39 +58,44 @@
     $(document).ready(function () {
         //平台用户充值
         $("#payModalSubmit").click(function () {
-            var  form   = $("#payModalForm");
-            var  action = form.attr('action');
-            var  data   = form.serialize();
-            $.ajax({
-                url:action,
-                type:'POST',
-                data:data,
-                success:function (res) {
-                    console.log(res);
-                    if(res.code == 1)
-                    {
-                        swal({
-                            title:res.message,
-                            //text: "<?=Yii::t('app','swal_text_error')?>",
-                            type: "success",
-                            confirmButtonText: "<?=Yii::t('app','but_close')?>",
-                            closeOnConfirm: false,
-                        },
-                        function(){
-                            location.reload();
-                        });
-                    }else{
-                        swal({
-                            title:res.message,
-                            //text: "<?=Yii::t('app','swal_text_error')?>",
-                            type: "error",
-                            confirmButtonColor: "#DD6B55",
-                            confirmButtonText: "<?=Yii::t('app','but_close_ret')?>",
-                            closeOnConfirm: false,
-                        })
-                    }
-                },
-            });
+            $("#payModalSubmit").attr("disabled", true);
+            $("#payModalSubmit").html('充值中');
+            
+                var  form   = $("#payModalForm");
+                var  action = form.attr('action');
+                var  data   = form.serialize();
+                $.ajax({
+                    url:action,
+                    type:'POST',
+                    data:data,
+                    success:function (res) {
+                        console.log(res);
+                        $("#payModalSubmit").attr("disabled", false);
+                        $("#payModalSubmit").html('确认充值');
+                        if(res.code == 1)
+                        {
+                            swal({
+                                    title:res.message,
+                                    //text: "<?=Yii::t('app','swal_text_error')?>",
+                                    type: "success",
+                                    confirmButtonText: "<?=Yii::t('app','but_close')?>",
+                                    closeOnConfirm: false,
+                                },
+                                function(){
+                                    location.reload();
+                                });
+                        }else{
+                            swal({
+                                title:res.message,
+                                //text: "<?=Yii::t('app','swal_text_error')?>",
+                                type: "error",
+                                confirmButtonColor: "#DD6B55",
+                                confirmButtonText: "<?=Yii::t('app','but_close_ret')?>",
+                                closeOnConfirm: false,
+                            })
+                        }
+                    },
+                });
         });
     })
 </script>

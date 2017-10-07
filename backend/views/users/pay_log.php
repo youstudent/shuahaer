@@ -4,6 +4,7 @@
  * @copyright Copyright (c) 2017 Double Software LLC
  * @license http://www.lrdouble.com/license/
  */
+$num = '';
 $this->title = Yii::t('app','users_pay').'-'.Yii::$app->params['appName'];
 use yii\bootstrap\ActiveForm;
 ?>
@@ -77,7 +78,7 @@ use yii\bootstrap\ActiveForm;
                                 <th  class="text-center" style="border-left: 0px;">编号</th>
                                 <th  class="text-center">用户ID</th>
                                 <th  class="text-center">昵称</th>
-                                <th  class="text-center">代理名称</th>
+                                <th  class="text-center">充值来源</th>
                                 <th  class="text-center">充值数量</th>
                                 <th  class="text-center">充值类型</th>
                                 <th  class="text-center">备注</th>
@@ -107,11 +108,15 @@ use yii\bootstrap\ActiveForm;
                                                 <i class="fa fa-times text-danger text"></i>
                                             </a>
                                     </td>
+                            <?php $num+=$value['gold']?>
                                 </tr>
                             <?php $i++?>
                             <?php endforeach;?>
                         </tbody>
                     </table>
+                    <div style="text-align: right">
+                         <input type="text" value="金币充值统计:<?php echo $num?>" disabled >
+                    </div>
                     <?php if(empty($data)):?>
                         <div class="text-center m-t-lg clearfix wrapper-lg animated fadeInRightBig" id="galleryLoading">
                             <h1><i class="fa fa-warning" style="color: red;font-size: 40px"></i></h1>
@@ -128,6 +133,10 @@ use yii\bootstrap\ActiveForm;
                         <div class="col-sm-12 text-right text-center-xs">
                             <?=\yii\widgets\LinkPager::widget([
                                 'pagination'=>$pages,
+                                'firstPageLabel' => '首页',
+                                'lastPageLabel' => '尾页',
+                                'nextPageLabel' => '下一页',
+                                'prevPageLabel' => '上一页',
                                 'options'   =>[
                                     'class'=>'pagination pagination-sm m-t-none m-b-none',
                                 ]

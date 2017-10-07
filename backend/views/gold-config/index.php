@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2017 Double Software LLC
  * @license http://www.lrdouble.com/license/
  */
-$this->title = Yii::t('app', '管理员列表') . '-' . Yii::$app->params['appName'];
+$this->title = Yii::t('app', 'notice_index') . '-' . Yii::$app->params['appName'];
 ?>
 <section id="content">
     <section class="vbox">
@@ -12,8 +12,8 @@ $this->title = Yii::t('app', '管理员列表') . '-' . Yii::$app->params['appNa
             <!--            面包屑开始           -->
             <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
                 <li><a href="/site/index"><i class="fa fa-home"></i>首页</a></li>
-                <li><a href="#">管理员</a></li>
-                <li class="active">管理员详情</li>
+                <li><a href="#">货币管理</a></li>
+                <li class="active">货币列表</li>
             </ul>
             <!--            面包屑结束            -->
             <section class="panel panel-default">
@@ -21,10 +21,10 @@ $this->title = Yii::t('app', '管理员列表') . '-' . Yii::$app->params['appNa
                     <!--                搜索开始          -->
                     <div class="row text-sm wrapper">
                         <div class="col-sm-9">
-                            <a href="<?= \yii\helpers\Url::to(['manage/add']) ?>" class="btn btn-primary"
-                               data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>&nbsp;添加新管理员</a>
                         </div>
                         <div class="col-sm-3 text-right">
+                            <a href="<?= \yii\helpers\Url::to(['gold-config/add']) ?>" class="btn btn-primary"
+                               data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>&nbsp;添加货币</a>
                         </div>
                     </div>
                     <!--                搜索结束          -->
@@ -36,9 +36,10 @@ $this->title = Yii::t('app', '管理员列表') . '-' . Yii::$app->params['appNa
                             <thead>
                             <tr>
                                 <th class="text-center" style="border-left: 0px;">编号</th>
-                                <th class="text-center">姓名</th>
-                                <th class="text-center">手机号</th>
-
+                                <th class="text-center">货币名</th>
+                                <th class="text-center">类型</th>
+                                <th class="text-center">Api编号1</th>
+                                <th class="text-center">Api编号2</th>
                                 <th class="text-center" style="border-right: 0px;">操作</th>
                             </tr>
                             </thead>
@@ -49,21 +50,24 @@ $this->title = Yii::t('app', '管理员列表') . '-' . Yii::$app->params['appNa
                                 <tr>
                                     <td class="text-center" style="border-left: 0px;"><?= $i ?></td>
                                     <td class="text-center"><?= $value['name'] ?></td>
-                                    <td class="text-center"><?= $value['phone'] ?></td>
-                                    <td class="text-center" style="border-right: 0px;">
-                                        <a href="<?= \yii\helpers\Url::to(['manage/edit','id'=>$value['id']]) ?>" class="btn btn-xs btn-primary"
-                                           data-toggle="modal" data-target="#myModal"> 编 辑 </a>
-                                        <a href="<?= \yii\helpers\Url::to(['manage/del','id'=>$value['id']]) ?>" onclick="return openAgency(this,'确认删除吗?')" class="btn btn-xs btn-danger"> 删 除 </a>
+                                    <td class="text-center"><?= $value['type'] ?></td>
+                                    <td class="text-center"><?= $value['num_code'] ?></td>
+                                    <td class="text-center"><?= $value['en_code'] ?></td>
+                                    <td class="text-center" style="width: 120px;">
+                                        <a href="<?php echo \yii\helpers\Url::to(['gold-config/edit', 'id' => $value['name']]) ?>"
+                                           data-toggle="modal" data-target="#myModal" class="btn btn-xs btn-primary">编辑</a>
+                                        <a href="<?php echo \yii\helpers\Url::to(['gold-config/del', 'id' => $value['name']]) ?>"
+                                           onclick="return openAgency(this,'是否确认删除?')" class="btn btn-xs btn-danger">删除</a>
                                     </td>
                                 </tr>
                                 <?php $i++ ?>
-                            <?php endforeach; ?>
+                            <?php endforeach;?>
                             </tbody>
                         </table>
                         <?php if(empty($data)):?>
                             <div class="text-center m-t-lg clearfix wrapper-lg animated fadeInRightBig" id="galleryLoading">
                                 <h1><i class="fa fa-warning" style="color: red;font-size: 40px"></i></h1>
-                                <h4 class="text-muted"><?php echo sprintf(Yii::t('app','search_null'),'管理员列表')?></h4>
+                                <h4 class="text-muted"><?php echo sprintf(Yii::t('app','search_null'),'参数列表')?></h4>
                                 <p class="m-t-lg"></p>
                             </div>
                         <?php endif;?>

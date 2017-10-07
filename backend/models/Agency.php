@@ -11,7 +11,9 @@ namespace backend\models;
 use common\models\AgencyGoldObject;
 use common\models\AgencyObject;
 use common\models\GoldConfigObject;
+use Symfony\Component\DomCrawler\Field\InputFormField;
 use yii\data\Pagination;
+use yii\db\Exception;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -111,11 +113,20 @@ class Agency extends AgencyObject
             ['pay_gold','match','pattern'=>'/^\+?[1-9][0-9]*$/','on'=>'pay'],
            // ['deduct_gold','match','pattern'=>'/^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$/','on'=>'deduct'],
             ['deduct_gold','validateDeduct','on'=>'deduct'],
-            ['deduct_gold','rebate','validateDeductrebate','on'=>'deduct'],
-            [['starttime','endtime','notes'],'safe'],
+            ['rebate','validateRebate','on'=>'deduct'],
+            //错误 多个字段使用数组
+           // [['deduct_gold','rebate'],'validateDeductrebate','on'=>'deduct'],
+            [['starttime','endtime','notes','gold_config'],'safe'],
         ];
     }
 
+   /* public function validateDeductrebate($a,$p)
+    {
+        if ($this->deduct_gold=0 && $this->rebate=0){
+            $this->addError('扣除货币或者返利点');
+        }
+    }*/
+    
     /**
      * 判断recode 推荐码用户是否存在
      * @param $attribute
@@ -145,6 +156,20 @@ class Agency extends AgencyObject
             $gole = $this->getNoeGold($this->pay_gold_config);
             if($gole < $this->deduct_gold){
                 $this->addError($attribute,'扣除金额不能大于现有余额！');
+            }
+        }
+    }
+    /**
+     * 验证返利点
+     * @param $attribute
+     * @param $params
+     */
+    public function validateRebate($attribute, $params)
+    {
+        if (!$this->hasErrors()) {
+            $data = self::findOne($this->id);
+            if ($this->rebate > $data->rebate) {
+                $this->addError($attribute, '扣除返利不能大于现有余额！');
             }
         }
     }
@@ -204,23 +229,23 @@ class Agency extends AgencyObject
             $transaction = \Yii::$app->db->beginTransaction();
             try{
                 $model = self::findOne($this->id);
+                $model->rebate=$model->rebate-$this->rebate;
                 $data = $model->consumeGold($this->pay_gold_config,$this->deduct_gold);
-
+                
                 if($data == false)throw  new \Exception('0x00010');
-
+                if($model->save() == false) throw new Exception('减少返利点失败');
                 $agencyDeduct = new AgencyDeduct();
                 $agencyDeduct->agency_id    = $model->id;
                 $agencyDeduct->name         = $model->name;
                 $agencyDeduct->time         = time();
                 $agencyDeduct->gold         = $this->deduct_gold;
-                $agencyDeduct->money        = $this->deduct_money;
+                $agencyDeduct->money        = $this->rebate;
                 $agencyDeduct->notes        = $this->deduct_notes;
                 $agencyDeduct->status       = 2;
                 $agencyDeduct->manage_id    = \Yii::$app->session->get('manageId');
                 $agencyDeduct->manage_name  = \Yii::$app->session->get('manageName');
                 $agencyDeduct->gold_config  = $this->pay_gold_config;
                 if($agencyDeduct->save() == false)throw new \Exception('0x00011');
-
                 $transaction->commit();
                 return true;
             }catch (\Exception $exception){
@@ -368,6 +393,24 @@ class Agency extends AgencyObject
         }
         return ['data'=>$data,'pages'=>$pages,'model'=>$this];
     }
+    
+    /**
+     * 搜索功能
+     * @param $data
+     * @return array
+     */
+    public function getDown($data)
+    {
+        $this->load($data);
+        $this->initTime();
+        $model = self::find()->where($this->searchWhereLikes())
+            ->andWhere(['>=','reg_time',strtotime($this->starttime)])
+            ->andWhere(['<=','reg_time',strtotime($this->endtime)]);;
+        
+        $pages = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
+        $data = $model->limit($pages->limit)->offset($pages->offset)->all();
+        return ['data'=>$data,'pages'=>$pages,'model'=>$this];
+    }
     /**
      * 平台添加代理商
      * @param array $data
@@ -440,6 +483,27 @@ class Agency extends AgencyObject
                 return ['like','identity',$this->keyword];
             else
                 return ['or',['name'=>$this->keyword],['like','phone',$this->keyword],['like','identity',$this->keyword]];
+        }
+        return [];
+    }
+    
+    
+    /**
+     * 搜索代理的下级代理
+     * @return array
+     */
+    public function searchWhereLikes()
+    {
+        if (!empty($this->select) && !empty($this->keyword))
+        {
+            if ($this->select == 'name')
+                return ['like','name',$this->keyword];
+            elseif($this->select == 'place_grade')
+                return ['place_grade'=>$this->keyword];
+            elseif($this->select == 'pid')
+                return ['pid'=>$this->keyword];
+            else
+                return ['or',['like','name',$this->keyword],['place_grade'=>$this->keyword]];
         }
         return [];
     }

@@ -21,13 +21,31 @@ use yii\data\Pagination;
  */
 class RebateController extends ObjectController
 {
-
-
+    
+    
     /**
      * 返利记录搜索
      * @return string
      */
     public function actionIndex()
+    {
+        $rebate = new Rebate();
+        $rebate->load(\Yii::$app->request->get());
+        $rebate->initTime();
+        $model = Rebate::find();
+        $model->andWhere(['>=','time',strtotime($rebate->starttime)])->andWhere(['<=','time',strtotime($rebate->endtime)])->andWhere($rebate->searchWhereLikes());
+        $pages      = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
+        $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
+        
+        return $this->render('index',['model'=>$rebate,'data'=>$data,'pages'=>$pages]);
+    }
+    
+    
+    /**
+     * 返利记录搜索
+     * @return string
+     */
+    /*public function actionIndex()
     {
         $agency = new Agency();
         $agency->load(\Yii::$app->request->get());
@@ -42,7 +60,7 @@ class RebateController extends ObjectController
         $pages      = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
         return $this->render('index',['model'=>$agency,'data'=>$data,'pages'=>$pages]);
-    }
+    }*/
 
     /**
      * 返钻比例设置
