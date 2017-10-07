@@ -201,12 +201,10 @@ use yii\bootstrap\ActiveForm;
                                         <a href="<?php echo \yii\helpers\Url::to(['agency/edit', 'id' => $value['id']]) ?>"
                                            data-toggle="modal" data-target="#myModal"
                                            class="btn btn-xs btn-success">&nbsp;编 辑&nbsp;</a>
-                                        <a href="<?php echo \yii\helpers\Url::to(['agency/edit', 'id' => $value['id']]) ?>"
-                                           data-toggle="modal" data-target="#myModal"
-                                           class="btn btn-xs btn-success">&nbsp;下级玩家</a>
-                                        <a href="<?php echo \yii\helpers\Url::to(['agency/edit', 'id' => $value['id']]) ?>"
-                                           data-toggle="modal" data-target="#myModal"
-                                           class="btn btn-xs btn-success">&nbsp;下级加盟商&nbsp;</a>
+                                        <a href="<?= \yii\helpers\Url::to(['users/down', 'Users' => ['select' => 'superior_id', 'keyword' => $value['id']]]) ?>"
+                                           class="btn btn-xs btn-primary">下级玩家</a>
+                                        <a href="<?= \yii\helpers\Url::to(['agency/down', 'Agency' => ['select' => 'pid', 'keyword' => $value['id']]]) ?>"
+                                           class="btn btn-xs btn-primary">下级加盟商</a>
 
                                     <?php elseif ($value['status'] == 2 || $value['status'] == 4): ?>
 
@@ -245,12 +243,16 @@ use yii\bootstrap\ActiveForm;
                 <footer class="panel-footer">
                     <div class="row">
                         <div class="col-sm-12 text-right text-center-xs">
-                            <?= \yii\widgets\LinkPager::widget([
-                                'pagination' => $pages,
-                                'options' => [
-                                    'class' => 'pagination pagination-sm m-t-none m-b-none',
+                            <?=\yii\widgets\LinkPager::widget([
+                                'pagination'=>$pages,
+                                'firstPageLabel' => '首页',
+                                'lastPageLabel' => '尾页',
+                                'nextPageLabel' => '下一页',
+                                'prevPageLabel' => '上一页',
+                                'options'   =>[
+                                    'class'=>'pagination pagination-sm m-t-none m-b-none',
                                 ]
-                            ]) ?>
+                            ])?>
                         </div>
                     </div>
                 </footer>

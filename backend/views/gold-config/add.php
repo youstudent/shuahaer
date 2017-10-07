@@ -9,23 +9,24 @@
     <div class="modal-content">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">添加管理员</h4>
+            <h4 class="modal-title" id="myModalLabel">添加货币</h4>
         </div>
         <div class="modal-body">
 
             <div class="col-xs-11">
             <?php $form = \yii\bootstrap\ActiveForm::begin([
                     'id'=>'payModalForm',
-                    'action'=>['manage/add'],
+                    'action'=>['gold-config/add'],
                     'options'=>['class'=>'form-horizontal'],
                     'fieldConfig' => [
                         'template' => "{label}<div class=\"col-lg-9\">{input}<span class=\"help-block m-b-none\"></span></div>",
                         'labelOptions'  => ['class'=>'col-lg-3 control-label'],
                     ],
                 ])?>
-                <?php echo $form->field($model,'name')->textInput(['placeholder'=>'姓 名'])?>
-                <?php echo $form->field($model,'password')->passwordInput(['placeholder'=>'密码'])?>
-                <?php echo $form->field($model,'phone')->textInput(['placeholder'=>'手机号'])?>
+            <?php echo $form->field($model,'name')->textInput()?>
+            <?php echo $form->field($model,'type')->textInput()?>
+            <?php echo $form->field($model,'num_code')->textInput()?>
+            <?php echo $form->field($model,'en_code')->textInput()?>
             <?php \yii\bootstrap\ActiveForm::end()?>
             </div>
         </div>

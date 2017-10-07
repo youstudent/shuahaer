@@ -300,7 +300,7 @@ class Users extends UsersObject
     
     
     /**
-     * 搜索并分页显示用户的数据
+     * 金币排行榜
      * @return array
      */
     public function getWealth($data = [])
@@ -423,6 +423,30 @@ class Users extends UsersObject
         }
         return [];
     }
+    
+    
+    /**
+     * 搜索处理数据函数 搜索代理玩家
+     * @return array
+     */
+    private function searchWheres()
+    {
+        if (!empty($this->select) && !empty($this->keyword))
+        {
+            if ($this->select == 'game_id')
+                return ['game_id'=>$this->keyword];
+            elseif ($this->select == 'nickname')
+                return ['like','nickname',$this->keyword];
+            elseif ($this->select == 'place_grade')
+                return ['place_grade'=>$this->keyword];
+            elseif ($this->select == 'superior_id')
+                return ['superior_id'=>$this->keyword];
+            else
+                return ['or',['game_id'=>$this->keyword],['like','nickname',$this->keyword],['place_grade'=>$this->keyword]];
+        }
+        return [];
+    }
+    
 
     /**
      * 处理数组 [1,2,3]
@@ -481,6 +505,28 @@ class Users extends UsersObject
             return $this->addError('status', $re['message']);
         }
     }
+    
+    /**
+     * 搜索代理商下级用户
+     * @return array
+     */
+    public function getDown($data = [])
+    {
+        $this->load($data);
+        $this->initTime();
+        $model   = self::find()->andWhere($this->searchWheres())
+            ->andWhere(['>=','reg_time',strtotime($this->starttime)])
+            ->andWhere(['<=','reg_time',strtotime($this->endtime)]);
+        $pages = new Pagination(
+            [
+                'totalCount' =>$model->count(),
+                'pageSize' => \Yii::$app->params['pageSize']
+            ]
+        );
+        $data  = $model->limit($pages->limit)->offset($pages->offset)->all();
+        return ['data'=>$data,'pages'=>$pages,'model'=>$this];
+    }
+    
     
     
     public function getGameGold(){

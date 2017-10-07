@@ -100,6 +100,19 @@ class UsersController extends ObjectController
         $data = $model->getList(Yii::$app->request->get());
         return $this->render('list',$data);
     }
+    
+    
+    /**
+     * 查询代理商的下级玩家
+     * @return string
+     */
+    public function actionDown()
+    {
+        $model = new Users();
+        $data = $model->getDown(Yii::$app->request->get());
+        return $this->render('down',$data);
+    }
+    
 
     /**
      * 显示用户的充值记录表

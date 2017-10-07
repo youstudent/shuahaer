@@ -56,11 +56,16 @@ class PayController extends ObjectController
         $model->andWhere(['>=','time',strtotime($agency->starttime)])->andWhere(['<=','time',strtotime($agency->endtime)]);
         $pages      = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
-        return $this->render('agencyPayLog',['model'=>$agency,'data'=>$data,'pages'=>$pages]);
+        //统计每页充值的金币数据
+        $num = 0;
+        foreach ($data as $v){
+          $num+=$v['gold'];
+        }
+        return $this->render('agencyPayLog',['model'=>$agency,'data'=>$data,'pages'=>$pages,'num'=>$num]);
     }
     
     /**
-     * 平台充值记录
+     * 扣除
      * 算法思路
      * @return string
      */

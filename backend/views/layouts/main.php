@@ -39,6 +39,7 @@ $config[] = ['label' => '公告管理', 'icon' => 'fa fa-bullhorn icon', 'bg_col
     ['label' => '公告管理', 'url' => ['notice/index', 'id' => 1]]
 ]];
 $config[] = ['label' => '设置中心', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-info', 'url' => ['manage/index'], 'items' => [
+    ['label' => '货币配置', 'url' => ['gold-config/index']],
     ['label' => '管理员列表', 'url' => ['manage/index', 'id' => 1]],
 ]];
 $config[] = ['label' => '退出登录', 'icon' => 'fa fa-mail-forward icon', 'bg_color' => 'bg-danger', 'url' => ['login/logout']]

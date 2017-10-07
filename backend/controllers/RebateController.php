@@ -29,20 +29,15 @@ class RebateController extends ObjectController
      */
     public function actionIndex()
     {
-        $agency = new Agency();
-        $agency->load(\Yii::$app->request->get());
-        $agency->initTime();
-        $model      = '';
-        if($agency->keyword != ''){
-            $agencyInfo = Agency::find()->where($agency->searchWhere())->one();
-            if(isset($agencyInfo->id)) $model = Rebate::find()->where(['agency_id'=>$agencyInfo->id]);
-            else $model = Rebate::find()->where(['id'=>-10]);
-        }else {$model = Rebate::find();}
-        $model->andWhere(['>=','time',strtotime($agency->starttime)])->andWhere(['<=','time',strtotime($agency->endtime)]);
+        $rebate = new Rebate();
+        $rebate->load(\Yii::$app->request->get());
+        $rebate->initTime();
+        $model = Rebate::find();
+        $model->andWhere(['>=','time',strtotime($rebate->starttime)])->andWhere(['<=','time',strtotime($rebate->endtime)])->andWhere($rebate->searchWhereLikes());
         $pages      = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
         
-        return $this->render('index',['model'=>$agency,'data'=>$data,'pages'=>$pages]);
+        return $this->render('index',['model'=>$rebate,'data'=>$data,'pages'=>$pages]);
     }
     
     

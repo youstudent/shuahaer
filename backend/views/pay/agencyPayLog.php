@@ -6,7 +6,6 @@
  */
 $this->title = Yii::t('app', 'pay_agency') . '-' . Yii::$app->params['appName'];
 use yii\bootstrap\ActiveForm;
-
 ?>
 <section id="content">
     <section class="vbox">
@@ -54,7 +53,7 @@ use yii\bootstrap\ActiveForm;
                                         ->dropDownList(["1" => Yii::t('app', 'user_select_search_all'),
                                             "name" => Yii::t('app', 'agency_select_search_game'),
                                             "phone" => Yii::t('app', 'agency_select_search_phone'),
-                                            "identity" => Yii::t('app', 'agency_select_search_identity')]) ?>
+                                            "id" => Yii::t('app', 'agency_select_search_id')]) ?>
                                 </div>
                                 <div class="form-group">
                                     <div class="input-group">
@@ -118,6 +117,12 @@ use yii\bootstrap\ActiveForm;
                             <?php endforeach; ?>
                             </tbody>
                         </table>
+                        <?php if ($num):?>
+                            <div style="text-align: right">
+                                <input type="text" value="金币充值统计:<?php echo $num?>" disabled >
+                            </div>
+                        <?php endif;?>
+                        
                         <?php if(empty($data)):?>
                             <div class="text-center m-t-lg clearfix wrapper-lg animated fadeInRightBig" id="galleryLoading">
                                 <h1><i class="fa fa-warning" style="color: red;font-size: 40px"></i></h1>
@@ -132,12 +137,16 @@ use yii\bootstrap\ActiveForm;
                 <footer class="panel-footer">
                     <div class="row">
                         <div class="col-sm-12 text-right text-center-xs">
-                            <?= \yii\widgets\LinkPager::widget([
-                                'pagination' => $pages,
-                                'options' => [
-                                    'class' => 'pagination pagination-sm m-t-none m-b-none',
+                            <?=\yii\widgets\LinkPager::widget([
+                                'pagination'=>$pages,
+                                'firstPageLabel' => '首页',
+                                'lastPageLabel' => '尾页',
+                                'nextPageLabel' => '下一页',
+                                'prevPageLabel' => '上一页',
+                                'options'   =>[
+                                    'class'=>'pagination pagination-sm m-t-none m-b-none',
                                 ]
-                            ]) ?>
+                            ])?>
                         </div>
                     </div>
                 </footer>

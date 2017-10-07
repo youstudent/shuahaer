@@ -26,6 +26,17 @@ class AgencyController extends ObjectController
         $data = $model->search(\Yii::$app->request->get());
         return $this->render('index',$data);
     }
+    
+    /**
+     * 首页初始化列表、带搜索功能的
+     * @return string
+     */
+    public function actionDown()
+    {
+        $model = new Agency();
+        $data = $model->getDown(\Yii::$app->request->get());
+        return $this->render('down',$data);
+    }
 
 
     /**
@@ -193,6 +204,7 @@ class AgencyController extends ObjectController
 
         $model->goldArr = $model->getGold();
         $model->deduct_notes='';
+        $model->rebate=0;
         return $this->render('deduct',['model'=>$model]);
     }
 }

@@ -19,7 +19,6 @@ class NoticeController extends ObjectController
         $data['101'] = '首页公告';
         $data['102'] = '首页滚动公告';
         $data['103'] = '房间滚动公告';
-
         $location = $data[\Yii::$app->request->get('location')];
         if($location){
             $notice = Notice::find()->andWhere(['location'=>$location])->andWhere(['status'=>1])->select(['title','content','time','manage_name'])->one();

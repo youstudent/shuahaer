@@ -201,14 +201,13 @@ class AgencyObject extends Object
     }
 
     /**
-     * 执行充值操作
+     * 执行扣除操作
      * @param $payGoldConfig
      * @param $payGold
      * @return bool
      */
     public function consumeGold($payGoldConfig,$payGold)
     {
-
         if(empty(self::$goldConfig)){
             self::$goldConfig = GoldConfigObject::find()->asArray()->all();
         }
