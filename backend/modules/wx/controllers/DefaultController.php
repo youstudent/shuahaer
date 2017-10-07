@@ -22,19 +22,24 @@ class DefaultController extends Controller
      */
     public function actionIndex()
     {
+        $request = \Yii::$app->request;
+        $session = \Yii::$app->session;
+        if (!empty($request->get('agency_id')) && !empty($request->get('code'))) {
+            $session->set('agency_id', $request->get('agency_id'));
+            $session->set('code', $request->get('code'));
+            return Wx::goToLogin();
+        }
         return $this->render('index');
     }
 
-    public function actionLogin()
-    {
-
-        return Wx::goToLogin();
-    }
-
+    /**
+     * 用户授权后绑定成功的微信回调函数
+     */
     public function actionRedirect()
     {
-
         $wxModel = new Wx();
-        $wxModel->getUserInfo(\Yii::$app->request->get('code'));
+        if ($wxModel->getUserInfo(\Yii::$app->request->get('code'))) {
+            die('添加成功！');
+        }
     }
 }

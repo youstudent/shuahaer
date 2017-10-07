@@ -13,6 +13,11 @@ use common\services\Request;
 use yii\base\Model;
 use yii\helpers\ArrayHelper;
 
+/**
+ * 获取微信的功能
+ * Class Wx
+ * @package backend\modules\wx\models
+ */
 class  Wx extends Model
 {
     public $wxappid = 'wx1f0573a349ad863e';
@@ -63,13 +68,39 @@ class  Wx extends Model
         return ArrayHelper::toArray(json_decode($data));
     }
 
+    /**
+     * 获取用户资料并绑定关系
+     * @param $code
+     * @return bool
+     * @throws \Exception
+     */
     public function getUserInfo($code)
     {
-        $requestUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?appid={$this->wxappid}&secret={$this->wxappsecrret}&code={$code}&grant_type=authorization_code";
-        $userAccessToken = $this->RequestGetDataToArray($requestUrl);
-        $requestUrl = "https://api.weixin.qq.com/sns/userinfo?access_token={$userAccessToken['access_token']}&openid={$userAccessToken['openid']}}&lang=zh_CN";
-        $userInfo = $this->RequestGetDataToArray($requestUrl);
-        var_dump($userInfo);
+        try {
+            $requestUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?appid={$this->wxappid}&secret={$this->wxappsecrret}&code={$code}&grant_type=authorization_code";
+            $userAccessToken = $this->RequestGetDataToArray($requestUrl);
+            if (isset($userAccessToken['errcode'])) throw new \Exception($userAccessToken['errmsg'], 11001100);
+            $requestUrl = "https://api.weixin.qq.com/sns/userinfo?access_token={$userAccessToken['access_token']}&openid={$userAccessToken['openid']}}&lang=zh_CN";
+            $userInfo = $this->RequestGetDataToArray($requestUrl);
+            if (isset($userInfo['errcode'])) {
+                throw new \Exception($userInfo['errmsg'], 11001100);
+            } elseif (!isset($userInfo['unionid'])) {
+                throw new \Exception('<h1 style="text-align: center;padding-top: 100px;">请将公众号绑定到微信开放平台帐号后在使用本功能!</h1>', 11001100);
+            }
+            $model = new AgencyUserTemp();
+            if ($model->add($userInfo['openid'], \Yii::$app->session->get('agency_id'), \Yii::$app->session->get('code'))) {
+                return true;
+            } else {
+                $message = $model->getFirstErrors();
+                $message = reset($message);
+                throw new \Exception($message);
+            }
+        } catch (\Exception $exception) {
+            if ($exception->getCode() == 11001100) {
+                die($exception->getMessage());
+            }
+            throw $exception;
+        }
     }
 
     /**
@@ -79,7 +110,7 @@ class  Wx extends Model
     {
         $wxappid = \Yii::$app->params['wxappid'];
         $redirectUri = \Yii::$app->request->hostInfo . "/wx/default/redirect";
-        $headerUrl = "Location:https://open.weixin.qq.com/connect/oauth2/authorize?appid={$wxappid}&redirect_uri=".urlencode($redirectUri)."&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect";
+        $headerUrl = "Location:https://open.weixin.qq.com/connect/oauth2/authorize?appid={$wxappid}&redirect_uri=" . urlencode($redirectUri) . "&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect";
         Header($headerUrl);
         die();
     }
