@@ -64,8 +64,7 @@ class Request
             return $data;
         }
     }
-    
-    
+
     static function curl_get($url)
     {
         $curl = curl_init();

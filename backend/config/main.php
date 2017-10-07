@@ -11,7 +11,11 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'modules' => [
+        'wx' => [
+            'class' => 'backend\modules\wx\wx',
+        ],
+    ],
     'language' => 'zh-CN',
     'components' => [
         'request' => [

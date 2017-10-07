@@ -12,4 +12,6 @@ return [
 //    'ApiUserPay'        => 'http://120.77.155.126:4002',
     'ApiUserPay'        => 'http://192.168.2.167:9010',//游戏服务器地址
     'manyPay'           => true,//多货币开始、关闭状态
+    'wxappid'=>'wx1f0573a349ad863e',
+    'wxappsecrret'=>'e968c1ce5c24b10e369f8d912e805d76',
 ];
