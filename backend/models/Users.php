@@ -20,6 +20,7 @@ use yii\helpers\ArrayHelper;
  */
 class Users extends UsersObject
 {
+    public $addnum =0;
     /**
      * 充值备注
      * @var
@@ -73,6 +74,8 @@ class Users extends UsersObject
     public function rules()
     {
         return [
+            [['addnum'],'match','pattern'=>'/^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$/','on'=>'addnum'],
+            ['addnum','required','on'=>'addnum'],
             [['select','keyword','pay_gold_num','pay_gold_config'],'safe'],
             ['pay_gold_num','integer','on'=>'pay'],
             ['pay_gold_num','match','pattern'=>'/^\+?[1-9][0-9]*$/','on'=>'pay'],
@@ -93,6 +96,7 @@ class Users extends UsersObject
                 'autograph' =>'备注',
                 'deduct_gold' =>'扣除金币',
                 'notes' =>'备注',
+                'addnum' =>'次数',
         ];
         return ArrayHelper::merge(parent::attributeLabels(),$arr);
     }
@@ -325,6 +329,63 @@ class Users extends UsersObject
         
         return ['data'=>$data,'pages'=>$pages,'model'=>$this];
     }
+    
+    
+    /**
+     * 充值
+     * @return array
+     */
+    public function PayRanking($data = [])
+    {
+        $this->load($data);
+        $this->initTime();
+        $model   = self::find()->alias('p')->joinWith('pay')->andWhere($this->searchWhere())
+            ->andWhere(['>=','reg_time',strtotime($this->starttime)])
+            ->andWhere(['<=','reg_time',strtotime($this->endtime)])->orderBy('g_user_pay.gold DESC');
+        $pages = new Pagination(
+            [
+                'totalCount' =>$model->count(),
+                'pageSize' => \Yii::$app->params['pageSize']
+            ]
+        );
+        
+        $data  = $model->limit($pages->limit)->offset($pages->offset)->limit('100')->all();
+        
+        foreach ($data as $key=>$value){
+            $data[$key]['gold'] = $value->getGold();
+        }
+        
+        return ['data'=>$data,'pages'=>$pages,'model'=>$this];
+    }
+    
+    /**
+     * 交易
+     * @return array
+     */
+    public function getDealNum($data = [])
+    {
+        $this->load($data);
+        $this->initTime();
+        $model   = self::find()->andWhere($this->searchWhere())
+            ->andWhere(['>=','reg_time',strtotime($this->starttime)])
+            ->andWhere(['<=','reg_time',strtotime($this->endtime)])->orderBy('num DESC');
+        $pages = new Pagination(
+            [
+                'totalCount' =>$model->count(),
+                'pageSize' => \Yii::$app->params['pageSize']
+            ]
+        );
+        
+        $data  = $model->limit($pages->limit)->offset($pages->offset)->limit('100')->all();
+        
+        foreach ($data as $key=>$value){
+            $data[$key]['gold'] = $value->getGold();
+        }
+        return ['data'=>$data,'pages'=>$pages,'model'=>$this];
+    }
+    
+    
+    //PayRanking getDealNum
 
     /**
      * 搜索并分页显示用户充值记录
@@ -439,8 +500,8 @@ class Users extends UsersObject
                 return ['like','nickname',$this->keyword];
             elseif ($this->select == 'place_grade')
                 return ['place_grade'=>$this->keyword];
-            elseif ($this->select == 'superior_id')
-                return ['superior_id'=>$this->keyword];
+            elseif ($this->select == 'agency_code')
+                return ['agency_code'=>$this->keyword];
             else
                 return ['or',['game_id'=>$this->keyword],['like','nickname',$this->keyword],['place_grade'=>$this->keyword]];
         }
@@ -528,8 +589,49 @@ class Users extends UsersObject
     }
     
     
-    
+    /**
+     * 玩家和金币建立一对一关系
+     * @return \yii\db\ActiveQuery
+     */
     public function getGameGold(){
         return $this->hasOne(UsersGoldObject::className(),['users_id'=>'id']);
     }
+    
+    /**
+     * 玩家和金币建立一对一关系
+     * @return \yii\db\ActiveQuery
+     */
+    public function getPay(){
+        return $this->hasMany(UserPay::className(),['user_id'=>'id']);
+    }
+    
+    
+    /**
+     * 获取玩加所有金币
+     * @param $id
+     * @return int|mixed
+     */
+    public static function getPayGold($id){
+      $num =   UserPay::find()->select('sum(gold)')->where(['user_id'=>$id])->asArray()->one();
+      if ($num['sum(gold)']){
+          return $num['sum(gold)'];
+      }
+          return 0;
+    }
+    
+    /**
+     * 修改玩加交易次数
+     * @param $data
+     * @return bool
+     */
+    public function editNum($data){
+        $this->scenario = 'addnum';
+        if ($this->load($data) && $this->validate()){
+            $this->num+=$this->addnum;
+           return  $this->save(false);
+        }
+    }
+    
+    
+    
 }

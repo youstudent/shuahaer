@@ -13,8 +13,8 @@ use yii\bootstrap\ActiveForm;
 <!--            面包屑开始           -->
             <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
                 <li><a href="<?=\yii\helpers\Url::to(['site/index'])?>"><i class="fa fa-home"></i>首页</a></li>
-                <li><a href="#">用户管理</a></li>
-                <li class="active">玩家列表</li>
+                <li><a href="#">财富管理</a></li>
+                <li class="active">财富列表</li>
             </ul>
 <!--            面包屑结束            -->
             <section class="panel panel-default">
@@ -79,7 +79,7 @@ use yii\bootstrap\ActiveForm;
                                 }
                                 ?>
 <!--                            多货币修改代码-->
-
+                                <th  class="text-center">操作</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -101,6 +101,9 @@ use yii\bootstrap\ActiveForm;
                                     
                                     <?php /*endif;*/?>
                                 </td>-->
+                                <td class="text-center">
+                                    <a href="<?=\yii\helpers\Url::to(['users/pay','id'=>$value['id']])?>" class="btn btn-xs btn-success" data-toggle="modal" data-target="#myModal">&nbsp;添加金币数&nbsp;&nbsp;</a>
+                                </td>
                             </tr>
                         <?php $i++?>
                         <?php endforeach;?>

@@ -6,7 +6,9 @@
  */
 namespace frontend\models;
 
+use common\models\AgencyGoldObject;
 use common\models\AgencyObject;
+use common\models\GoldConfigObject;
 use yii\data\Pagination;
 use yii\helpers\ArrayHelper;
 
@@ -64,6 +66,7 @@ class Agency extends AgencyObject{
             [['used_password','new_password','repeat_password'],'required','on'=>['editPassword','editSave']],
             [['used_password'],'validatePassword','on'=>'editPassword'],
             [['repeat_password'],'validateRepeat','on'=>'editPassword'],
+            [['place_grade'],'safe']
         ];
     }
 
@@ -185,8 +188,27 @@ class Agency extends AgencyObject{
             $this->gold     = 0;
             $this->gold_all = 0;
             $this->status   = 3;
+            if (!empty($this->recode)){
+                $this->place_grade=2;
+            }
             $this->code =$this->createCode();
             if($this->save()) {
+                $data = GoldConfigObject::find()->asArray()->all();
+    
+                foreach ($data as $key=>$value)
+                {
+                    $agencyGold = new AgencyGoldObject();
+                    $agencyGold->agency_id   = $this->id;
+                    $agencyGold->gold_config = $value['name'];
+                    $agencyGold->gold        = 0;
+                    $agencyGold->sum_gold    = 0;
+                    if($agencyGold->save() == false){
+                        $message = $agencyGold->getFirstErrors();
+                        $message = reset($message);
+                        $this->addError('id',$message);
+                        return false;
+                    }
+                }
                 \Yii::$app->session->set('agencyId',$this->id);
                 \Yii::$app->session->set('agencyName',$this->name);
                 \Yii::$app->session->set('status',$this->status);
@@ -214,6 +236,7 @@ class Agency extends AgencyObject{
                 \Yii::$app->session->set('agencyId',$data->id);
                 \Yii::$app->session->set('agencyName',$data->name);
                 \Yii::$app->session->set('status',$data->status);
+                \Yii::$app->session->set('code',$data->code);
 
                 return $data->status;
             }
@@ -239,12 +262,12 @@ class Agency extends AgencyObject{
                 $inArray[] = $item;
             }
         }
-
-        $model = self::find()->where(['in','id',$inArray]);
+        $model = self::find()->where(['pid'=>\Yii::$app->session->get('agencyId')])->andWhere($this->searchWhereLike());
         $pages = new Pagination(['totalCount'=>$model->count(),'pageSize'=>\Yii::$app->params['pageSize']]);
         $data  = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
+       
 
-        foreach ($data as $key=>$value)
+       /* foreach ($data as $key=>$value)
         {
             foreach ($inArray as $item)
             {
@@ -264,7 +287,7 @@ class Agency extends AgencyObject{
                     $data[$key]['dj']          = $item['dj'];
                 }
             }
-        }
+        }*/
 
         return ['data'=>$data,'pages'=>$pages,'model'=>$this];
     }
@@ -314,5 +337,25 @@ class Agency extends AgencyObject{
         if($data)
             $code = $this->createCode();
         return $code;
+    }
+    
+    /**
+     * 搜索处理数据函数
+     * @return array
+     */
+    public function searchWhereLike()
+    {
+        if (!empty($this->select) && !empty($this->keyword))
+        {
+            if ($this->select == 'name')
+                return ['like','name',$this->keyword];
+            elseif ($this->select == 'id')
+                return ['like','id',$this->keyword];
+            elseif($this->select == 'place_grade')
+                return ['place_grade'=>$this->keyword];
+            else
+                return ['or',['place_grade'=>$this->keyword],['like','id',$this->keyword],['like','name',$this->keyword]];
+        }
+        return [];
     }
 }

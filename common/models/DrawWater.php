@@ -97,10 +97,17 @@ class DrawWater extends \yii\db\ActiveRecord
             }
             $this->nickname = $model->nickname;
             $this->created_at     = time();
+            /**
+             * 添加转账次数
+             */
+            if ($this->type ==1){
+                $model->num+=1;
+                $model->save(false);
+            }
+            
             return $this->save(false);
         }
     }
-    
     
     
     /**

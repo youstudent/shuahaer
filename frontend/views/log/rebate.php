@@ -58,7 +58,7 @@ use yii\bootstrap\ActiveForm;
                                 <th  class="text-center" style="border-left: 0px">编号</th>
                                 <th  class="text-center">充值用户名</th>
                                 <th  class="text-center">数量</th>
-                                <th  class="text-center">比例</th>
+                                <th  class="text-center">返利点</th>
                                 <th  class="text-center">等级</th>
                                 <th  class="text-center">时间</th>
                                 <th  class="text-center" style="border-right: 0px">详情</th>
@@ -70,7 +70,7 @@ use yii\bootstrap\ActiveForm;
                             <?php foreach ($data as $key => $value):?>
                                 <tr>
                                     <td  class="text-center" style="border-left: 0px"><?=$i?></td>
-                                    <td  class="text-center"><?=$value['agency_pay_name']?></td>
+                                    <td  class="text-center"><?=$value['pay_name']?></td>
                                     <td  class="text-center"><?=$value['gold_num']?></td>
                                     <td  class="text-center"><?=$value['proportion']?></td>
                                     <td  class="text-center"><?=$value['rebate_conf']?></td>

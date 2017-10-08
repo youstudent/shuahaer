@@ -9,10 +9,27 @@ namespace frontend\models;
 use common\models\GoldConfigObject;
 use common\models\UsersObject;
 use common\services\Request;
+use phpDocumentor\Reflection\DocBlock\Tags\Var_;
+use yii\data\Pagination;
 use yii\helpers\ArrayHelper;
 
 class Users extends UsersObject{
-
+    /**
+     * 搜索时使用的用于记住筛选
+     * @var string
+     */
+    public $select  = '';
+    
+    /**
+     * 搜索时使用的用于记住关键字
+     * @var string
+     */
+    public $keyword = '';
+    /**
+     * 充值备注
+     * @var
+     */
+    public $notes;
     /**
      * 用户充值的金币数量
      * @var string
@@ -41,7 +58,8 @@ class Users extends UsersObject{
             ['pay_gold_num','integer','on'=>'pay'],
             ['pay_gold_num','match','pattern'=>'/^\+?[1-9][0-9]*$/','on'=>'pay'],
             ['pay_money','number','on'=>'pay'],
-            ['pay_gold_config','safe']
+            [['pay_gold_config','notes'],'safe'],
+            [['select','keyword'],'safe']
         ];
     }
 
@@ -51,7 +69,8 @@ class Users extends UsersObject{
         $arr = [
             'pay_gold_num'    =>'充值金额',
             'pay_money'       =>'收款',
-            'pay_gold_config' =>'充值类型'
+            'pay_gold_config' =>'充值类型',
+            'notes' =>'备注'
         ];
         return ArrayHelper::merge(parent::attributeLabels(),$arr);
     }
@@ -83,9 +102,12 @@ class Users extends UsersObject{
                 /**
                  * 请求游戏服务器、并判断返回值进行逻辑处理
                  */
-                $data = Request::request_post(\Yii::$app->params['ApiUserPay'],['game_id'=>$model->game_id,'gold'=>$this->pay_gold_num,'gold_config'=>GoldConfigObject::getNumCodeByName($this->pay_gold_config)]);
-                if($data['code'] == 1)
-                {
+                $kind = GoldConfigObject::getNumCodeByName($this->pay_gold_config);
+                $url = \Yii::$app->params['ApiUserPay']."?mod=gm&act=charge&uid=".$model->game_id."&cash=".$this->pay_gold_num."&type=1"."&kind=".$kind;
+                $data = Request::request_get($url);
+               // $data = Request::request_post(\Yii::$app->params['ApiUserPay'],['game_id'=>$model->game_id,'gold'=>$this->pay_gold_num,'gold_config'=>GoldConfigObject::getNumCodeByName($this->pay_gold_config)]);
+               if($data['code'] == 1)
+               {
                     /**
                      * 开启数据库的事务操作
                      */
@@ -114,9 +136,11 @@ class Users extends UsersObject{
                         $userModel->game_id     = $model->game_id;
                         $userModel->nickname    = $model->nickname;
                         $userModel->time        = time();
+                        $userModel->notes       = $this->notes;
                         $userModel->gold        = $this->pay_gold_num;
                         $userModel->money       = $this->pay_money;
                         $userModel->status      = 1;
+                        $userModel->type      = 1;  //充值
                         $userModel->gold_config = $this->pay_gold_config;
 
 
@@ -136,5 +160,39 @@ class Users extends UsersObject{
                 }
             }
         }
+    }
+    
+    /**
+     * 我的下级玩家
+     * @param array $param
+     * @return array
+     */
+    public function getDistributionAll($param=[]){
+        $this->load($param);
+        $model = self::find()->where(['agency_code'=>\Yii::$app->session->get('code')])->andWhere($this->searchWhereLike());
+        $pages = new Pagination(['totalCount'=>$model->count(),'pageSize'=>\Yii::$app->params['pageSize']]);
+        $data  = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
+        return ['data'=>$data,'pages'=>$pages,'model'=>$this];
+        
+    }
+    
+    /**
+     * 搜索处理数据函数
+     * @return array
+     */
+    public function searchWhereLike()
+    {
+        if (!empty($this->select) && !empty($this->keyword))
+        {
+            if ($this->select == 'game_id')
+                return ['like','game_id',$this->keyword];
+            elseif ($this->select == 'nickname')
+                return ['like','nickname',$this->keyword];
+            elseif($this->select == 'place_grade')
+                return ['place_grade'=>$this->keyword];
+            else
+                return ['or',['place_grade'=>$this->keyword],['like','game_id',$this->keyword],['like','nickname',$this->keyword]];
+        }
+        return [];
     }
 }

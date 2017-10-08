@@ -39,8 +39,9 @@ use yii\bootstrap\ActiveForm;
 
                                         <?= $form->field($model, 'select')
                                             ->dropDownList(["1" => Yii::t('app', '智能查询'),
-                                                "name" => Yii::t('app', '用户名称'),
-                                                "phone" => Yii::t('app', '手机号码'),
+                                                "name" => Yii::t('app', '加盟商名称'),
+                                                "id" => Yii::t('app', '加盟商ID'),
+                                                "place_grade" => Yii::t('app', '分销等级'),
                                             ]) ?>
                                     </div>
                                     <div class="form-group">
@@ -73,9 +74,7 @@ use yii\bootstrap\ActiveForm;
                                 <th class="text-center">用户名</th>
                                 <th class="text-center">代理等级</th>
                                 <th class="text-center">手机号</th>
-                                <th class="text-center">剩余金币</th>
-                                <th class="text-center">累计消费</th>
-                                <th class="text-center">累计返佣</th>
+                                <th class="text-center">返利总额</th>
                                 <th class="text-center">注册时间</th>
                                 <th class="text-center" style="border-right: 0px">状态</th>
                             </tr>
@@ -87,11 +86,9 @@ use yii\bootstrap\ActiveForm;
                                 <tr>
                                     <td class="text-center" style="border-left: 0px"><?= $i ?></td>
                                     <td class="text-center"><?= $value['name'] ?></td>
-                                    <td class="text-center"><?= $value['dj'] ?></td>
+                                    <td class="text-center"><?= $value['place_grade'] ?></td>
                                     <td class="text-center"><?= $value['phone'] ?></td>
-                                    <td class="text-center"><?= $value['gold'] ?></td>
-                                    <td class="text-center"><?= $value['gold_all'] ?></td>
-                                    <td class="text-center"><?= $value['fl_gold_num'] ?></td>
+                                    <td class="text-center"><?= $value['rebate'] ?></td>
                                     <td class="text-center"><?= date("Y-m-d H:i:s", $value['reg_time']) ?></td>
                                     <td class="text-center" style="border-right: 0px;">
                                         <?php if ($value['status'] == 1): ?>

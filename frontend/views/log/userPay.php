@@ -58,6 +58,8 @@ use yii\bootstrap\ActiveForm;
                                 <th  class="text-center">数量</th>
                                 <th  class="text-center">时间</th>
                                 <th  class="text-center">收款人民币</th>
+                                <th  class="text-center">备注</th>
+                                <th  class="text-center">状态</th>
                                 <th  class="text-center" style="border-right: 0px;">充值人</th>
                             </tr>
                             </thead>
@@ -71,7 +73,16 @@ use yii\bootstrap\ActiveForm;
                                     <td  class="text-center"><?=$value['gold']?></td>
                                     <td  class="text-center"><?=date("Y-m-d H:i:s",$value['time'])?></td>
                                     <td  class="text-center"><?=$value['money']?></td>
+                                    <td  class="text-center"><?=$value['notes']?></td>
                                     <td  class="text-center" style="border-right: 0px;"><?=$value['agency_name']?></td>
+                                    <td class="text-center">
+                                        <?php if($value['status'] == 1):?>
+                                            <span class="badge  bg-success">&nbsp;&nbsp;充值完成&nbsp;&nbsp;&nbsp;</span>
+                                        <?php else:?>
+                                            <span class="badge  bg-warning">充值失败</span>
+                                        <?php endif;?>
+                                    </td>
+                                    
                                 </tr>
                                 <?php $i++?>
                             <?php endforeach;?>

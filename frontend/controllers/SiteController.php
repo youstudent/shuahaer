@@ -3,6 +3,8 @@
 
 namespace frontend\controllers;
 
+use dosamigos\qrcode\lib\Enum;
+use dosamigos\qrcode\QrCode;
 use frontend\models\Agency;
 use frontend\models\AgencyPay;
 use frontend\models\UserPay;
@@ -99,8 +101,42 @@ class SiteController extends ObjectController
                 }
             }
         }
-
         return $this->render('index',['model'=>$model,'monthOrderToDay'=>$orderMonth,'userOrderToDay'=>$userOrder]);
+    }
+    
+    /**
+     * 二维码下载
+     * @return
+     */
+    public function actionDownload(){
+        $FileNamePath = $this->getQRFileName();
+        return \Yii::$app->response->sendFile($FileNamePath);
+    
+    }
+    /**
+     * 生成二维码
+     * @return array|int
+     */
+    public function actionQrcode()
+    {
+        $agency_id = \Yii::$app->session->get('agencyId');
+        $code = \Yii::$app->session->get('code');
+        $FileNamePath = $this->getQRFileName();
+        $url = \Yii::$app->request->getHostInfo()."wx/default/index?agency_id=$agency_id&code=$code";
+        QrCode::png($url,$FileNamePath,0,10,4,true);
+       // $string = QrCode::encode($url,false,Enum::QR_ECLEVEL_L,9);
+        return $FileNamePath;
+        // echo "<img src='{$string}'>";
+        //  die();
+    }
+    
+    /**
+     * 获取文件路径名
+     * @return string
+     */
+    public function getQRFileName(){
+       $FileNamePath = 'imgcode/'.\Yii::$app->session->get('agencyId').'-'.\Yii::$app->session->get('code').'.png';
+       return $FileNamePath;
     }
 
     /**

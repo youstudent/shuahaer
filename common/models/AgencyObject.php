@@ -60,6 +60,7 @@ class AgencyObject extends Object
             [['password'], 'string', 'max' => 64],
             [['name', 'identity'], 'string', 'max' => 32],
             ['gold','safe'],
+            [['keyword','select'],'safe']
         ];
     }
 

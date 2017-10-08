@@ -155,7 +155,7 @@ use yii\bootstrap\ActiveForm;
                                     <td class="text-center"><?= $value['pName'] ?></td>
                                 <?php endif; ?>
                                 <td class="text-center"><?= $value['phone'] ?></td>
-                                <td class="text-center"><?= 12?></td>
+                                <td class="text-center"><?= \backend\models\Agency::getPayGold($value['id'])?></td>
                                 <td class="text-center"><?= $value['rebate']?></td>
                                 <!--                                多货币修改-->
                                 <?php foreach ($value['gold'] as $keys=>$values):?>
@@ -201,7 +201,7 @@ use yii\bootstrap\ActiveForm;
                                         <a href="<?php echo \yii\helpers\Url::to(['agency/edit', 'id' => $value['id']]) ?>"
                                            data-toggle="modal" data-target="#myModal"
                                            class="btn btn-xs btn-success">&nbsp;编 辑&nbsp;</a>
-                                        <a href="<?= \yii\helpers\Url::to(['users/down', 'Users' => ['select' => 'superior_id', 'keyword' => $value['id']]]) ?>"
+                                        <a href="<?= \yii\helpers\Url::to(['users/down', 'Users' => ['select' => 'agency_code', 'keyword' => $value['code']]]) ?>"
                                            class="btn btn-xs btn-primary">下级玩家</a>
                                         <a href="<?= \yii\helpers\Url::to(['agency/down', 'Agency' => ['select' => 'pid', 'keyword' => $value['id']]]) ?>"
                                            class="btn btn-xs btn-primary">下级加盟商</a>

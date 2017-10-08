@@ -25,6 +25,7 @@ use Yii;
  */
 class UsersObject extends Object
 {
+   
     /**
      * 这个用户的所有金币
      * @var array
@@ -152,13 +153,12 @@ class UsersObject extends Object
         if(empty(self::$goldConfig)){
             self::$goldConfig = GoldConfigObject::find()->asArray()->all();
         }
-
+        
         /**
          * 循环处理代码、避免数据库压力
          */
         foreach (self::$goldConfig as $key=>$value)
         {
-
             if($value['name'] == $payGoldConfig)
             {
                 /*
@@ -172,7 +172,6 @@ class UsersObject extends Object
                             ->one();
                     $data->gold = ($data->gold + $payGold);
                     $data->sum_gold   = ($data->sum_gold + $payGold);
-
                     return $data->save();
 
                 }
@@ -185,7 +184,7 @@ class UsersObject extends Object
 
                     $data->gold = strtotime('+1month',$data->value);
                     //时间未执行使用多少 作者放得BUG
-
+                  
                     return $data->save();
                 }
             }

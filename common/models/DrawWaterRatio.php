@@ -30,6 +30,7 @@ class DrawWaterRatio extends \yii\db\ActiveRecord
     {
         return [
             [['id'], 'required'],
+            [['ratio'], 'validateRatio'],
             [['id', 'ratio', 'updated_at'], 'integer'],
         ];
     }

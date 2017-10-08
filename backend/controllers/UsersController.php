@@ -7,9 +7,11 @@
 namespace backend\controllers;
 
 use backend\models\Users;
+use dosamigos\qrcode\formats\MailTo;
+use dosamigos\qrcode\lib\Enum;
+use dosamigos\qrcode\QrCode;
 use Yii;
 use yii\web\Response;
-
 /**
  * 游戏玩家管理类
  * Class UsersController

@@ -7,8 +7,8 @@ $this->title = "代理商列表-".\Yii::$app->params['appName'];
             <!--            面包屑开始           -->
             <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
                 <li><a href="/site/index"><i class="fa fa-home"></i>首页</a></li>
-                <li><a href="#">代理管理</a></li>
-                <li class="active">代理商列表</li>
+                <li><a href="#">充值管理</a></li>
+                <li class="active">充值中心列表</li>
             </ul>
             <!--            面包屑结束            -->
             <section class="panel panel-default">
@@ -43,10 +43,7 @@ $this->title = "代理商列表-".\Yii::$app->params['appName'];
                             <thead>
                             <tr>
                                 <th class="text-center">编号</th>
-                                <th class="text-center">ID</th>
-                                <th class="text-center">手机号</th>
-                                <th class="text-center">昵称</th>
-
+                                <th class="text-center">玩家ID</th>
                                 <!--                            多货币修改代码-->
                                 <?php
                                 $item = \common\models\GoldConfigObject::find()->all();
@@ -55,6 +52,11 @@ $this->title = "代理商列表-".\Yii::$app->params['appName'];
                                 }
                                 ?>
                                 <!--                            多货币修改代码-->
+                                <th class="text-center">昵称</th>
+                                <th class="text-center">手机号</th>
+                                
+
+                              
 
                                 <th class="text-center">操作</th>
                             </tr>
@@ -63,14 +65,16 @@ $this->title = "代理商列表-".\Yii::$app->params['appName'];
                             <?php if(!empty($data)):?>
                                 <td class="text-center">1</td>
                                 <td class="text-center"><?=$data['game_id']?></td>
-                                <td class="text-center"><?=$data['nickname']?></td>
-                                <td class="text-center"><?=$data['phone']?></td>
 
                                 <!--                                多货币修改-->
                                 <?php foreach ($data['gold'] as $keys=>$values):?>
                                     <td class="text-center"><?= $values ?></td>
                                 <?php endforeach;?>
                                 <!--                                多货币修改-->
+                                <td class="text-center"><?=$data['nickname']?></td>
+                                <td class="text-center"><?=$data['phone']?></td>
+                                
+
 
                                 <td class="text-center">
                                     <a href="<?php echo \yii\helpers\Url::to(['pay/pay1','id'=>$data['id']])?>" class="btn btn-xs btn-primary" data-toggle="modal" data-target="#myModal">充值</a>

@@ -13,7 +13,7 @@ use yii\bootstrap\ActiveForm;
             <!--            面包屑开始           -->
             <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
                 <li><a href="<?=\yii\helpers\Url::to(['site/index'])?>"><i class="fa fa-home"></i>首页</a></li>
-                <li class="active">提现记录</li>
+                <li class="active">扣除记录</li>
             </ul>
             <!--            面包屑结束            -->
             <section class="panel panel-default">
@@ -58,9 +58,9 @@ use yii\bootstrap\ActiveForm;
                                 <th  class="text-center">用户名</th>
                                 <th  class="text-center">数量</th>
                                 <th  class="text-center">类型</th>
-                                <th  class="text-center">人民币</th>
+                               
                                 <th  class="text-center">时间</th>
-                                <th  class="text-center">审核人</th>
+                                <th  class="text-center">平台操作人</th>
                                 <th  class="text-center">备注</th>
                                 <th  class="text-center" style="border-right: 0px">状态</th>
                             </tr>
@@ -74,7 +74,7 @@ use yii\bootstrap\ActiveForm;
                                     <td  class="text-center"><?=$value['name']?></td>
                                     <td  class="text-center"><?=$value['gold']?></td>
                                     <td  class="text-center"><?=$value['gold_config']?></td>
-                                    <td  class="text-center"><?=$value['money']?></td>
+                                   
                                     <td  class="text-center"><?=date("Y-m-d H:i:s",$value['time'])?></td>
                                     <td  class="text-center"><?=$value['manage_name']?></td>
                                     <td  class="text-center" ><?=$value['notes']?></td>

@@ -96,7 +96,7 @@ use yii\bootstrap\ActiveForm;
                             <tr>
                                 <th class="text-center" style="border-left: 0px;">编号</th>
                                 <th class="text-center">用户ID</th>
-                                <th class="text-center">转入ID</th>
+                              
                                 <th class="text-center">昵称</th>
                                 <th class="text-center">类型</th>
                                 <th class="text-center">收入支出金额</th>
@@ -111,7 +111,7 @@ use yii\bootstrap\ActiveForm;
                                 <tr>
                                     <td class="text-center" style="border-left: 0px;"><?= $i ?></td>
                                     <td class="text-center"><?= $value['game_id'] ?></td>
-                                    <td class="text-center"><?= $value['roll_in_game_id'] ?></td>
+                                   
                                     <td class="text-center"><?= $value['nickname'] ?></td>
                                     <td class="text-center"><?= $value['type']==1?'转账抽水':'游戏抽水'?></td>
                                     <td class="text-center"><?= $value['pay_out_money'] ?></td>

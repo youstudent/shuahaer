@@ -535,4 +535,14 @@ class Agency extends AgencyObject
             $this->endtime = date('Y-m-d H:i:s');
         }
     }
+    
+    
+    public static function getPayGold($agency_id){
+    $data = AgencyPay::find()->select('sum(gold)')->where(['agency_id'=>$agency_id])->asArray()->one();
+     if ($data['sum(gold)']){
+        return $data['sum(gold)'];
+     }
+        return 0;
+       
+    }
 }

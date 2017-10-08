@@ -94,6 +94,11 @@ use yii\bootstrap\ActiveForm;
                         <?php endforeach;?>
                         </tbody>
                     </table>
+                        <?php if ($num):?>
+                            <div style="text-align: right">
+                                <input type="text" value="货币充值统计:<?php echo $num?>" disabled >
+                            </div>
+                        <?php endif;?>
 <!--                        未找到任何数据显示-->
                     <?php if(empty($data)):?>
                         <div class="text-center m-t-lg clearfix wrapper-lg animated fadeInRightBig" id="galleryLoading">
@@ -112,6 +117,10 @@ use yii\bootstrap\ActiveForm;
                         <div class="col-sm-12 text-right text-center-xs">
                             <?=\yii\widgets\LinkPager::widget([
                                 'pagination'=>$pages,
+                                'firstPageLabel' => '首页',
+                                'lastPageLabel' => '尾页',
+                                'nextPageLabel' => '下一页',
+                                'prevPageLabel' => '上一页',
                                 'options'   =>[
                                     'class'=>'pagination pagination-sm m-t-none m-b-none',
                                 ]

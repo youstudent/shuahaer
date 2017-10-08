@@ -147,6 +147,8 @@ use yii\bootstrap\ActiveForm;
                         </div>
                     <?php endif;?>
                 </div>
+               
+                <img src="<?= \yii\helpers\Url::to(['users/qrcode'])?>"/>
 <!--                表格结束          -->
 <!--                分页开始          -->
                 <footer class="panel-footer">

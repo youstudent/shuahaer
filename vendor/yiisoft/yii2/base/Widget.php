@@ -108,6 +108,7 @@ class Widget extends Component implements ViewContextInterface
                 if ($widget->beforeRun()) {
                     $result = $widget->run();
                     $result = $widget->afterRun($result);
+                    echo $result;
                 }
                 return $widget;
             } else {
@@ -133,6 +134,7 @@ class Widget extends Component implements ViewContextInterface
             /* @var $widget Widget */
             $config['class'] = get_called_class();
             $widget = Yii::createObject($config);
+            $out = '';
             if ($widget->beforeRun()) {
                 $result = $widget->run();
                 $out = $widget->afterRun($result);
@@ -144,6 +146,7 @@ class Widget extends Component implements ViewContextInterface
             }
             throw $e;
         }
+
         return ob_get_clean() . $out;
     }
 
@@ -211,7 +214,7 @@ class Widget extends Component implements ViewContextInterface
      * Renders a view.
      * The view to be rendered can be specified in one of the following formats:
      *
-     * - path alias (e.g. "@app/views/site/index");
+     * - [path alias](guide:concept-aliases) (e.g. "@app/views/site/index");
      * - absolute path within application (e.g. "//site/index"): the view name starts with double slashes.
      *   The actual view file will be looked for under the [[Application::viewPath|view path]] of the application.
      * - absolute path within module (e.g. "/site/index"): the view name starts with a single slash.
@@ -233,7 +236,7 @@ class Widget extends Component implements ViewContextInterface
 
     /**
      * Renders a view file.
-     * @param string $file the view file to be rendered. This can be either a file path or a path alias.
+     * @param string $file the view file to be rendered. This can be either a file path or a [path alias](guide:concept-aliases).
      * @param array $params the parameters (name-value pairs) that should be made available in the view.
      * @return string the rendering result.
      * @throws InvalidParamException if the view file does not exist.
@@ -254,7 +257,7 @@ class Widget extends Component implements ViewContextInterface
 
         return dirname($class->getFileName()) . DIRECTORY_SEPARATOR . 'views';
     }
-    
+
     /**
      * This method is invoked right before the widget is executed.
      *

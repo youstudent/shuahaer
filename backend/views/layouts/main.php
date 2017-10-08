@@ -20,8 +20,8 @@ $config = [
 ];
 $config[] = ['label' => '排行榜管理', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-danger', 'url' => ['notice/index'], 'items' => [
     ['label' => '财富排行榜', 'url' => ['ranking/wealth']],
-    ['label' => '充值排行榜', 'url' => ['config/index','type'=>'']],
-    ['label' => '交易排行榜', 'url' => ['config/index','type'=>'']],
+    ['label' => '充值排行榜', 'url' => ['ranking/pay']],
+    ['label' => '交易排行榜', 'url' => ['ranking/deal']],
 ]];
 $config[] = ['label' => '抽水管理', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-danger', 'url' => ['notice/index'], 'items' => [
     ['label' => '游戏抽水记录', 'url' => ['draw-water/list']]
@@ -35,12 +35,13 @@ if (Yii::$app->params['distribution']) {
         ['label' => '返利记录', 'url' => ['rebate/index', 'id' => 1]]
     ]];
 }
-$config[] = ['label' => '公告管理', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-danger', 'url' => ['notice/index'], 'items' => [
-    ['label' => '公告管理', 'url' => ['notice/index', 'id' => 1]]
-]];
 $config[] = ['label' => '设置中心', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-info', 'url' => ['manage/index'], 'items' => [
     ['label' => '货币配置', 'url' => ['gold-config/index']],
     ['label' => '管理员列表', 'url' => ['manage/index', 'id' => 1]],
+]];
+
+$config[] = ['label' => '公告管理', 'icon' => 'fa fa-sitemap icon', 'bg_color' => 'bg-info', 'url' => ['notice/index'], 'items' => [
+    ['label' => '公告管理', 'url' => ['notice/index']],
 ]];
 $config[] = ['label' => '退出登录', 'icon' => 'fa fa-mail-forward icon', 'bg_color' => 'bg-danger', 'url' => ['login/logout']]
 ?>

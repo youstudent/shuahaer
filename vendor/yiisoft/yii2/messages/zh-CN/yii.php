@@ -66,7 +66,7 @@ return [
     '{attribute} "{value}" has already been taken.' => '{attribute}的值"{value}"已经被占用了。',
     '{attribute} cannot be blank.' => '{attribute}不能为空。',
     '{attribute} contains wrong subnet mask.' => '{attribute} 属性包含错误的子网掩码。',
-    '{attribute} is invalid.' => '{attribute}是无效的',
+    '{attribute} is invalid.' => '{attribute}是无效的。',
     '{attribute} is not a valid URL.' => '{attribute}不是一条有效的URL。',
     '{attribute} is not a valid email address.' => '{attribute}不是有效的邮箱地址。',
     '{attribute} is not in the allowed range.' => '{attribute} 不在允许的范围内。',
