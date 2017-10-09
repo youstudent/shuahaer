@@ -64,4 +64,23 @@ class Users extends UsersObject
             }
         }
     }
+    
+    /**
+     * 玩家绑定代理商
+     * @param $data
+     * @return
+     */
+    public function bound($data){
+        $ageny = Agency::findOne(['code'=>$data['code']]);
+        if (!$ageny){
+            return $this->addError('agency_code','该推荐码不存在');
+        }
+        $users = Users::findOne(['game_id'=>$data['game_id']]);
+        if (!$users){
+            return $this->addError('game_id','该玩家不存在');
+        }
+        $users->agency_code=$ageny->code;
+        $users->superior_name=$ageny->name;
+        return $users->save(false);
+    }
 }

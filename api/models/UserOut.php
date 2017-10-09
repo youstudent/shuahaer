@@ -40,25 +40,21 @@ class UserOut extends UserOutObject
         }
     }
 
-    /**
-     * 添加一条消费记录
-     * @param $data
-     * @return bool|void
-     */
+   
     public function add($data)
     {
         $this->scenario = 'add';
         if($this->load($data,'') && $this->validate()){
 
-            $this->gold_config = GoldConfigObject::getNameByCode($this->gold_config);
-            $model = Users::find()->where(['game_id'=>$this->game_id])->one();
-            $data = $model->consumeGold($this->gold_config,$this->gold);
-            if($data){
+           $this->gold_config = GoldConfigObject::getNameByCode($this->gold_config);
+           $model = Users::find()->where(['game_id'=>$this->game_id])->one();
+            $data = $model->consumeGolds($this->gold_config,$this->gold);
+           if($data){
                 $this->user_id  = $model->id;
                 $this->nickname = $model->nickname;
                 $this->time     = time();
                 return $this->save();
-            }
+           }
 
             $message = $model->getFirstErrors();
             $message = reset($message);

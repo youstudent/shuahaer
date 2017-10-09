@@ -71,7 +71,7 @@ use yii\bootstrap\ActiveForm;
                                 <th  class="text-center">用户ID</th>
                                 <th  class="text-center">用户昵称</th>
                                 <th  class="text-center">货币数量</th>
-                               <!-- <th  class="text-center">操作</th>-->
+                                <th  class="text-center">操作</th>
 
 <!--                            多货币修改代码-->
 <!--                            多货币修改代码-->
@@ -85,19 +85,10 @@ use yii\bootstrap\ActiveForm;
                                 <td  class="text-center"><?=$i?></td>
                                 <td  class="text-center"><?=$value['game_id']?></td>
                                 <td  class="text-center"><?=$value['nickname']?></td>
-<!--                                多货币修改-->
                                 <td  class="text-center"><?=\backend\models\Users::getPayGold( $value['id'])?></td>
-<!--                                多货币修改-->
-                                <!--<td class="text-center" width="200px;">
-                                    <?php /*if(Yii::$app->params['backendPayUser']):*/?>
-                                    
-                                    <a href="<?/*=\yii\helpers\Url::to(['users/pay','id'=>$value['id']])*/?>" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#myModal">&nbsp;充值&nbsp;&nbsp;</a>
-                                    
-                                    <?php /*endif;*/?>
-                                </td>-->
-                                <!--<td class="text-center">
-                                    <a href="<?/*=\yii\helpers\Url::to(['ranking/add-money','id'=>$value['id']])*/?>" class="btn btn-xs btn-success" data-toggle="modal" data-target="#myModal">&nbsp;添加充值金额&nbsp;&nbsp;</a>
-                                </td>-->
+                                <td class="text-center">
+                                    <a href="<?=\yii\helpers\Url::to(['users/pay','id'=>$value['id'],'agency_name'=>'充值榜'])?>" class="btn btn-xs btn-success" data-toggle="modal" data-target="#myModal">&nbsp;添加充值金额&nbsp;&nbsp;</a>
+                                </td>
                             </tr>
                         <?php $i++?>
                         <?php endforeach;?>
@@ -117,9 +108,13 @@ use yii\bootstrap\ActiveForm;
                     <div class="row">
                         <div class="col-sm-12 text-right text-center-xs">
                             <?=\yii\widgets\LinkPager::widget([
-                                    'pagination'=>$pages,
-                                    'options'   =>[
-                                            'class'=>'pagination pagination-sm m-t-none m-b-none',
+                                'pagination'=>$pages,
+                                'firstPageLabel' => '首页',
+                                'lastPageLabel' => '尾页',
+                                'nextPageLabel' => '下一页',
+                                'prevPageLabel' => '上一页',
+                                'options'   =>[
+                                    'class'=>'pagination pagination-sm m-t-none m-b-none',
                                 ]
                             ])?>
                         </div>

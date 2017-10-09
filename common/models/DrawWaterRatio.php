@@ -64,7 +64,7 @@ class DrawWaterRatio extends \yii\db\ActiveRecord
      */
     public function edit($data){
         if ($this->load($data) && $this->validate()){
-            $url = \Yii::$app->params['ApiUserPay']."?mod=gm&act=pumpProportion&pump=".$this->ratio;
+            $url = \Yii::$app->params['ApiUserPay']."?mod=gm&act=pumpProportion&pump=".$this->ratio."&type=".$this->type;
             $data = Request::request_get($url);
             if($data['code'] == 1){
                 $this->updated_at =time();
@@ -73,5 +73,24 @@ class DrawWaterRatio extends \yii\db\ActiveRecord
                 return false;
         }
         
+    }
+    
+    
+    /**
+     * 修改游戏开关
+     * @param $data
+     * @return bool
+     */
+    public function type($data){
+      if ($this->load($data,'')){
+          $re = DrawWaterRatio::findOne($this->id);
+          $url = \Yii::$app->params['ApiUserPay']."?mod=gm&act=pumpProportion&pump=".$this->ratio."&type=".$re->type;
+          $data = Request::request_get($url);
+          if($data['code'] == 1){
+              $re->ratio =$this->ratio;
+              return $re->save(false);
+          }
+          return false;
+      }
     }
 }

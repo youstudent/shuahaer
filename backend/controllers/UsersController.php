@@ -7,6 +7,7 @@
 namespace backend\controllers;
 
 use backend\models\Users;
+use Codeception\Module\MongoDb;
 use dosamigos\qrcode\formats\MailTo;
 use dosamigos\qrcode\lib\Enum;
 use dosamigos\qrcode\QrCode;
@@ -49,6 +50,7 @@ class UsersController extends ObjectController
          * 查询用户并返回给页面进行渲染
          */
         $model = Users::findOne(Yii::$app->request->get('id'));
+        $model->agency_name = Yii::$app->request->get('agency_name');
         $model->goldArr = $model->getGold();
         return $this->render('payModal',['model'=>$model]);
     }
@@ -59,6 +61,7 @@ class UsersController extends ObjectController
      */
     public function actionDeduct()
     {
+        $m = new \MongoClient();
         $this->layout = false;
         if(empty(\Yii::$app->request->get('id'))){
             $id =  \Yii::$app->request->post('id');

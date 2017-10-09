@@ -38,6 +38,10 @@
 
                 <?php echo $form->field($model,'pay_gold_num')->textInput([])?>
                 <?php echo $form->field($model,'notes')->textInput([])?>
+                <div style="display: none">
+                    <?php echo $form->field($model,'agency_name')->textInput([])?>
+                </div>
+                
             <?php \yii\bootstrap\ActiveForm::end()?>
             </div>
         </div>

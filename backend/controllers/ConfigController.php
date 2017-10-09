@@ -21,7 +21,7 @@ class ConfigController extends ObjectController
      * @return string
      */
     public function actionIndex(){
-       $data  = DrawWaterRatio::find()->asArray()->one();
+       $data  = DrawWaterRatio::find()->asArray()->all();
        return $this->render('index',['data'=>$data]);
     }
     
@@ -48,6 +48,25 @@ class ConfigController extends ObjectController
             
         }
         return $this->render('edit',['model'=>$model]);
+    }
+    
+    
+    /**
+     *  支付开关
+     * @return array
+     */
+    public function actionType(){
+        \Yii::$app->response->format = Response::FORMAT_JSON;
+        $model = new DrawWaterRatio();
+        if ($model->type(\Yii::$app->request->get())){
+            return ['code'=>1,'message'=>"操作成功"];
+        }
+        /**
+         * 发送错误读取错误是什么、并返回给客户端
+         */
+        $message = $model->getFirstErrors();
+        $message = reset($message);
+        return ['code'=>0,'message'=>$message];
     }
     
 }

@@ -129,7 +129,7 @@ use yii\bootstrap\ActiveForm;
                                         'Users'=>['select'=>'game_id','keyword'=>$value['game_id']]])?>" class="btn btn-xs btn-info">&nbsp; 战绩&nbsp; </a>
                                     <?php if(Yii::$app->params['backendPayUser']):?>
                                     
-                                    <a href="<?=\yii\helpers\Url::to(['users/pay','id'=>$value['id']])?>" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#myModal">&nbsp;充值&nbsp;&nbsp;</a>
+                                    <a href="<?=\yii\helpers\Url::to(['users/pay','id'=>$value['id'],'agency_name'=>'平台'])?>" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#myModal">&nbsp;充值&nbsp;&nbsp;</a>
                                     
                                     <a href="<?=\yii\helpers\Url::to(['users/deduct','id'=>$value['id']])?>" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#myModal">扣除</a>
                                     <?php endif;?>

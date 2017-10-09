@@ -228,4 +228,42 @@ class UsersObject extends Object
             }
         }
     }
+    
+    /**
+     * 执行消费操作
+     * @param $payGoldConfig
+     * @param $payGold
+     * @return bool
+     */
+    public function consumeGolds($goldConfig,$payGold)
+    {
+        
+        if(empty(self::$goldConfig)){
+            self::$goldConfig = GoldConfigObject::find()->asArray()->all();
+        }
+        
+        /**
+         * 循环处理代码、避免数据库压力
+         */
+        foreach (self::$goldConfig as $key=>$value)
+        {
+            if($value['name'] == $goldConfig)
+            {
+                if($value['type'] == 1)
+                {
+                    $data = UsersGoldObject::find()
+                        ->andWhere(['users_id'=>$this->id])
+                        ->andWhere(['gold_config'=>$goldConfig])
+                        ->one();
+                    if($data['gold'] < $payGold){
+                        return $this->addError('game_id','余额不足');
+                    }
+                    $data->gold       = ($data->gold + $payGold);
+                    return $data->save();
+                }elseif ($value['type'] == 2){
+                    return true;
+                }
+            }
+        }
+    }
 }

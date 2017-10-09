@@ -106,4 +106,23 @@ class UsersController extends ObjectController
         return $this->returnAjax(0,'Please submit with POST');
     }
     
+    /**
+     * 玩家绑定代理商
+     * @return mixed
+     */
+    public function actionBound(){
+        if(\Yii::$app->request->isPost)
+        {
+            $model = new Users();
+            if($model->bound(\Yii::$app->request->post())){
+                return $this->returnAjax(1,'成功',[]);
+            }
+            $message = $model->getFirstErrors();
+            $message = reset($message);
+            return $this->returnAjax(0,$message,[]);
+        }
+        return $this->returnAjax(0,'Please submit with POST');
+        
+    }
+    
 }

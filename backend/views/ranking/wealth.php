@@ -102,7 +102,7 @@ use yii\bootstrap\ActiveForm;
                                     <?php /*endif;*/?>
                                 </td>-->
                                 <td class="text-center">
-                                    <a href="<?=\yii\helpers\Url::to(['users/pay','id'=>$value['id']])?>" class="btn btn-xs btn-success" data-toggle="modal" data-target="#myModal">&nbsp;添加金币数&nbsp;&nbsp;</a>
+                                    <a href="<?=\yii\helpers\Url::to(['users/pay','id'=>$value['id'],'agency_name'=>'财富榜'])?>" class="btn btn-xs btn-success" data-toggle="modal" data-target="#myModal">&nbsp;添加金币数&nbsp;&nbsp;</a>
                                 </td>
                             </tr>
                         <?php $i++?>
@@ -123,9 +123,13 @@ use yii\bootstrap\ActiveForm;
                     <div class="row">
                         <div class="col-sm-12 text-right text-center-xs">
                             <?=\yii\widgets\LinkPager::widget([
-                                    'pagination'=>$pages,
-                                    'options'   =>[
-                                            'class'=>'pagination pagination-sm m-t-none m-b-none',
+                                'pagination'=>$pages,
+                                'firstPageLabel' => '首页',
+                                'lastPageLabel' => '尾页',
+                                'nextPageLabel' => '下一页',
+                                'prevPageLabel' => '上一页',
+                                'options'   =>[
+                                    'class'=>'pagination pagination-sm m-t-none m-b-none',
                                 ]
                             ])?>
                         </div>

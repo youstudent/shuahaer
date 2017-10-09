@@ -24,7 +24,8 @@ $config[] = ['label' => '排行榜管理', 'icon' => 'fa fa-bullhorn icon', 'bg_
     ['label' => '交易排行榜', 'url' => ['ranking/deal']],
 ]];
 $config[] = ['label' => '抽水管理', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-danger', 'url' => ['notice/index'], 'items' => [
-    ['label' => '游戏抽水记录', 'url' => ['draw-water/list']]
+    ['label' => '游戏抽水记录', 'url' => ['draw-water/list','type'=>2]],
+    ['label' => '游戏转账记录', 'url' => ['draw-water/list','type'=>1]]
 ]];
 $config[] = ['label' => '参数管理', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-danger', 'url' => ['notice/index'], 'items' => [
     ['label' => '系统参数列表', 'url' => ['config/index','type'=>'']],

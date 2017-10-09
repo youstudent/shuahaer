@@ -53,7 +53,11 @@ $agency = \backend\models\Agency::find();
                                 class="fa fa-ban fa-stack-1x text-white"></i> </span>
                         <a class="clear">
                             <span class="h3 block m-t-xs"><strong><?=$model->code?></strong></span>
-                            <small class="text-muted text-uc">我的邀请码</small><strong><a href="<?=\yii\helpers\Url::to(['/site/download'])?>">下载二维码</a></strong>
+                            <small class="text-muted text-uc">我的邀请码</small><strong>
+                    <?php if (Yii::$app->params['qrcode']):?>
+                                <a href="<?=\yii\helpers\Url::to(['/site/download'])?>">下载二维码</a>
+                    <?php endif;?>
+                            </strong>
                         </a>
                     </div>
                 </div>
@@ -139,7 +143,10 @@ $agency = \backend\models\Agency::find();
                         <footer class="panel-footer bg-white no-padder">
 
                         </footer>
-                            <?=\yii\bootstrap\Html::img(['/site/qrcode'])?>
+                           <?php if (Yii::$app->params['qrcode']):?>
+                               <?=\yii\bootstrap\Html::img(['/site/qrcode'])?>
+                           <?php endif;?>
+                           
                     </section>
                 </div>
             </div>

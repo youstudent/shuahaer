@@ -28,6 +28,7 @@ $this->title = Yii::t('app', 'notice_index') . '-' . Yii::$app->params['appName'
                             <thead>
                             <tr>
                                 <th class="text-center" style="border-left: 0px;">编号</th>
+                                <th class="text-center">类型</th>
                                 <th class="text-center">抽水比例</th>
                                 <th class="text-center" style="border-right: 0px;">操作</th>
                             </tr>
@@ -35,14 +36,39 @@ $this->title = Yii::t('app', 'notice_index') . '-' . Yii::$app->params['appName'
                             <tbody>
 
                             <?php $i = 1; ?>
+                            <?php foreach ($data as $value):?>
                                 <tr>
+                              
                                     <td class="text-center" style="border-left: 0px;"><?= $i ?></td>
-                                    <td class="text-center"><?= $data['ratio'] ?></td>
-                                    <td class="text-center" style="width: 120px;">
-                                        <a href="<?php echo \yii\helpers\Url::to(['config/edit', 'id' => $data['id']]) ?>"
-                                           data-toggle="modal" data-target="#myModal" class="btn btn-xs btn-primary">编辑</a>
+                                    <td class="text-center">
+                                        <?php if ($value['type']==1):?>
+                                           <span>游戏抽水</span>
+                                        <?php elseif ($value['type']==2):?>
+                                           <span>转账抽水</span>
+                                        <?php elseif ($value['type']==3):?>
+                                           <span>支付开关</span>
+                                        <?php endif;?>
                                     </td>
+                                    <td class="text-center">
+                                        <?php if ($value['type']==3):?>
+                                        <?= $value['ratio']==0?'关闭':'开启'?>
+                                        <?php else:?>
+                                        <?= $value['ratio'] ?>
+                                        <?php endif;?>
+                                    </td>
+                                    <td class="text-center" style="width: 120px;">
+                                        <?php if ($value['type']==3):?>
+                                            <a onclick="return openAgency(this,'是否<?=$value['ratio']==1?'停用':'启用'?>该支付?')"
+                                               href="<?php echo \yii\helpers\Url::to(['config/type', 'id' => $value['id'],'ratio'=>$value['ratio']==1?0:1]) ?>"
+                                               class="btn btn-xs btn-danger"><?=$value['ratio']==1?'停用':'启用'?></a>
+                                        <?php else:?>
+                                        <a href="<?php echo \yii\helpers\Url::to(['config/edit', 'id' => $value['id']]) ?>"
+                                         data-toggle="modal" data-target="#myModal" class="btn btn-xs btn-primary">编辑</a>
+                                        <?php endif;?>
+                                    </td>
+                               
                                 </tr>
+                            <?php endforeach;?>
                                 <?php $i++ ?>
                             </tbody>
                         </table>

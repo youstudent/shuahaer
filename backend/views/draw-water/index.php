@@ -15,7 +15,7 @@ use yii\bootstrap\ActiveForm;
             <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
                 <li><a href="<?= \yii\helpers\Url::to(['site/index']) ?>"><i class="fa fa-home"></i>首页</a></li>
                 <li><a href="#">抽水管理</a></li>
-                <li class="active">抽水记录</li>
+                <li class="active">转账记录</li>
             </ul>
             
             <section class="panel panel-default">
@@ -24,7 +24,7 @@ use yii\bootstrap\ActiveForm;
                         <div class="col-sm-9">
                             <?php $form = ActiveForm::begin([
                                 'id' => 'agencyForm',
-                                'action' => ['draw-water/list','type'=>1],
+                                'action' => ['draw-water/list','type'=>2],
                                 'method' => 'get',
                                 'fieldConfig' => [
                                     'template' => "{input}",
@@ -78,11 +78,9 @@ use yii\bootstrap\ActiveForm;
                             <tr>
                                 <th class="text-center" style="border-left: 0px;">编号</th>
                                 <th class="text-center">用户ID</th>
-                                <th class="text-center">昵称</th>
-                                <th class="text-center">类型</th>
-                                <th class="text-center">收入/支出金额</th>
-                                <th class="text-center">是否大赢家</th>
+                                <th class="text-center">交易金额</th>
                                 <th class="text-center">抽水数量</th>
+                                <th class="text-center">转入玩家ID</th>
                                 <th class="text-center">时间</th>
                             </tr>
                             </thead>
@@ -92,12 +90,9 @@ use yii\bootstrap\ActiveForm;
                                 <tr>
                                     <td class="text-center" style="border-left: 0px;"><?= $i ?></td>
                                     <td class="text-center"><?= $value['game_id'] ?></td>
-                                   
-                                    <td class="text-center"><?= $value['nickname'] ?></td>
-                                    <td class="text-center"><?= $value['type']==1?'转账抽水':'游戏抽水'?></td>
-                                    <td class="text-center"><?= $value['pay_out_money'] ?></td>
-                                    <td class="text-center"><?= $value['winner'] ?></td>
                                     <td class="text-center"><?= $value['num'] ?></td>
+                                    <td class="text-center"><?= $value['pay_out_money'] ?></td>
+                                    <td class="text-center"><?= $value['roll_in_game_id'] ?></td>
                                     <td class="text-center"><?= date('Y-m-d H:i:s', $value['created_at']) ?></td>
                                 </tr>
                                 <?php $i++ ?>

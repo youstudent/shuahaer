@@ -22,8 +22,15 @@ class DrawWaterController extends ObjectController
     public function actionList()
     {
         $model = new DrawWater();
-        $data = $model->getList(\Yii::$app->request->get(),\Yii::$app->request->get('type'));
-        return $this->render('list',$data);
+        $type = \Yii::$app->request->get('type');
+        $data = $model->getList(\Yii::$app->request->get(),$type);
+        $re ='';
+        if ($type==1){
+            $re = 'list';
+        }else{
+            $re = 'index';
+        }
+        return $this->render($re,$data);
     }
     
     

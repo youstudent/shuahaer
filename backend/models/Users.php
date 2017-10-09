@@ -20,6 +20,8 @@ use yii\helpers\ArrayHelper;
  */
 class Users extends UsersObject
 {
+    public $agency_name;
+    
     public $addnum =0;
     /**
      * 充值备注
@@ -76,7 +78,7 @@ class Users extends UsersObject
         return [
             [['addnum'],'match','pattern'=>'/^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$/','on'=>'addnum'],
             ['addnum','required','on'=>'addnum'],
-            [['select','keyword','pay_gold_num','pay_gold_config'],'safe'],
+            [['select','keyword','pay_gold_num','pay_gold_config','agency_name'],'safe'],
             ['pay_gold_num','integer','on'=>'pay'],
             ['pay_gold_num','match','pattern'=>'/^\+?[1-9][0-9]*$/','on'=>'pay'],
             ['pay_money','number','on'=>'pay'],
@@ -167,7 +169,7 @@ class Users extends UsersObject
                          */
                         $userModel = new UserPay();
                         $userModel->agency_id   = '1';
-                        $userModel->agency_name = '平台';
+                        $userModel->agency_name = $this->agency_name;
                         $userModel->user_id     = $model->id;
                         $userModel->game_id     = $model->game_id;
                         $userModel->nickname    = $model->nickname;
