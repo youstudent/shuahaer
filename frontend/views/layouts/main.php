@@ -9,7 +9,7 @@ $config = [
     ['label' => '购买记录', 'icon' => 'fa fa-users icon', 'bg_color' => 'bg-success', 'url' => ['log/pay']],
     ['label' => '玩家充值', 'icon' => 'fa fa-mail-forward icon', 'bg_color' => 'bg-danger', 'url' => ['pay/pay']],
     ['label' => '充值记录', 'icon' => 'fa fa-sitemap icon', 'bg_color' => 'bg-info', 'url' => ['log/user-pay']],
-    ['label' => '返利记录', 'icon' => 'fa fa-ticket icon', 'bg_color' => 'bg-warning', 'url' => ['log/rebate']],
+    //['label' => '返利记录', 'icon' => 'fa fa-ticket icon', 'bg_color' => 'bg-warning', 'url' => ['log/rebate']],
     ['label' => '扣除记录', 'icon' => 'fa fa-dollar icon', 'bg_color' => 'bg-primary', 'url' => ['log/deduct']],
     $config[] = ['label' => '我的下级', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-danger', 'url' => ['log/agency'], 'items' => [
         ['label' => '下级代理商', 'url' => ['log/agency']],
