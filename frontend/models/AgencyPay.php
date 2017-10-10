@@ -15,5 +15,11 @@ use common\models\AgencyPayObject;
  */
 class AgencyPay extends AgencyPayObject
 {
+    
+    
+    public static function GoldAll(){
+        $data =  \api\models\UserPay::find()->select('sum(gold)')->where(['agency_id'=>\Yii::$app->session->get('agencyId')])->asArray()->one();
+       return $data['sum(gold)'];
+    }
 
 }

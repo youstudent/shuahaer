@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2017 Double Software LLC
  * @license http://www.lrdouble.com/license/
  */
-$this->title = Yii::t('app', 'notice_index') . '-' . Yii::$app->params['appName'];
+$this->title = Yii::t('app', 'gold-config_index') . '-' . Yii::$app->params['appName'];
 ?>
 <section id="content">
     <section class="vbox">

@@ -61,7 +61,6 @@ class UsersController extends ObjectController
      */
     public function actionDeduct()
     {
-        $m = new \MongoClient();
         $this->layout = false;
         if(empty(\Yii::$app->request->get('id'))){
             $id =  \Yii::$app->request->post('id');

@@ -75,6 +75,9 @@ class Users extends UsersObject
         if (!$ageny){
             return $this->addError('agency_code','该推荐码不存在');
         }
+        if ($ageny->status!==1){
+            return $this->addError('game_id','该代理被停封');
+        }
         $users = Users::findOne(['game_id'=>$data['game_id']]);
         if (!$users){
             return $this->addError('game_id','该玩家不存在');

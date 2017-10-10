@@ -36,7 +36,7 @@ class LogController extends ObjectController
         else
             $endTime = date('Y-m-d H:i:s',time());
         $pages = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
-        $data = $model->offset($pages->offset)->limit($pages->limit)->all();
+        $data = $model->offset($pages->offset)->limit($pages->limit)->orderBy('time DESC')->all();
         $num =0;
         foreach ($data as $value){
           $num+=$value['gold'];
@@ -62,7 +62,7 @@ class LogController extends ObjectController
         else
             $endTime = date('Y-m-d H:i:s',time());
         $pages = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
-        $data = $model->offset($pages->offset)->limit($pages->limit)->all();
+        $data = $model->offset($pages->offset)->limit($pages->limit)->orderBy('time DESC')->all();
         $models = new UserPay();
         return $this->render('userPay',['data'=>$data,'pages'=>$pages,'startTime'=>$startTime,'endTime'=>$endTime,'model'=>$models]);
     }
@@ -85,7 +85,7 @@ class LogController extends ObjectController
         else
             $endTime = date('Y-m-d H:i:s',time());
         $pages = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
-        $data = $model->offset($pages->offset)->limit($pages->limit)->all();
+        $data = $model->offset($pages->offset)->limit($pages->limit)->orderBy('time DESC')->all();
         return $this->render('rebate',['data'=>$data,'pages'=>$pages,'startTime'=>$startTime,'endTime'=>$endTime]);
     }
     /**
@@ -107,7 +107,7 @@ class LogController extends ObjectController
         else
             $endTime = date('Y-m-d H:i:s',time());
         $pages = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
-        $data = $model->offset($pages->offset)->limit($pages->limit)->all();
+        $data = $model->offset($pages->offset)->limit($pages->limit)->orderBy('time DESC')->all();
         return $this->render('deduct',['data'=>$data,'pages'=>$pages,'startTime'=>$startTime,'endTime'=>$endTime]);
     }
     

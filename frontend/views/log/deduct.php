@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2017 Double Software LLC
  * @license http://www.lrdouble.com/license/
  */
-$this->title = "提现记录-".\Yii::$app->params['appName'];
+$this->title = "扣除记录-".\Yii::$app->params['appName'];
 use yii\bootstrap\ActiveForm;
 ?>
 <section id="content">

@@ -1,5 +1,5 @@
 <?php
-$this->title = "代理商列表-".\Yii::$app->params['appName'];
+$this->title = "玩家充值-".\Yii::$app->params['appName'];
 ?>
 <section id="content">
     <section class="vbox">

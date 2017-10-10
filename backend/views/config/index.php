@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2017 Double Software LLC
  * @license http://www.lrdouble.com/license/
  */
-$this->title = Yii::t('app', 'notice_index') . '-' . Yii::$app->params['appName'];
+$this->title = Yii::t('app', 'config_index') . '-' . Yii::$app->params['appName'];
 ?>
 <section id="content">
     <section class="vbox">
@@ -53,7 +53,7 @@ $this->title = Yii::t('app', 'notice_index') . '-' . Yii::$app->params['appName'
                                         <?php if ($value['type']==3):?>
                                         <?= $value['ratio']==0?'关闭':'开启'?>
                                         <?php else:?>
-                                        <?= $value['ratio'] ?>
+                                        <?= $value['ratio']?>%
                                         <?php endif;?>
                                     </td>
                                     <td class="text-center" style="width: 120px;">

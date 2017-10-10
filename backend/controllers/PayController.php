@@ -55,7 +55,7 @@ class PayController extends ObjectController
         // 添加查询的时间条件
         $model->andWhere(['>=','time',strtotime($agency->starttime)])->andWhere(['<=','time',strtotime($agency->endtime)]);
         $pages      = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
-        $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
+        $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->orderBy('time DESC')->all();
         //统计每页充值的金币数据
         $num = 0;
         foreach ($data as $v){
@@ -90,7 +90,7 @@ class PayController extends ObjectController
         // 添加查询的时间条件
         $model->andWhere(['>=','time',strtotime($agency->starttime)])->andWhere(['<=','time',strtotime($agency->endtime)]);
         $pages      = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
-        $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
+        $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->orderBy('time DESC')->all();
         return $this->render('agencyDeductLog',['model'=>$agency,'data'=>$data,'pages'=>$pages]);
     }
     

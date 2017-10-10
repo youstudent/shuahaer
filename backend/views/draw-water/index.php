@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2017 Double Software LLC
  * @license http://www.lrdouble.com/license/
  */
-$this->title = Yii::t('app', 'pay_user') . '-' . Yii::$app->params['appName'];
+$this->title = Yii::t('app', 'draw-water1') . '-' . Yii::$app->params['appName'];
 use yii\bootstrap\ActiveForm;
 
 ?>
@@ -24,7 +24,7 @@ use yii\bootstrap\ActiveForm;
                         <div class="col-sm-9">
                             <?php $form = ActiveForm::begin([
                                 'id' => 'agencyForm',
-                                'action' => ['draw-water/list','type'=>2],
+                                'action' => ['draw-water/list','type'=>1],
                                 'method' => 'get',
                                 'fieldConfig' => [
                                     'template' => "{input}",
@@ -90,8 +90,8 @@ use yii\bootstrap\ActiveForm;
                                 <tr>
                                     <td class="text-center" style="border-left: 0px;"><?= $i ?></td>
                                     <td class="text-center"><?= $value['game_id'] ?></td>
-                                    <td class="text-center"><?= $value['num'] ?></td>
                                     <td class="text-center"><?= $value['pay_out_money'] ?></td>
+                                    <td class="text-center"><?= $value['num'] ?></td>
                                     <td class="text-center"><?= $value['roll_in_game_id'] ?></td>
                                     <td class="text-center"><?= date('Y-m-d H:i:s', $value['created_at']) ?></td>
                                 </tr>

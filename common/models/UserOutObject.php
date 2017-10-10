@@ -35,7 +35,8 @@ class UserOutObject extends Object
     public function rules()
     {
         return [
-            [['user_id', 'game_id', 'time', 'gold'], 'integer'],
+            [['gold'],'number'],
+            [['user_id', 'game_id', 'time'], 'integer'],
             [['nickname', 'game_class'], 'string', 'max' => 32],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => UsersObject::className(), 'targetAttribute' => ['user_id' => 'id']],
             [['game_class'], 'exist', 'skipOnError' => true, 'targetClass' => GameClassObject::className(), 'targetAttribute' => ['game_class' => 'name']],

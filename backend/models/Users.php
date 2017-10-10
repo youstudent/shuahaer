@@ -80,6 +80,7 @@ class Users extends UsersObject
             ['addnum','required','on'=>'addnum'],
             [['select','keyword','pay_gold_num','pay_gold_config','agency_name'],'safe'],
             ['pay_gold_num','integer','on'=>'pay'],
+            ['pay_gold_num','integer','on'=>'deduct'],
             ['pay_gold_num','match','pattern'=>'/^\+?[1-9][0-9]*$/','on'=>'pay'],
             ['pay_money','number','on'=>'pay'],
             [['starttime','endtime','autograph','notes'],'safe'],
@@ -129,6 +130,7 @@ class Users extends UsersObject
         $this->scenario = 'pay';
         if($this->load($data) && $this->validate())
         {
+            
             /**
              * 查询用户是否存在
              */
@@ -295,7 +297,7 @@ class Users extends UsersObject
             ]
         );
 
-        $data  = $model->limit($pages->limit)->offset($pages->offset)->all();
+        $data  = $model->limit($pages->limit)->offset($pages->offset)->orderBy('reg_time DESC')->all();
 
         foreach ($data as $key=>$value){
             $data[$key]['gold'] = $value->getGold();
@@ -341,7 +343,7 @@ class Users extends UsersObject
     {
         $this->load($data);
         $this->initTime();
-        $model   = self::find()->alias('p')->joinWith('pay')->andWhere($this->searchWhere())
+        $model   = self::find()->alias('p')->joinWith('pay')->andWhere($this->searchWheress())
             ->andWhere(['>=','reg_time',strtotime($this->starttime)])
             ->andWhere(['<=','reg_time',strtotime($this->endtime)])->orderBy('g_user_pay.gold DESC');
         $pages = new Pagination(
@@ -402,7 +404,7 @@ class Users extends UsersObject
                 ->andWhere(['>=','reg_time',strtotime($this->starttime)])
                 ->andWhere(['<=','reg_time',strtotime($this->endtime)]);
         $idArray = $model->asArray()->select('id')->all();
-        $model   = UserPay::find()->where(['IN','user_id',$this->searchIn($idArray)])->andWhere(['type'=>1]);
+        $model   = UserPay::find()->where(['IN','user_id',$this->searchIn($idArray)])->andWhere(['type'=>1])->orderBy('time DESC');
         $pages   = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data    = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
         return ['data'=>$data,'pages'=>$pages,'model'=>$this];
@@ -422,7 +424,7 @@ class Users extends UsersObject
             ->andWhere(['>=','reg_time',strtotime($this->starttime)])
             ->andWhere(['<=','reg_time',strtotime($this->endtime)]);
         $idArray = $model->asArray()->select('id')->all();
-        $model   = UserPay::find()->where(['IN','user_id',$this->searchIn($idArray)])->andWhere(['type'=>2]);
+        $model   = UserPay::find()->where(['IN','user_id',$this->searchIn($idArray)])->andWhere(['type'=>2])->orderBy('time DESC');
         $pages   = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data    = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
         return ['data'=>$data,'pages'=>$pages,'model'=>$this];
@@ -444,7 +446,7 @@ class Users extends UsersObject
             ->andWhere(['>=','reg_time',strtotime($this->starttime)])
             ->andWhere(['<=','reg_time',strtotime($this->endtime)]);
         $idArray = $model->asArray()->select('id')->all();
-        $model   = UserOut::find()->where(['IN','user_id',$this->searchIn($idArray)]);
+        $model   = UserOut::find()->where(['IN','user_id',$this->searchIn($idArray)])->orderBy('time DESC');
         $pages   = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data    = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
         return ['data'=>$data,'pages'=>$pages,'model'=>$this];
@@ -463,7 +465,7 @@ class Users extends UsersObject
             ->andWhere(['>=','reg_time',strtotime($this->starttime)])
             ->andWhere(['<=','reg_time',strtotime($this->endtime)]);
         $idArray = $model->asArray()->select('id')->all();
-        $model   = GameExploits::find()->where(['IN','user_id',$this->searchIn($idArray)]);
+        $model   = GameExploits::find()->where(['IN','user_id',$this->searchIn($idArray)])->orderBy('time DESC');
         $pages   = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data    = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
         return ['data'=>$data,'pages'=>$pages,'model'=>$this];
@@ -483,6 +485,23 @@ class Users extends UsersObject
                 return ['like','nickname',$this->keyword];
             else
                 return ['or',['game_id'=>$this->keyword],['like','nickname',$this->keyword]];
+        }
+        return [];
+    }
+    /**
+     * 搜索处理数据函数
+     * @return array
+     */
+    private function searchWheress()
+    {
+        if (!empty($this->select) && !empty($this->keyword))
+        {
+            if ($this->select == 'game_id')
+                return ['p.game_id'=>$this->keyword];
+            elseif ($this->select == 'nickname')
+                return ['like','p.nickname',$this->keyword];
+            else
+                return ['or',['p.game_id'=>$this->keyword],['like','p.nickname',$this->keyword]];
         }
         return [];
     }

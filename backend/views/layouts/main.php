@@ -18,16 +18,19 @@ $config = [
         ['label' => '加盟商扣除列表', 'url' => ['pay/agency-deduct-log']],
     ]],
 ];
-$config[] = ['label' => '排行榜管理', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-danger', 'url' => ['notice/index'], 'items' => [
+$config[] = ['label' => '排行榜管理', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-danger', 'url' => ['ranking/wealth'], 'items' => [
     ['label' => '财富排行榜', 'url' => ['ranking/wealth']],
     ['label' => '充值排行榜', 'url' => ['ranking/pay']],
     ['label' => '交易排行榜', 'url' => ['ranking/deal']],
 ]];
-$config[] = ['label' => '抽水管理', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-danger', 'url' => ['notice/index'], 'items' => [
+$config[] = ['label' => '抽水管理', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-danger', 'url' => ['draw-water/list','type'=>2], 'items' => [
     ['label' => '游戏抽水记录', 'url' => ['draw-water/list','type'=>2]],
     ['label' => '游戏转账记录', 'url' => ['draw-water/list','type'=>1]]
 ]];
-$config[] = ['label' => '参数管理', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-danger', 'url' => ['notice/index'], 'items' => [
+$config[] = ['label' => '公告管理', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-info', 'url' => ['notice/index'], 'items' => [
+    ['label' => '公告管理', 'url' => ['notice/index']],
+]];
+$config[] = ['label' => '参数管理', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-danger', 'url' => ['config/indexx'], 'items' => [
     ['label' => '系统参数列表', 'url' => ['config/index','type'=>'']],
 ]];
 if (Yii::$app->params['distribution']) {
@@ -37,13 +40,12 @@ if (Yii::$app->params['distribution']) {
     ]];
 }
 $config[] = ['label' => '设置中心', 'icon' => 'fa fa-bullhorn icon', 'bg_color' => 'bg-info', 'url' => ['manage/index'], 'items' => [
-    ['label' => '货币配置', 'url' => ['gold-config/index']],
+    
     ['label' => '管理员列表', 'url' => ['manage/index', 'id' => 1]],
 ]];
-
-$config[] = ['label' => '公告管理', 'icon' => 'fa fa-sitemap icon', 'bg_color' => 'bg-info', 'url' => ['notice/index'], 'items' => [
-    ['label' => '公告管理', 'url' => ['notice/index']],
-]];
+if (Yii::$app->params['gold-config']){
+    $config[] = ['label' => '货币配置', 'icon' => 'fa fa-mail-forward icon', 'bg_color' => 'bg-danger', 'url' => ['gold-config/index']];
+}
 $config[] = ['label' => '退出登录', 'icon' => 'fa fa-mail-forward icon', 'bg_color' => 'bg-danger', 'url' => ['login/logout']]
 ?>
 <!DOCTYPE html>
@@ -71,8 +73,7 @@ $config[] = ['label' => '退出登录', 'icon' => 'fa fa-mail-forward icon', 'bg
         <div class="navbar-header aside-md">
             <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav"> <i
                         class="fa fa-bars"></i> </a>
-            <a href="#" class="navbar-brand" data-toggle="fullscreen"><img src="/images/logo.png" class="m-r-sm">
-                <?php echo Yii::$app->params['appName']; ?>
+            <a href="#" class="navbar-brand" data-toggle="fullscreen"><img src="/images/logo.png" class="m-r-sm"><?php echo Yii::$app->params['appName']; ?>
             </a>
             <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".nav-user"> <i class="fa fa-cog"></i>
             </a>

@@ -25,7 +25,7 @@ class DrawWaterController extends ObjectController
         $type = \Yii::$app->request->get('type');
         $data = $model->getList(\Yii::$app->request->get(),$type);
         $re ='';
-        if ($type==1){
+        if ($type==2){
             $re = 'list';
         }else{
             $re = 'index';

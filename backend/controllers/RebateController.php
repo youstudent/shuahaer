@@ -35,7 +35,7 @@ class RebateController extends ObjectController
         $model = Rebate::find();
         $model->andWhere(['>=','time',strtotime($rebate->starttime)])->andWhere(['<=','time',strtotime($rebate->endtime)])->andWhere($rebate->searchWhereLikes());
         $pages      = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
-        $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
+        $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->orderBy('time DESC')->all();
         
         return $this->render('index',['model'=>$rebate,'data'=>$data,'pages'=>$pages]);
     }

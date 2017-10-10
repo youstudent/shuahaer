@@ -31,7 +31,8 @@ class DrawWaterRatio extends \yii\db\ActiveRecord
         return [
             [['id'], 'required'],
             [['ratio'], 'validateRatio'],
-            [['id', 'ratio', 'updated_at'], 'integer'],
+            [['id', 'updated_at'], 'integer'],
+            [['ratio'],'number']
         ];
     }
     
@@ -40,8 +41,8 @@ class DrawWaterRatio extends \yii\db\ActiveRecord
      */
     public function validateRatio()
     {
-        if ($this->ratio<1 || $this->ratio>100){
-            $this->addError('ratio','比例在1-100之间');
+        if ($this->ratio<0 || $this->ratio>100){
+            $this->addError('ratio','比例在0-100之间');
         }
     }
     

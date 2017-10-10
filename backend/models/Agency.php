@@ -99,7 +99,7 @@ class Agency extends AgencyObject
     {
         return [
             [['pid', 'reg_time',  'status', 'code','recode','pay_money'], 'integer'],
-            [['gold_all','pay_gold','deduct_money'],'number'],
+            [['gold_all','pay_gold','deduct_money','rebate','deduct_gold'],'number'],
             [['phone'], 'string', 'max' => 12],
             [['password'], 'string', 'max' => 64],
             [['name', 'identity'], 'string', 'max' => 32],
@@ -111,7 +111,7 @@ class Agency extends AgencyObject
             ['recode','validateCodeExist'],
             ['phone','validatePhoneExist','on'=>'add'],
             ['pay_gold','match','pattern'=>'/^\+?[1-9][0-9]*$/','on'=>'pay'],
-           // ['deduct_gold','match','pattern'=>'/^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$/','on'=>'deduct'],
+           // [['deduct_gold','rebate'],'validateDeducts','on'=>'deduct'],
             ['deduct_gold','validateDeduct','on'=>'deduct'],
             ['rebate','validateRebate','on'=>'deduct'],
             //错误 多个字段使用数组
@@ -141,6 +141,23 @@ class Agency extends AgencyObject
             if($data)
                 return $this->pid = $data['id'];
             return $this->addError($attribute,\Yii::t('app','recode_no_exist'));
+        }
+    }
+    
+    
+    /**
+     * 严重扣除金币是否符合要求
+     * @param $attribute
+     * @param $params
+     */
+    public function validateDeducts($attribute,$params)
+    {
+        if(!$this->hasErrors())
+        {
+           
+                if($this->deduct_gold<0 || $this->rebate<0 || ($this->deduct_gold=0 && $this->rebate=0 )){
+                $this->addError($attribute,'数量无效');
+            }
         }
     }
 
@@ -226,6 +243,12 @@ class Agency extends AgencyObject
         $this->scenario = 'deduct';
         if($this->load($data) && $this->validate())
         {
+            if($this->deduct_gold<0 || $this->rebate<0) {
+               return $this->addError('deduct_gold', '数量无效');
+            }
+            if((int)$this->deduct_gold==0 && (int)$this->rebate==0) {
+               return  $this->addError('deduct_gold', '请选择扣除货币或返利点');
+            }
             $transaction = \Yii::$app->db->beginTransaction();
             try{
                 $model = self::findOne($this->id);
@@ -378,7 +401,7 @@ class Agency extends AgencyObject
             ->andWhere(['<=','reg_time',strtotime($this->endtime)]);;
 
         $pages = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
-        $data = $model->limit($pages->limit)->offset($pages->offset)->all();
+        $data = $model->limit($pages->limit)->offset($pages->offset)->orderBy('reg_time DESC')->all();
 
         foreach ($data as $key=>$val)
         {

@@ -18,7 +18,8 @@ class UserOut extends UserOutObject
     public function rules()
     {
         return [
-            [['user_id', 'game_id', 'time', 'gold'], 'integer'],
+            [['gold'],'number'],
+            [['user_id', 'game_id', 'time'], 'integer'],
             [['nickname', 'game_class','gold_config'], 'string', 'max' => 32],
             [['game_id','game_class','notes','gold'],'required','on'=>'add'],
             [['game_id'],'validateGameId','on'=>'add']

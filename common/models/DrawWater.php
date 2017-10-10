@@ -57,7 +57,7 @@ class DrawWater extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'game_id','created_at','type'], 'integer'],
+            [['id', 'game_id','created_at','type','roll_in_game_id'], 'integer'],
             [['nickname'], 'string', 'max' => 30],
             [['winner'], 'string', 'max' => 20],
             [['pay_out_money','num'],'number'],
@@ -126,7 +126,7 @@ class DrawWater extends \yii\db\ActiveRecord
             $model->andWhere(['type'=>$type]);
         }
         $pages   = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
-        $data    = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
+        $data    = $model->limit($pages->limit)->offset($pages->offset)->asArray()->orderBy('created_at DESC')->all();
         return ['data'=>$data,'pages'=>$pages,'model'=>$this];
     }
     

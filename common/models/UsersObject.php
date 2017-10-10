@@ -255,10 +255,13 @@ class UsersObject extends Object
                         ->andWhere(['users_id'=>$this->id])
                         ->andWhere(['gold_config'=>$goldConfig])
                         ->one();
-                    if($data['gold'] < $payGold){
+                    /*if($data['gold'] < $payGold){
                         return $this->addError('game_id','余额不足');
-                    }
+                    }*/
                     $data->gold       = ($data->gold + $payGold);
+                    if ($data->gold<0){
+                        $data->gold =0;
+                    }
                     return $data->save();
                 }elseif ($value['type'] == 2){
                     return true;
