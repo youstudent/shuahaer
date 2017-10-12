@@ -70,6 +70,7 @@ use yii\bootstrap\ActiveForm;
                                 <th  class="text-center">编号</th>
                                 <th  class="text-center">用户ID</th>
                                 <th  class="text-center">用户昵称</th>
+                                <th  class="text-center">银行金库</th>
 
 <!--                            多货币修改代码-->
                                 <?php
@@ -96,6 +97,7 @@ use yii\bootstrap\ActiveForm;
                                 <td  class="text-center"><?=$i?></td>
                                 <td  class="text-center"><?=$value['game_id']?></td>
                                 <td  class="text-center"><?=$value['nickname']?></td>
+                                <td  class="text-center"><?=$value['bank']?></td>
 <!--                                多货币修改-->
                                 <?php foreach ($value['gold'] as $keys=>$values):?>
                                     <td class="text-center"><?= $values ?></td>
@@ -147,8 +149,6 @@ use yii\bootstrap\ActiveForm;
                         </div>
                     <?php endif;?>
                 </div>
-               
-                <img src="<?= \yii\helpers\Url::to(['users/qrcode'])?>"/>
 <!--                表格结束          -->
 <!--                分页开始          -->
                 <footer class="panel-footer">

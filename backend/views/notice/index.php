@@ -20,28 +20,8 @@ $this->title = Yii::t('app', 'notice_index') . '-' . Yii::$app->params['appName'
                 <div class="panel-heading">
                     <!--                搜索开始          -->
                     <div class="row text-sm wrapper">
-                        <div class="col-sm-9">
-                            <!--筛选状态 全部|正常|封停 开始-->
-                            <div class="btn-group" data-toggle="buttons" style="margin-right: 8px;">
-                                <label class="btn btn-default <?php if (Yii::$app->request->get('show') == '') {
-                                    echo "active";
-                                } ?>" onclick="setStatus('')">
-                                    <input type="radio" name="options" id="statusAll">全部</label>
-                                <label class="btn btn-default <?php if (Yii::$app->request->get('show') == 1) {
-                                    echo "active";
-                                } ?> " onclick="setStatus(1)">
-                                    <input type="radio" name="options" id="statusOk">显示</label>
-                                <label class="btn btn-default <?php if (Yii::$app->request->get('show') == 2) {
-                                    echo "active";
-                                } ?> " onclick="setStatus(2)">
-                                    <input type="radio" name="options" id="statusColose">隐藏</label>
-                            </div>
-                            <input type="hidden" name="Agency[searchstatus]" value="" id="status">
-                            <!--筛选状态 全部|正常|封停 结束-->
-                        </div>
+                       
                         <div class="col-sm-3 text-right">
-                            <a href="<?= \yii\helpers\Url::to(['notice/add']) ?>" class="btn btn-primary"
-                               data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>&nbsp;添加新的公告</a>
                         </div>
                     </div>
                     <!--                搜索结束          -->
@@ -85,8 +65,6 @@ $this->title = Yii::t('app', 'notice_index') . '-' . Yii::$app->params['appName'
                                     <td class="text-center" style="width: 120px;">
                                         <a href="<?php echo \yii\helpers\Url::to(['notice/edit', 'id' => $value['id']]) ?>"
                                            data-toggle="modal" data-target="#myModal" class="btn btn-xs btn-primary">编辑</a>
-                                        <a href="<?php echo \yii\helpers\Url::to(['notice/del', 'id' => $value['id']]) ?>"
-                                           onclick="return openAgency(this,'是否确认删除?')" class="btn btn-xs btn-danger">删除</a>
                                     </td>
                                 </tr>
                                 <?php $i++ ?>

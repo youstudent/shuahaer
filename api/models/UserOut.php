@@ -49,8 +49,9 @@ class UserOut extends UserOutObject
 
            $this->gold_config = GoldConfigObject::getNameByCode($this->gold_config);
            $model = Users::find()->where(['game_id'=>$this->game_id])->one();
-            $data = $model->consumeGolds($this->gold_config,$this->gold);
-           if($data){
+          //  $datas = $model->consumeGolds($this->gold_config,$this->gold);
+            $datas =true;
+           if($datas){
                 $this->user_id  = $model->id;
                 $this->nickname = $model->nickname;
                 $this->time     = time();

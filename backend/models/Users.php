@@ -162,9 +162,9 @@ class Users extends UsersObject
 //                        foreach ($goldConfig as $key=>$val){
 //
 //                        }
-                        $data = $model->payGold($this->pay_gold_config,$this->pay_gold_num);
-                        if (!$data)
-                            throw new \Exception('save error 101023'); /* 保存失败抛出异常 */
+                        //$data = $model->payGold($this->pay_gold_config,$this->pay_gold_num);
+                       // if (!$data)
+                         //   throw new \Exception('save error 101023'); /* 保存失败抛出异常 */
 
                         /**
                          * 保存用户充值记录
@@ -238,9 +238,9 @@ class Users extends UsersObject
 //                        foreach ($goldConfig as $key=>$val){
 //
 //                        }
-                        $data = $model->consumeGold($this->pay_gold_config,$this->pay_gold_num);
-                        if (!$data)
-                            throw new \Exception('save error 101023'); /* 保存失败抛出异常 */
+                       // $data = $model->consumeGold($this->pay_gold_config,$this->pay_gold_num);
+                       // if (!$data)
+                        //    throw new \Exception('save error 101023'); /* 保存失败抛出异常 */
                         
                         /**
                          * 保存用户充值记录

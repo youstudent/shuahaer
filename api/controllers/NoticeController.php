@@ -21,7 +21,7 @@ class NoticeController extends ObjectController
         $data['103'] = '房间滚动公告';
         $location = $data[\Yii::$app->request->get('location')];
         if($location){
-            $notice = Notice::find()->andWhere(['location'=>$location])->andWhere(['status'=>1])->select(['title','content','time','manage_name'])->one();
+            $notice = Notice::find()->andWhere(['location'=>$location])->andWhere(['status'=>1])->select(['title','content','time','manage_name'])->orderBy('time DESC')->one();
             return $this->returnAjax(1,'成功',$notice);
         }
         return $this->returnAjax(0,'参数不正确');
