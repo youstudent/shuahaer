@@ -54,7 +54,7 @@ use yii\bootstrap\ActiveForm;
                                     <?= $form->field($model, 'select')
                                         ->dropDownList(["1" => Yii::t('app', 'user_select_search_all'),
                                             "agency_id" => '代理ID',
-                                            "agency_name" =>'代理']) ?>
+                                            "agency_name" =>'代理名字']) ?>
                                 </div>
                                 <div class="form-group">
                                     <div class="input-group">

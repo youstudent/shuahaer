@@ -117,7 +117,7 @@ use yii\bootstrap\ActiveForm;
                                         <i class="fa fa-times text-danger text"></i>
                                     </a>
                                 </td>
-                                <td class="text-center" width="400px;">
+                                <td class="text-center" width="500px;">
                                     <a onclick="return openAgency(this,'是否<?=$value['status']==1?'停用':'启用'?>该账号?')"
                                        href="<?php echo \yii\helpers\Url::to(['users/status', 'id' => $value['game_id']]) ?>"
                                        class="btn btn-xs btn-danger"><?=$value['status']==1?'停用':'启用'?></a>
@@ -134,6 +134,8 @@ use yii\bootstrap\ActiveForm;
                                     <a href="<?=\yii\helpers\Url::to(['users/pay','id'=>$value['id'],'agency_name'=>'平台'])?>" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#myModal">&nbsp;充值&nbsp;&nbsp;</a>
                                     
                                     <a href="<?=\yii\helpers\Url::to(['users/deduct','id'=>$value['id']])?>" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#myModal">扣除</a>
+
+                                    <a href="<?=\yii\helpers\Url::to(['users/distribute','id'=>$value['id']])?>" class="btn btn-xs btn-success" data-toggle="modal" data-target="#myModal">分配代理</a>
                                     <?php endif;?>
                                 </td>
                             </tr>

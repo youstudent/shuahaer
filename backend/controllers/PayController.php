@@ -40,28 +40,33 @@ class PayController extends ObjectController
         $agency->load(\Yii::$app->request->get());
         $agency->initTime();//初始化默认时间
         $model      = '';
-        
+        $row['gold']=0;
+        $row['money']=0;
         //判断是否输入关键字
         if($agency->keyword != ''){
             $agencyInfo = Agency::find()->where($agency->searchWhere())->one();
             //查询代理是否存在
             if(isset($agencyInfo->id)) {
                 $model = AgencyPay::find()->andWhere(['agency_id' => $agencyInfo->id]);
+                
+                $rows = AgencyPay::find()->select('sum(gold),sum(money)')->where(['agency_id' => $agencyInfo->id])->andWhere(['>=','time',strtotime($agency->starttime)])->andWhere(['<=','time',strtotime($agency->endtime)])->asArray()->one();
+                $row['gold'] = $rows['sum(gold)'];
+                $row['money'] = $rows['sum(money)'];
             } else{
                 //不存在查询一个不存在代理充值记录
                 $model = AgencyPay::find()->where(['id'=>-10]);
             }
-        }else {$model = AgencyPay::find();}//没有关键字查询所有
+        }else {$model = AgencyPay::find();
+         $re= AgencyPay::find()->select(['sum(gold),sum(money)'])->andWhere(['>=','time',strtotime($agency->starttime)])->andWhere(['<=','time',strtotime($agency->endtime)])->asArray()->one();
+            $row['gold'] = $re['sum(gold)'];
+            $row['money'] = $re['sum(money)'];
+        }//没有关键字查询所有
         // 添加查询的时间条件
         $model->andWhere(['>=','time',strtotime($agency->starttime)])->andWhere(['<=','time',strtotime($agency->endtime)]);
         $pages      = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->orderBy('time DESC')->all();
         //统计每页充值的金币数据
-        $num = 0;
-        foreach ($data as $v){
-          $num+=$v['gold'];
-        }
-        return $this->render('agencyPayLog',['model'=>$agency,'data'=>$data,'pages'=>$pages,'num'=>$num]);
+        return $this->render('agencyPayLog',['model'=>$agency,'data'=>$data,'pages'=>$pages,'rows'=>$row]);
     }
     
     /**

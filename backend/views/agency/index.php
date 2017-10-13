@@ -119,6 +119,7 @@ use yii\bootstrap\ActiveForm;
                         <thead>
                         <tr>
                             <th class="text-center" style="border-left: 0px;">编号</th>
+                            <th class="text-center" style="border-left: 0px;">ID</th>
                             <?php if (Yii::$app->params['distribution']): ?>
                                 <th class="text-center" style="width: 80px;">代理ID</th>
                                 <th class="text-center">上级代理姓名</th>
@@ -150,6 +151,7 @@ use yii\bootstrap\ActiveForm;
                         <?php foreach ($data as $key => $value): ?>
                             <tr>
                                 <td class="text-center" style="border-left: 0px;"><?= $i ?></td>
+                                <td class="text-center" style="border-left: 0px;"><?= $value['id'] ?></td>
                                 <?php if (Yii::$app->params['distribution']): ?>
                                     <td class="text-center"><?= $value['pid'] ?></td>
                                     <td class="text-center"><?= $value['pName'] ?></td>
@@ -179,7 +181,7 @@ use yii\bootstrap\ActiveForm;
                                         <span class="label bg-danger"><?= Yii::t('app', '拒绝') ?></span>
                                     <?php endif; ?>
                                 </td>
-                                <td class="text-center" style="width: 480px;border-right: 0px;">
+                                <td class="text-center" style="width: 450px;border-right: 0px;">
                                     <?php if ($value['status'] == 1): ?>
 
                                         <a href="<?php echo \yii\helpers\Url::to(['agency/pay', 'id' => $value['id']]) ?>"
@@ -194,8 +196,8 @@ use yii\bootstrap\ActiveForm;
                                            class="btn btn-xs btn-danger">&nbsp;封&nbsp;号&nbsp;</a>
 
                                         <?php if (Yii::$app->params['distribution']): ?>
-                                            <a href="<?= \yii\helpers\Url::to(['rebate/index', 'Agency' => ['select' => 'phone', 'keyword' => $value['phone']]]) ?>"
-                                               class="btn btn-xs btn-primary"> 分 佣 </a>
+                                            <a href="<?= \yii\helpers\Url::to(['rebate/index', 'Rebate' => ['select' => 'agency_id', 'keyword' => $value['id']]]) ?>"
+                                               class="btn btn-xs btn-primary"> 返 利 </a>
                                         <?php endif; ?>
 
                                         <a href="<?php echo \yii\helpers\Url::to(['agency/edit', 'id' => $value['id']]) ?>"

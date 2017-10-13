@@ -53,7 +53,7 @@ use yii\bootstrap\ActiveForm;
                                         ->dropDownList(["1" => Yii::t('app', 'user_select_search_all'),
                                             "name" => Yii::t('app', 'agency_select_search_game'),
                                             "phone" => Yii::t('app', 'agency_select_search_phone'),
-                                            "id" => Yii::t('app', 'agency_select_search_id')]) ?>
+                                           ]) ?>
                                 </div>
                                 <div class="form-group">
                                     <div class="input-group">
@@ -117,11 +117,20 @@ use yii\bootstrap\ActiveForm;
                             <?php endforeach; ?>
                             </tbody>
                         </table>
-                        <?php if ($num):?>
-                            <div style="text-align: right">
-                                <input type="text" value="金币充值统计:<?php echo $num?>" disabled >
-                            </div>
+                        
+                        <span>
+                        <?php if ($rows['gold']):?>
+                            <div style="text-align: right;float: left">
+                            <input type="text" value="数量充值统计:<?php echo $rows['gold']?>" disabled >
+                        </div>
                         <?php endif;?>
+                            <?php if ($rows['money']):?>
+                                <div style="text-align: right">
+                            <input type="text" value="收款人民币:<?php echo $rows['money']?>" disabled >
+                        </div>
+                            <?php endif;?>
+                        
+                    </span>
                         
                         <?php if(empty($data)):?>
                             <div class="text-center m-t-lg clearfix wrapper-lg animated fadeInRightBig" id="galleryLoading">

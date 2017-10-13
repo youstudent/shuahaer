@@ -112,6 +112,11 @@ use yii\bootstrap\ActiveForm;
                             <?php endforeach;?>
                         </tbody>
                     </table>
+                    <?php if ($num):?>
+                        <div style="text-align: right">
+                            <input type="text" value="金币扣除统计:<?php echo $num?>" disabled >
+                        </div>
+                    <?php endif;?>
                     <?php if(empty($data)):?>
                         <div class="text-center m-t-lg clearfix wrapper-lg animated fadeInRightBig" id="galleryLoading">
                             <h1><i class="fa fa-warning" style="color: red;font-size: 40px"></i></h1>

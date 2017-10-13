@@ -78,6 +78,9 @@ class Users extends UsersObject
         return [
             [['addnum'],'match','pattern'=>'/^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$/','on'=>'addnum'],
             ['addnum','required','on'=>'addnum'],
+            ['agency_code','required','on'=>'addagency_code'],
+            ['agency_code','number','on'=>'addagency_code'],
+            ['agency_code','validateCode','on'=>'addagency_code'],
             [['select','keyword','pay_gold_num','pay_gold_config','agency_name'],'safe'],
             ['pay_gold_num','integer','on'=>'pay'],
             ['pay_gold_num','integer','on'=>'deduct'],
@@ -100,10 +103,28 @@ class Users extends UsersObject
                 'deduct_gold' =>'扣除金币',
                 'notes' =>'备注',
                 'addnum' =>'次数',
+                'agency_code' =>'代理推荐码',
+            
         ];
         return ArrayHelper::merge(parent::attributeLabels(),$arr);
     }
-    
+    /**
+     *  分配代理商   验证代理商推荐码是否正确
+     * @param $attribute
+     * @param $params
+     */
+    public function validateCode($attribute,$params)
+    {
+        if(!$this->hasErrors())
+        {
+          $re =  Agency::findOne(['code'=>$this->agency_code]);
+          if (!$re){
+            return  $this->addError($attribute,'推荐码不存在');
+          }
+          $this->superior_id=$re->id;
+          $this->superior_name=$re->name;
+        }
+    }
     
     /**
      * 严重扣除金币是否符合要求
@@ -400,14 +421,19 @@ class Users extends UsersObject
     {
         $this->load($data);
         $this->initTime();
-        $model   = self::find()->andWhere($this->searchWhere())
-                ->andWhere(['>=','reg_time',strtotime($this->starttime)])
-                ->andWhere(['<=','reg_time',strtotime($this->endtime)]);
-        $idArray = $model->asArray()->select('id')->all();
-        $model   = UserPay::find()->where(['IN','user_id',$this->searchIn($idArray)])->andWhere(['type'=>1])->orderBy('time DESC');
+        $model   = UserPay::find()->andWhere($this->searchWhere())
+            ->andWhere(['>=','time',strtotime($this->starttime)])
+            ->andWhere(['<=','time',strtotime($this->endtime)])->andWhere(['type'=>1])->orderBy('time DESC');
         $pages   = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data    = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
-        return ['data'=>$data,'pages'=>$pages,'model'=>$this];
+        /**
+         * 统计该玩家所有的充值记录
+         */
+        $num   = UserPay::find()->andWhere($this->searchWhere())
+            ->andWhere(['>=','time',strtotime($this->starttime)])
+            ->andWhere(['<=','time',strtotime($this->endtime)])->select('sum(gold)')->andWhere(['type'=>1])->asArray()->one();
+        
+        return ['data'=>$data,'pages'=>$pages,'model'=>$this,'num'=>$num['sum(gold)']];
     }
     
     
@@ -420,14 +446,16 @@ class Users extends UsersObject
     {
         $this->load($data);
         $this->initTime();
-        $model   = self::find()->andWhere($this->searchWhere())
-            ->andWhere(['>=','reg_time',strtotime($this->starttime)])
-            ->andWhere(['<=','reg_time',strtotime($this->endtime)]);
-        $idArray = $model->asArray()->select('id')->all();
-        $model   = UserPay::find()->where(['IN','user_id',$this->searchIn($idArray)])->andWhere(['type'=>2])->orderBy('time DESC');
+        $model   = UserPay::find()->andWhere($this->searchWhere())
+            ->andWhere(['>=','time',strtotime($this->starttime)])
+            ->andWhere(['<=','time',strtotime($this->endtime)])->andWhere(['type'=>2])->orderBy('time DESC');
         $pages   = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data    = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
-        return ['data'=>$data,'pages'=>$pages,'model'=>$this];
+    
+        $num   = UserPay::find()->andWhere($this->searchWhere())
+            ->andWhere(['>=','time',strtotime($this->starttime)])
+            ->andWhere(['<=','time',strtotime($this->endtime)])->select('sum(gold)')->andWhere(['type'=>2])->asArray()->one();
+        return ['data'=>$data,'pages'=>$pages,'model'=>$this,'num'=>$num['sum(gold)']];
     }
     
     
@@ -442,14 +470,24 @@ class Users extends UsersObject
     {
         $this->load($data);
         $this->initTime();
-        $model   = self::find()->andWhere($this->searchWhere())
-            ->andWhere(['>=','reg_time',strtotime($this->starttime)])
-            ->andWhere(['<=','reg_time',strtotime($this->endtime)]);
-        $idArray = $model->asArray()->select('id')->all();
-        $model   = UserOut::find()->where(['IN','user_id',$this->searchIn($idArray)])->orderBy('time DESC');
+        $model   = UserOut::find()->andWhere($this->searchWhere())
+            ->andWhere(['>=','time',strtotime($this->starttime)])
+            ->andWhere(['<=','time',strtotime($this->endtime)])->orderBy('time DESC');
+        
+        
+        $row   = UserOut::find()->andWhere($this->searchWhere())
+            ->andWhere(['>=','time',strtotime($this->starttime)])
+            ->andWhere(['<=','time',strtotime($this->endtime)])->andWhere(['>=','gold',0]);
+        $rows = $row->select('sum(gold)')->asArray()->one()['sum(gold)'];
+        
+        $re   = UserOut::find()->andWhere($this->searchWhere())
+            ->andWhere(['>=','time',strtotime($this->starttime)])
+            ->andWhere(['<=','time',strtotime($this->endtime)])->andWhere(['<','gold',0]);
+        $res = $re->select('sum(gold)')->asArray()->one()['sum(gold)'];
+        
         $pages   = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data    = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
-        return ['data'=>$data,'pages'=>$pages,'model'=>$this];
+        return ['data'=>$data,'pages'=>$pages,'model'=>$this,'rows'=>round($rows,2),'res'=>round($res,2)];
     }
 
     /**
@@ -461,11 +499,9 @@ class Users extends UsersObject
     {
         $this->load($data);
         $this->initTime();
-        $model   = self::find()->andWhere($this->searchWhere())
-            ->andWhere(['>=','reg_time',strtotime($this->starttime)])
-            ->andWhere(['<=','reg_time',strtotime($this->endtime)]);
-        $idArray = $model->asArray()->select('id')->all();
-        $model   = GameExploits::find()->where(['IN','user_id',$this->searchIn($idArray)])->orderBy('time DESC');
+        $model   = GameExploits::find()->andWhere($this->searchWhere())
+            ->andWhere(['>=','time',strtotime($this->starttime)])
+            ->andWhere(['<=','time',strtotime($this->endtime)])->orderBy('time DESC');
         $pages   = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data    = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
         return ['data'=>$data,'pages'=>$pages,'model'=>$this];
@@ -653,6 +689,19 @@ class Users extends UsersObject
         }
     }
     
+    
+    /**
+     * 后台 用户绑定代理
+     * @param array $data
+     * @return bool
+     */
+    public function distribute($data=[]){
+        $this->scenario ='addagency_code';
+        if ($this->load($data) && $this->validate()){
+              return $this->save();
+        }
+        
+    }
     
     
 }

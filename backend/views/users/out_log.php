@@ -22,7 +22,7 @@ use yii\bootstrap\ActiveForm;
                 <!--                搜索开始          -->
                 <div class="row text-sm wrapper">
                     <?php $form = ActiveForm::begin([
-                        'action'=>['users/out-log'],
+                        'action'=>['users/out-log','status'=>1],
                         'method'=>'get',
                         'fieldConfig' => [
                             'template' => "{input}",
@@ -97,6 +97,20 @@ use yii\bootstrap\ActiveForm;
                         <?php endforeach;?>
                         </tbody>
                     </table>
+                    <span>
+                        <?php if ($rows):?>
+                            <div style="text-align: right;float: left">
+                            <input type="text" value="正消费统计:<?php echo $rows?>" disabled >
+                        </div>
+                        <?php endif;?>
+                        <?php if ($res):?>
+                            <div style="text-align: right">
+                            <input type="text" value="负消费统计:<?php echo $res?>" disabled >
+                        </div>
+                        <?php endif;?>
+                        
+                    </span>
+                   
                     <?php if(empty($data)):?>
                         <div class="text-center m-t-lg clearfix wrapper-lg animated fadeInRightBig" id="galleryLoading">
                             <h1><i class="fa fa-warning" style="color: red;font-size: 40px"></i></h1>

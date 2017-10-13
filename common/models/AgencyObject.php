@@ -116,13 +116,13 @@ class AgencyObject extends Object
         if (!empty($this->select) && !empty($this->keyword))
         {
             if ($this->select == 'name')
-                return ['name'=>$this->keyword];
+                return ['like','name',$this->keyword];
             elseif ($this->select == 'phone')
-                return ['phone'=>$this->keyword];
+                return ['like','phone',$this->keyword];
             elseif($this->select == 'identity')
                 return ['identity'=>$this->keyword];
             else
-                return ['or',['name'=>$this->keyword],['phone'=>$this->keyword],['identity'=>$this->keyword]];
+                return ['or',['like','name',$this->keyword],['like','phone',$this->keyword],['identity'=>$this->keyword]];
         }
         return [];
     }

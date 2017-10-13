@@ -47,6 +47,7 @@ class Rebate extends RebateObject{
     {
         if (!empty($this->select) && !empty($this->keyword))
         {
+            
             if ($this->select == 'agency_id')
                 return ['like','agency_id',$this->keyword];
             elseif ($this->select == 'agency_name')

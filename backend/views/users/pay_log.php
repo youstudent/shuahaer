@@ -4,7 +4,6 @@
  * @copyright Copyright (c) 2017 Double Software LLC
  * @license http://www.lrdouble.com/license/
  */
-$num = '';
 $this->title = Yii::t('app','users_pay').'-'.Yii::$app->params['appName'];
 use yii\bootstrap\ActiveForm;
 ?>
@@ -108,7 +107,6 @@ use yii\bootstrap\ActiveForm;
                                                 <i class="fa fa-times text-danger text"></i>
                                             </a>
                                     </td>
-                                 <?php $num+=$value['gold']?>
                                 </tr>
                             <?php $i++?>
                             <?php endforeach;?>

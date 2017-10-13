@@ -183,4 +183,27 @@ class UsersController extends ObjectController
         $message = reset($message);
         return ['code'=>0,'message'=>$message];
     }
+    
+    /**
+     *  玩家 分配代理
+     * @return array|string
+     */
+    public function actionDistribute()
+    {
+        $this->layout = false;
+        $id = empty(\Yii::$app->request->get('id')) ? \Yii::$app->request->post('id') : \Yii::$app->request->get('id');
+        $model = Users::findOne($id);
+        if(\Yii::$app->request->isPost)
+        {
+            \Yii::$app->response->format = Response::FORMAT_JSON;
+            if($model->distribute(\Yii::$app->request->post()))
+            {
+                return ['code'=>1,'message'=>'分配成功'];
+            }
+            $message = $model->getFirstErrors();
+            $message = reset($message);
+            return ['code'=>0,'message'=>$message];
+        }
+        return $this->render('edit',['model'=>$model]);
+    }
 }
