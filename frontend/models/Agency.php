@@ -50,8 +50,9 @@ class Agency extends AgencyObject{
     {
         return [
 //            [['password'],'min'=>6],
+            [['phone','identity'],'unique','on'=>'add'],
             [['phone','password'],'required','on'=>'login'],
-            [['phone','password','reppassword','name','identity'],'required','on'=>'add'],
+            [['phone','password','reppassword','name','identity','recode'],'required','on'=>'add'],
             [['pid', 'reg_time',  'gold_all', 'status', 'code'], 'integer'],
             [['phone'], 'string', 'max' => 12],
             [['phone'],'unique','on'=>'add'],

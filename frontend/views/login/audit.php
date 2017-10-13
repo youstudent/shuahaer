@@ -41,7 +41,11 @@
                         <img src="/images/封锁.png" alt="" width="150px;">
                         <h2>你的账号：<?=Yii::$app->session->get('agencyName')?>,审核被拒绝!</h2>
                     <?php endif;?>
+                    <div style="float: left">
+                        <?=\yii\bootstrap\Html::a('返回登录页面',['/login/login'],['class'=>'btn btn btn-primary'])?>
+                    </div>
             </div>
+            
             <div class="col-sm-3"></div>
     </section>
 </section>

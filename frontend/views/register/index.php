@@ -57,7 +57,16 @@
                                 <?=$form->field($model,'recode')->textInput()?>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label" for="agency-password"></label>
-                                <div class="col-lg-9"><?=\yii\bootstrap\Html::submitButton('提交注册申请',['class'=>'btn btn btn-primary'])?><span class="help-block m-b-none"></span></div>
+                                <div class="col-lg-9">
+                                    <div style="float: left">
+                                        <?=\yii\bootstrap\Html::submitButton('提交注册申请',['class'=>'btn btn btn-primary'])?><span class="help-block m-b-none"></span>
+                                    </div>
+                                    
+                                    <div style="float: right">
+                                        <?=\yii\bootstrap\Html::a('返回登录页面',['/login/login'],['class'=>'btn btn btn-primary'])?>
+                                    </div>
+                                   
+                                </div>
                             </div>
 
                             <?php \yii\bootstrap\ActiveForm::end()?>

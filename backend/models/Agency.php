@@ -98,6 +98,7 @@ class Agency extends AgencyObject
     public function rules()
     {
         return [
+            [['phone','identity'],'unique','on'=>'add'],
             [['pid', 'reg_time',  'status', 'code','recode','pay_money'], 'integer'],
             [['gold_all','pay_gold','deduct_money','rebate','deduct_gold'],'number'],
             [['phone'], 'string', 'max' => 12],
