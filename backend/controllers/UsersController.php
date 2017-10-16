@@ -206,4 +206,25 @@ class UsersController extends ObjectController
         }
         return $this->render('edit',['model'=>$model]);
     }
+    
+    
+    /**
+     * 玩家绑定和取消超级账号
+     * @return array
+     */
+    public function actionSuper(){
+        \Yii::$app->response->format = Response::FORMAT_JSON;
+        $model = new Users();
+        if ($model->Super(Yii::$app->request->get('id'))){
+            return ['code'=>1,'message'=>"操作成功"];
+        }
+        /**
+         * 发送错误读取错误是什么、并返回给客户端
+         */
+        $message = $model->getFirstErrors();
+        $message = reset($message);
+        return ['code'=>0,'message'=>$message];
+    }
+    
+    
 }

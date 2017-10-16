@@ -117,10 +117,15 @@ use yii\bootstrap\ActiveForm;
                                         <i class="fa fa-times text-danger text"></i>
                                     </a>
                                 </td>
-                                <td class="text-center" width="500px;">
+                                <td class="text-center" width="550px;">
                                     <a onclick="return openAgency(this,'是否<?=$value['status']==1?'停用':'启用'?>该账号?')"
                                        href="<?php echo \yii\helpers\Url::to(['users/status', 'id' => $value['game_id']]) ?>"
                                        class="btn btn-xs btn-danger"><?=$value['status']==1?'停用':'启用'?></a>
+
+                                    <a onclick="return openAgency(this,'是否<?=$value['super']==1?'取消超级账号':'绑定超级账号'?>?')"
+                                       href="<?php echo \yii\helpers\Url::to(['users/super', 'id' => $value['id']]) ?>"
+                                       class="btn btn-xs btn-<?=$value['super']==1?'info':'danger'?>"><?=$value['super']==1?'取消超级账号':'绑定超级账号'?></a>
+                                    
                                     <a href="<?=\yii\helpers\Url::to(['users/pay-log',
                                         'Users'=>['select'=>'game_id','keyword'=>$value['game_id']]])?>" class="btn btn-xs btn-primary">充值记录</a>
                                     <a href="<?=\yii\helpers\Url::to(['users/deduct-log',

@@ -86,7 +86,7 @@ class Users extends UsersObject
             ['pay_gold_num','integer','on'=>'deduct'],
             ['pay_gold_num','match','pattern'=>'/^\+?[1-9][0-9]*$/','on'=>'pay'],
             ['pay_money','number','on'=>'pay'],
-            [['starttime','endtime','autograph','notes'],'safe'],
+            [['starttime','endtime','autograph','notes','super'],'safe'],
             ['pay_gold_num','validateDeduct','on'=>'deduct'],
             ['pay_gold_num','match','pattern'=>'/^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$/','on'=>'deduct'],
         ];
@@ -700,6 +700,28 @@ class Users extends UsersObject
         if ($this->load($data) && $this->validate()){
               return $this->save();
         }
+    }
+    
+    
+    /**
+     * 处理超级账号
+     * @param $id
+     */
+    public function Super($id){
+        $user = Users::findOne($id);
+        if ($user->super == 1){
+            $user->super = 0;
+        }else{
+            $user->super = 1;
+        }
+        $url = \Yii::$app->params['ApiUserPay']."?mod=gm&act=supperUserBind&uid=".$user->game_id."&isSupperUser=".$user->super;
+        $data = Request::request_get($url);
+        if($data['code'] == 1)
+        {
+           return $user->save();
+        
+        }
+        
         
     }
     
