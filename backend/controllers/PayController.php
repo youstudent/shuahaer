@@ -80,23 +80,28 @@ class PayController extends ObjectController
         $agency->load(\Yii::$app->request->get());
         $agency->initTime();//初始化默认时间
         $model      = '';
-        
+        $row['gold']=0;
         //判断是否输入关键字
         if($agency->keyword != ''){
             $agencyInfo = Agency::find()->where($agency->searchWhere())->one();
             //查询代理是否存在
             if(isset($agencyInfo->id)) {
                 $model = AgencyDeduct::find()->andWhere(['agency_id' => $agencyInfo->id]);
+                $rows = AgencyDeduct::find()->select('sum(gold)')->where(['agency_id' => $agencyInfo->id])->andWhere(['>=','time',strtotime($agency->starttime)])->andWhere(['<=','time',strtotime($agency->endtime)])->asArray()->one();
+                $row['gold'] = $rows['sum(gold)'];
             } else{
                 //不存在查询一个不存在代理充值记录
                 $model = AgencyDeduct::find()->where(['id'=>-10]);
             }
-        }else {$model = AgencyDeduct::find();}//没有关键字查询所有
+        }else {$model = AgencyDeduct::find();
+            $re= AgencyDeduct::find()->select(['sum(gold)'])->andWhere(['>=','time',strtotime($agency->starttime)])->andWhere(['<=','time',strtotime($agency->endtime)])->asArray()->one();
+            $row['gold'] = $re['sum(gold)'];
+        }//没有关键字查询所有
         // 添加查询的时间条件
         $model->andWhere(['>=','time',strtotime($agency->starttime)])->andWhere(['<=','time',strtotime($agency->endtime)]);
         $pages      = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->orderBy('time DESC')->all();
-        return $this->render('agencyDeductLog',['model'=>$agency,'data'=>$data,'pages'=>$pages]);
+        return $this->render('agencyDeductLog',['model'=>$agency,'data'=>$data,'pages'=>$pages,'row'=>$row]);
     }
     
 }

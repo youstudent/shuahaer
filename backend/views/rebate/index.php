@@ -69,11 +69,6 @@ use yii\bootstrap\ActiveForm;
                             </div>
                             <?php ActiveForm::end() ?>
                         </div>
-                        <!--<div class="col-sm-3 text-right">
-                            <a href="<?/*= \yii\helpers\Url::to(['rebate/setting']) */?>" class="btn btn-primary"
-                               data-toggle="modal" data-target="#myModal"><i
-                                    class="fa fa-gears"></i>&nbsp;<?php /*echo Yii::t('app', '返利比例') */?></a>
-                        </div>-->
                     </div>
                     <!--                搜索结束          -->
                 </div>
@@ -116,6 +111,16 @@ use yii\bootstrap\ActiveForm;
                             <?php endforeach; ?>
                             </tbody>
                         </table>
+                        <?php if ($rows['sum(gold_num)']):?>
+                            <div style="text-align: right;float: left">
+                                <input type="text" value="消费数量统计:<?php echo $rows['sum(gold_num)'] ?>" disabled >
+                            </div>
+                        <?php endif;?>
+                        <?php if ($rows['sum(proportion)']):?>
+                            <div style="text-align: right;float: right">
+                                <input type="text" value="返利点统计:<?php echo round($rows['sum(proportion)'],2) ?>" disabled >
+                            </div>
+                        <?php endif;?>
                         <?php if(empty($data)):?>
                             <div class="text-center m-t-lg clearfix wrapper-lg animated fadeInRightBig" id="galleryLoading">
                                 <h1><i class="fa fa-warning" style="color: red;font-size: 40px"></i></h1>

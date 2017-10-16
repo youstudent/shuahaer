@@ -99,6 +99,16 @@ use yii\bootstrap\ActiveForm;
                             <?php endforeach; ?>
                             </tbody>
                         </table>
+                        <?php if ($rows['sum(pay_out_money)']):?>
+                            <div style="text-align: right;float: left">
+                                <input type="text" value="交易金额统计:<?php echo $rows['sum(pay_out_money)'] ?>" disabled >
+                            </div>
+                        <?php endif;?>
+                        <?php if ($rows['sum(num)']):?>
+                            <div style="text-align: right;float: right">
+                                <input type="text" value="抽水统计:<?php echo round($rows['sum(num)'],2) ?>" disabled >
+                            </div>
+                        <?php endif;?>
                         <?php if(empty($data)):?>
                             <div class="text-center m-t-lg clearfix wrapper-lg animated fadeInRightBig" id="galleryLoading">
                                 <h1><i class="fa fa-warning" style="color: red;font-size: 40px"></i></h1>

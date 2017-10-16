@@ -125,9 +125,12 @@ class DrawWater extends \yii\db\ActiveRecord
         if ($type){
             $model->andWhere(['type'=>$type]);
         }
+        $rows =  self::find()->select('sum(pay_out_money),sum(num)')->andWhere($this->searchWhere())
+            ->andWhere(['>=','created_at',strtotime($this->starttime)])
+            ->andWhere(['<=','created_at',strtotime($this->endtime)])->andWhere(['type'=>$type])->asArray()->one();
         $pages   = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data    = $model->limit($pages->limit)->offset($pages->offset)->asArray()->orderBy('created_at DESC')->all();
-        return ['data'=>$data,'pages'=>$pages,'model'=>$this];
+        return ['data'=>$data,'pages'=>$pages,'model'=>$this,'rows'=>$rows];
     }
     
     

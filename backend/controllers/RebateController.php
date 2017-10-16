@@ -11,6 +11,7 @@ use backend\models\Agency;
 use backend\models\Rebate;
 use backend\models\RebateConf;
 use backend\models\RebateRatio;
+use phpDocumentor\Reflection\DocBlock\Tags\Var_;
 use yii\web\Response;
 use yii\data\Pagination;
 
@@ -36,32 +37,9 @@ class RebateController extends ObjectController
         $model->andWhere(['>=','time',strtotime($rebate->starttime)])->andWhere(['<=','time',strtotime($rebate->endtime)])->andWhere($rebate->searchWhereLikes());
         $pages      = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
         $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->orderBy('time DESC')->all();
-        
-        return $this->render('index',['model'=>$rebate,'data'=>$data,'pages'=>$pages]);
+        $rows = Rebate::find()->select('sum(gold_num),sum(proportion)')->andWhere(['>=','time',strtotime($rebate->starttime)])->andWhere(['<=','time',strtotime($rebate->endtime)])->andWhere($rebate->searchWhereLikes())->asArray()->one();
+        return $this->render('index',['model'=>$rebate,'data'=>$data,'pages'=>$pages,'rows'=>$rows]);
     }
-    
-    
-    /**
-     * 返利记录搜索
-     * @return string
-     */
-    /*public function actionIndex()
-    {
-        $agency = new Agency();
-        $agency->load(\Yii::$app->request->get());
-        $agency->initTime();
-        $model      = '';
-        if($agency->keyword != ''){
-            $agencyInfo = Agency::find()->where($agency->searchWhere())->one();
-            if(isset($agencyInfo->id)) $model = Rebate::find()->where(['agency_id'=>$agencyInfo->id]);
-                else $model = Rebate::find()->where(['id'=>-10]);
-        }else {$model = Rebate::find();}
-        $model->andWhere(['>=','time',strtotime($agency->starttime)])->andWhere(['<=','time',strtotime($agency->endtime)]);
-        $pages      = new Pagination(['totalCount' =>$model->count(), 'pageSize' => \Yii::$app->params['pageSize']]);
-        $data       = $model->limit($pages->limit)->offset($pages->offset)->asArray()->all();
-        return $this->render('index',['model'=>$agency,'data'=>$data,'pages'=>$pages]);
-    }*/
-
     /**
      * 返钻比例设置
      * @return array|string

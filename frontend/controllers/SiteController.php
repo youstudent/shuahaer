@@ -159,4 +159,12 @@ class SiteController extends ObjectController
         }
         return $this->render('editPassword',['model'=>$model]);
     }
+    
+    /**
+     * 错误
+     * @return \yii\web\Response
+     */
+    public function actionError(){
+        return $this->redirect(['index']);
+    }
 }

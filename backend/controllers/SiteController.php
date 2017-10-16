@@ -103,5 +103,13 @@ class SiteController extends ObjectController
         }
         return $this->render('index',['monthOrderToDay'=>$orderMonth,'userOrderToDay'=>$userOrder]);
     }
+    
+    /**
+     * 错误
+     * @return \yii\web\Response
+     */
+    public function actionError(){
+        return $this->redirect(['index']);
+    }
 
 }

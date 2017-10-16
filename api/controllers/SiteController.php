@@ -23,5 +23,14 @@ class SiteController extends ObjectController
     {
         return $this->returnAjax(1,'ok!',[]);
     }
+    
+    
+    /**
+     * 错误
+     * @return \yii\web\Response
+     */
+    public function actionError(){
+        return $this->redirect(['index']);
+    }
 
 }
