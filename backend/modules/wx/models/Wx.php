@@ -20,8 +20,8 @@ use yii\helpers\ArrayHelper;
  */
 class  Wx extends Model
 {
-    public $wxappid = 'wx1f0573a349ad863e';
-    public $wxappsecrret = 'e968c1ce5c24b10e369f8d912e805d76';
+    public $wxappid = 'wxda66dd84468204e8';
+    public $wxappsecrret = '1342d68cdf1bfada87c9a91b5770546e';
     public $accessToken = '';
 
     /**
